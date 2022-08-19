@@ -101,9 +101,9 @@ console.log("hello console")
 let marks = prompt('Enter your marks :');
 
 // check the condition
-let result = (marks >= 40) ? 'pass' : 'fail';
+let results = (marks >= 40) ? 'pass' : 'fail';
 
-console.log(`You ${result} the exam.`);
+console.log(`You ${results} the exam.`);
 
 
 // 3. check the age to determine the eligibility to vote
@@ -126,8 +126,9 @@ function getDistance(x1, y1, x2, y2)
 
 
 
-/
-/ 5.Calculate the sum of numbers received in a comma delimited string
+
+//  5.Calculate the sum of numbers received in a comma delimited string
+
 console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
 
 function sumCSV(s)
