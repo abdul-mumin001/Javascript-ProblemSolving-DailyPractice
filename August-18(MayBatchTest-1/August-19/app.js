@@ -173,3 +173,44 @@ console.log(test37(12));
 // Q8.Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7.  Go to the editor
 //  Q9.Print all even numbers from 0 – 10
 // Q10.Calculate the sum of numbers from 1 to 10
+
+
+
+//   3.Print the odd numbers less than 100
+
+for(var i = 1; i <= 100; i += 2)
+{
+    console.log(i) 
+}
+
+
+//4. Print all the multiplication tables with numbers from 1 to 10
+for(var i = 1; i <= 10; i++)
+{
+    printTable(i);
+    console.log("");
+}
+function printTable(n)
+{
+    for(var i = 1; i <= 10; i++)
+    {
+        var row = n + " * " + i + " = " + n * i;
+        console.log(row);
+    }
+}
+
+
+
+//5. Calculate the sum of numbers from 1 to 10
+
+var sum = 0;
+
+for(var i = 1; i <= 10; i++)
+{
+    sum += i;
+}
+
+console.log(sum);
+
+
+
