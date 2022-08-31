@@ -116,17 +116,144 @@
 
 
 
-function pattern(){
+// function pattern(){
  
   
-    for(let i=1;i<=5;i++){
-      let str='';
-      for(let j=1;j<=i;j++){
-        str+=j;
+//     for(let i=1;i<=5;i++){
+//       let str='';
+//       for(let j=1;j<=i;j++){
+//         str+=j;
         
-      }
-      console.log(str)
-    }
+//       }
+//       console.log(str)
+//     }
     
+//   }
+//   pattern()
+
+
+
+
+// print even no from 0-10
+
+//   for(let i=0;i<=10;i++){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+// }
+
+
+//minute to second
+
+// function convertMS(minutes){
+// let sec=(minutes*minutes);
+// return sec
+// }
+// console.log(convertMS(100))
+
+
+// print hour ,minutes ,sec 
+
+// function convertHMS(value) {
+//   const sec = parseInt(value, 10); // convert value to number if it's string
+//   let hours   = Math.floor(sec / 3600); // get hours
+//   let minutes = Math.floor((sec - (hours * 3600)) / 60); // get minutes
+//   let seconds = sec - (hours * 3600) - (minutes * 60); //  get seconds
+//   // add 0 if value < 10; Example: 2 => 02
+//   if (hours   < 10) {hours   = "0"+hours;}
+//   if (minutes < 10) {minutes = "0"+minutes;}
+//   if (seconds < 10) {seconds = "0"+seconds;}
+//   return hours+':'+minutes+':'+seconds; // Return is HH : MM : SS
+// }
+
+
+
+// Create a function that takes the age in years and returns the age in days.
+
+function convertAgeInYrToDays(ageInYears){
+    let ageInDays=(ageInYears*365);
+    return ageInDays;
+}
+console.log(convertAgeInYrToDays(22))
+
+
+
+
+//  Take a 3 digit number and print the reverse of that number.
+//  i/p=123;  o/p=3,2,1 
+
+function reverse(a){
+    
+  let x=a%10;
+  let b=Math.floor(a/10)
+  let y=b%10;
+  let z=Math.floor(b/10)
+  return (x+","+y+","+z)
+  
+ 
+}
+console.log(reverse(123))
+
+
+// Print the odd numbers less than 100
+
+for(var i = 1; i <= 100; i += 2)
+{
+  console.log(i) 
+}
+
+
+//. Print all the multiplication tables with numbers from 1 to 10
+for(var i = 1; i <= 10; i++)
+{
+  printTable(i);
+  console.log("");
+}
+function printTable(n)
+{
+  for(var i = 1; i <= 10; i++)
+  {
+      var row = n + " * " + i + " = " + n * i;
+      console.log(row);
   }
-  pattern()
+}
+
+
+
+//. Calculate the sum of numbers from 1 to 10
+
+var sum = 0;
+
+for(var i = 1; i <= 10; i++)
+{
+  sum += i;
+}
+
+console.log(sum);
+
+
+
+
+// Print the odd numbers less than 100
+
+for(var i = 1; i <= 100; i += 2)
+{
+    console.log(i) 
+}
+
+
+//Print all the multiplication tables with numbers from 1 to 10
+for(var i = 1; i <= 10; i++)
+{
+    printTable(i);
+    console.log("");
+}
+function printTable(n)
+{
+    for(var i = 1; i <= 10; i++)
+    {
+        var row = n + " * " + i + " = " + n * i;
+        console.log(row);
+    }
+}
+
