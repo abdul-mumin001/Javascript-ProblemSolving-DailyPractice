@@ -137,8 +137,9 @@ console.log(sum);
 
 
 // pratik parmeshwar jamadar	
+
 // Q 1 .  Calculate the sum of prime number form 0 to 20
-// 	Q 2 . calculate the sum of odd position's number  :  input 5879856
+ //Q 2 . calculate the sum of odd position's number:  input 5879856
 // 	Q 3 : If number is a prime number the print "is a prime number" otherwise " is a not prime number"
 // 	Q 4 : find the difference between even number and odd number and then add the prime number.
 // 	Q 5 : if number is divisiable by 3 then write" yes " if else " No" 
@@ -148,10 +149,62 @@ console.log(sum);
 // 	Q 9 : print last digit of number input "abcd"
 // 	Q 10 : find square root of 4225
 	
+// Q 1 .  Calculate the sum of prime number form 0 to 20
 
 
 
+ //Q 2 . calculate the sum of odd position's number:  input 5879856
 
+ let sum=0;
+
+ function sumOfOdd(num){
+ let oddsum=0;
+ while(num!=0){
+  let digit=num%10;
+  num=Math.floor(num/10);
+  if(digit%2!=0){
+    oddsum+=digit;
+  }
+ }
+ 
+    return oddsum;
+ }
+ console.log(sumOfOdd(5879856))
+
+
+ // Q 3 : If number is a prime number the print "is a prime number" otherwise " is a not prime number"
+
+ const number = parseInt(process.argv[2]);
+ let isPrime = true;
+ 
+ // check if number is equal to 1
+ if (number === 1) {
+     console.log("1 is neither prime nor composite number.");
+ }
+ 
+ // check if number is greater than 1
+ else if (number > 1) {
+ 
+     // looping through 2 to number-1
+     for (let i = 2; i < number; i++) {
+         if (number % i == 0) {
+             isPrime = false;
+             break;
+         }
+     }
+ 
+     if (isPrime) {
+         console.log(`${number} is a prime number`);
+     } else {
+         console.log(`${number} is a not prime number`);
+     }
+ }
+ 
+ // check if number is less than 1
+ else {
+     console.log("The number is not a prime number.");
+ }
+ 
 
 
 // Kishore Cherukuru	

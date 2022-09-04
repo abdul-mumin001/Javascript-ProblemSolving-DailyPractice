@@ -144,29 +144,29 @@
 
 
 
-let n = 7
-let space = (n-1)/2 
-let star = 1;
-for(let i = 1;i <= n; i++){
-  let str = ""
-  for(let j = 1;j <= space; j++){
-    str = str + " ";
-  }
-  for(let j = 1;j <= star; j++){
-    str = str + "*";
-  }
-  space = i<= n/2 ? space -1 : space+1;
-  star = i<= n/2 ? star +2 : star-2;
-  // if(i <= n/2){
-  //   space = space - 1;
+// let n = 7
+// let space = (n-1)/2 
+// let star = 1;
+// for(let i = 1;i <= n; i++){
+//   let str = ""
+//   for(let j = 1;j <= space; j++){
+//     str = str + " ";
+//   }
+//   for(let j = 1;j <= star; j++){
+//     str = str + "*";
+//   }
+//   space = i<= n/2 ? space -1 : space+1;
+//   star = i<= n/2 ? star +2 : star-2;
+//   // if(i <= n/2){
+//   //   space = space - 1;
   //   star = star + 2;
   // }else{
   //   space = space + 1;
   //   star = star - 2;
   // }
   // str = str + "\n";
-  console.log(str);
-} 
+  // console.log(str);
+// } 
 // n(space*star) 
 // n/2(space*star)+n/2(space*star) => n(space*star) 
 // "   *\n  ***\n *****\n*******\n *****\n  ***\n   *"
@@ -177,3 +177,61 @@ for(let i = 1;i <= n; i++){
 //  *****
 //   ***
 //    *
+
+
+
+
+// print oddsum
+// let sum=0;
+
+//  function sumOfOdd(num){
+//  let oddsum=0;
+//  while(num!=0){
+//   let digit=num%10;
+//   num=Math.floor(num/10);
+//   if(digit%2!=0){
+//     oddsum+=digit;
+//   }
+//  }
+ 
+//     return oddsum;
+//  }
+//  console.log(sumOfOdd(5879856))
+
+
+// check prime or not 
+
+// const number = parseInt(process.argv[2]);
+// let isPrime = true;
+
+// // check if number is equal to 1
+// if (number === 1) {
+//     console.log("1 is neither prime nor composite number.");
+// }
+
+// // check if number is greater than 1
+// else if (number > 1) {
+
+//     // looping through 2 to number-1
+//     for (let i = 2; i < number; i++) {
+//         if (number % i == 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+
+//     if (isPrime) {
+//         console.log(`${number} is a prime number`);
+//     } else {
+//         console.log(`${number} is a not prime number`);
+//     }
+// }
+
+// // check if number is less than 1
+// else {
+//     console.log("The number is not a prime number.");
+// }
+
+
+
+
