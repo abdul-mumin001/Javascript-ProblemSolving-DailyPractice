@@ -48,3 +48,21 @@ for(let i=1;i<=5;i++){
   }
   console.log(str)
 }
+
+
+
+// 4.Q 
+// 1
+// 22
+// 333
+// 4444
+// 55555
+
+
+for(let i=1;i<=5;i++){
+  str='';
+  for(let j=1;j<=i;j++){
+    str+=i;
+  }
+  console.log(str)
+}
