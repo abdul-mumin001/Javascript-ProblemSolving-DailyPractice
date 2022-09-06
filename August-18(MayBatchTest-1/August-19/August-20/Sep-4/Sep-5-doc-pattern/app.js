@@ -66,3 +66,23 @@ for(let i=1;i<=5;i++){
   }
   console.log(str)
 }
+
+
+
+
+// 5.Q 
+// *****
+// ****
+// ***
+// **
+// *
+
+
+
+for(let i=1;i<=5;i++){
+  str='';
+  for(let j=i;j<=5;j++){
+    str+="*"
+  }
+  console.log(str)
+}
