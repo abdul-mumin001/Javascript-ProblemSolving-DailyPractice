@@ -103,3 +103,27 @@ for(let i=5;i>=1;i--){
   }
   console.log(str)
 }
+
+
+// 7.Q 
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+
+
+for(let i=1;i<=5;i++){
+  str='';
+  for(let j=1;j<=5-i;j++){
+    str+=' '
+  }
+  for(let k=1;k<=i;k++){
+    str+='*'
+  }
+  for(let l=2;l<=i;l++){
+    str+= '*'
+  }
+  console.log(str);
+}
