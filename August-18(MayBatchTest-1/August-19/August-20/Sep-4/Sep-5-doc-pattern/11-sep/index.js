@@ -35,3 +35,17 @@ function countpage(n, m){
 }
 console.log(countpage(2,8))
 exports.countpage = countpage
+
+
+
+// Q.You're given a number, 
+// calculate the sum of `1 + 2 + 3 + ... + n` and return the sum.
+
+
+
+function numberSum(num){
+  let sum=num*(num+1)/2;
+  return sum;
+}
+console.log(numberSum(2))
+exports.numberSum = numberSum
