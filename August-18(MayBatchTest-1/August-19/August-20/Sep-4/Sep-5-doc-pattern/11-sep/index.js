@@ -21,3 +21,17 @@ while(num != 0){  // true
   str += digit; //4321 
 }
 console.log(str);
+
+
+
+
+// Q.There is a book, each page of the book contains `n` words. 
+// The books contains a total of `m` words. Return how many pages are there in the book
+
+
+function countpage(n, m){
+  let no_Of_Page=m/n;
+  return no_Of_Page;
+}
+console.log(countpage(2,8))
+exports.countpage = countpage
