@@ -66,4 +66,16 @@ function anagram(str1, str2){
  
 } 
 console.log(anagram('elbow', 'below'))
-exports.anagram = anagram
+exports.anagram = anagram 
+
+
+
+// Q.You're given a 5 digit number, return the sum of second and last digit of the number.
+
+function secondLast(num){
+  let lastDigit=num%10;
+  let SecondLastDigit=Math.floor((num/1000)%10);
+  return (lastDigit+SecondLastDigit);
+}
+console.log(secondLast(12345))
+exports.secondLast = secondLast
