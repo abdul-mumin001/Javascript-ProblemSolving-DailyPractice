@@ -49,3 +49,21 @@ function numberSum(num){
 }
 console.log(numberSum(2))
 exports.numberSum = numberSum
+
+
+
+// Q.Given two strings, check if they are anagrams or not. If they are anagrams return true else return false.
+
+function anagram(str1, str2){
+  
+  let a = str1.split('').sort().join('');
+  let b= str2.split('').sort().join('');
+  if(a === b){
+     return true;
+  } else { 
+     return false;
+  }
+ 
+} 
+console.log(anagram('elbow', 'below'))
+exports.anagram = anagram
