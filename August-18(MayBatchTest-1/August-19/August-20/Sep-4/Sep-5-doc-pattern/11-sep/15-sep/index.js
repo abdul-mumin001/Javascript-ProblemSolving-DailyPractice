@@ -60,3 +60,16 @@ function pow (base,exponent) {
   }
   console.log(pow(3,4))
   
+
+
+
+  function count1(arr){
+    var count=0
+for(let i=0;i<arr.length;i++){
+if(arr[i]=='1'){
+    count+=arr[i]
+}
+}
+return count
+  }
+  console.log(count1([0,1,0,1,1]))
