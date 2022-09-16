@@ -43,3 +43,20 @@ function power(a,b){
 }
 console.log(power(2,6))
 console.log(power(1,0))
+
+
+
+//anither method
+
+function pow (base,exponent) {
+  
+    if (exponent==0){return 1};
+    var  ans=1;
+    for (var i=1; i<=exponent; i++){
+      ans*=base
+    }
+    
+    return ans;
+  }
+  console.log(pow(3,4))
+  
