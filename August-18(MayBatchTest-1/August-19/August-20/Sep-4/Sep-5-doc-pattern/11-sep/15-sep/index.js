@@ -73,3 +73,30 @@ if(arr[i]=='1'){
 return count
   }
   console.log(count1([0,1,0,1,1]))
+
+
+
+
+
+
+
+  //Rotation of array
+var left=0;
+  var right=arr.length-1;
+  var rotation=0;
+  while(left<=right)
+    {
+      var mid=left+Math.floor((right-left)/2);
+      if(arr[mid]>arr[right])
+      {
+        rotation=mid;
+        left=mid+1;
+        
+      }
+      else
+      {
+        rotation=mid;
+        right=mid-1;
+      }
+}
+  return rotation;
