@@ -104,7 +104,7 @@ console.log(isEvenNo(4));
 // 1. Approaches. 
   // separate 0 and 1. 
 
-// Approach 1 
+// Approach i
 
 function separate0sAnd1s(arr) {
   var countOf0 = 0; // O(1)
@@ -133,3 +133,71 @@ console.log(separate0sAnd1s([1,1,0,1,0]))
 // O( 2 +  arr.length + arr.length);
 // O( 2 + 2* arr.length);
 // O(2*arr.length) => O(n) => n is arr.length;
+
+
+
+
+
+
+
+// Approach ii
+
+function sortByTwoPoint(arr) {
+  var start = 0 , end = arr.length - 1 ;
+
+
+  while( start < end ) {
+
+  	while( start < end && arr[start] %2 == 0 ) {
+    	start++ ;
+  	}
+
+  	while( start < end && arr[end] %2 == 1 ) {
+    	end-- ;
+  	}
+
+  	if( start < end ) {
+    	// swap(arr[start], arr[end]);
+      var temp=arr[start];
+      arr[start]=arr[end]
+      arr[end]=temp;
+    	start++ ;
+    	end-- ;
+  	}
+  }
+
+  return arr;
+} 
+console.log(sortByTwoPoint([23, 45, 6, 8, 19, 12]))
+// Q:- Given a interger array, we have to separate even and odd numbers. 
+
+// i. we don't need to maintain the order of input.
+// ii. We have to maintain the order of input. 
+
+// [23, 45, 6, 8, 19, 12];
+
+// [6,8, 12, 23,45,19];
+
+// [8, 12, 6, 23, 19, 45]
+
+
+// Approach iii:
+function sort(arr)
+{
+  var i=-1;
+  for(var j=0;j<arr.length;j++)
+  {
+    if(arr[j]==0)
+    {
+      i++;
+      var temp=arr[i];
+      arr[i]=arr[j]
+      arr[j]=temp;
+      
+      
+    }
+  }
+  return arr;
+}
+console.log(sort([23, 45, 6, 8, 19, 12]))
+
