@@ -181,6 +181,11 @@ console.log(sortByTwoPoint([23, 45, 6, 8, 19, 12]))
 // [8, 12, 6, 23, 19, 45]
 
 
+
+
+
+
+// not getting & ans is not coming correctly
 // Approach iii:
 function sort(arr)
 {
