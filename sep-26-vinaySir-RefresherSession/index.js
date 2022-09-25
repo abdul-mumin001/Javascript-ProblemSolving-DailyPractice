@@ -536,6 +536,76 @@ console.log(binarySearch(arr, 11));
 // console.log(insertionSort([2,9,1,4]))
 
 
+// Merge Sort :- It is a sorting algorithm. 
+
+// [2, 9, 4, 1, 3, 5]
+// [2, 9, 4] , [1, 3, 5]
+// [2], [9, 4], [1] , [3, 5]
+// [2], [9], [4], [1], [3], [5]
+// [2], [4, 9], [1] , [3, 5]
+// [2, 4, 9] , [1, 3, 5]
+// [1, 2, 3, 4, 5, 9]
+
+// Stack = 1
+// arr = [2,1,5,9,4,7]
+// mid = 3
+// left = [1,2,5]
+// right = [4,7,9]
+// return [1,2,4,5,7,9]
+
+// // Stack 2 -> left
+// arr = [2,1,5]
+// mid = 1
+// left = [2]
+// right = [1,5]
+// return [1,2,5]
+
+// // Stack 3 -> left => left
+// arr = [2]
+// return [2]
+
+// Stack 4 -> left => right
+// arr = [1,5]
+// mid = 1
+// left = [1]
+// right = [5]
+// return [1,5]
+
+function mergeSort(arr)  {
+    if(arr.length <= 1) {
+        return arr
+    }
+    let mid = Math.floor(arr.length / 2);
+    let left = mergeSort(arr.slice(0,mid))
+    let right = mergeSort(arr.slice(mid));
+    return merge(left, right) 
+}
+
+// merge([1], [5])
+// left = [1] -> []
+// right = [5]
+// newArr = [1]
+// return [1,5]
+
+// merge([2], [1,5])
+// left = [2] -> []
+// right = [1,5] -> [5]
+// newArr = [] -> [1] -> [1,2]
+// return [1,2,5]
+
+function merge(left, right) {
+    let newArr = []
+    while(left.length && right.length) {
+        if(left[0] < right[0]){
+            newArr.push(left.shift());
+        } else {
+            newArr.push(right.shift())
+        }
+    }
+    return [...newArr, ...left, ...right]
+}
+console.log(mergeSort([2,1,5,9,4,7]))
+
 
 
 
