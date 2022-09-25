@@ -428,6 +428,122 @@ console.log(binarySearch(arr, 11));
 
 
 
+// 4 sorting algos till now.
+// 1. Selection Sort
+// 2. Bubble Sort
+// 3. Insertion Sort
+// 4. Merge Sort
+
+// 1. Selection Sort :- Selection sort is a sorting algo.
+                                                                                    //0 1 2 3 4 5 6      
+// arr = [4,6,8,3,4,2,9] -> [2,6,8,3,4,4,9] -> [2,3,8,6,4,4,9] -> [2,3,4,6,8,4,9] -> [2,3,4,4,8,6,9]
+    // 0 1 2 3 4 5 6 
+// -> [2,3,4,4,6,8,9]
+// i = 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6
+// min = 6
+
+// function selectionSort(arr) {
+//     for(let i = 0; i < arr.length-1; i++) {
+//       let min  = i;
+//       for(let j = i + 1; j< arr.length; j++){
+//         if(arr[j] < arr[min]) {
+//             min = j;
+//         }
+//       }   
+//       if( min != i ) {
+//         let temp = arr[i];
+//         arr[i] = arr[min]
+//         arr[min] = temp;
+//       }
+//     }
+//     return arr;
+// }
+
+// let arr = [4,6,8,3,4,2,9]
+// console.log(selectionSort(arr))
+
+
+
+
+
+
+
+// 1. Bubble Sort :- It is a sorting algorithm.
+// Itteration 1
+// [2, 9, 1, 4, 0, 8]
+// [2, 1, 9, 4, 0, 8]
+// [2, 1, 4, 9, 0, 8]
+// [2, 1, 4, 0, 9, 8]
+// [2, 1, 4, 0, 8 ,9]
+
+// // Itteration 2
+// [2, 1, 4, 0, 8 ,9]
+// [1, 2, 4, 0, 8, 9]
+// [1, 2, 0, 4, 8, 9]
+
+// // Itteration 3
+// [1, 2, 0, 4, 8 ,9]
+// [1, 0, 2, 4, 8, 9]
+
+// // Itteration 4
+// [1, 0, 2, 4, 8, 9]
+// [0, 1, 2, 4, 8, 9]
+
+// // Itteration 5
+// [0, 1, 2, 4, 8, 9]
+
+
+// arr = [2, 9, 1, 4] -> [2, 1, 9, 4] -> [2,1,4,9]
+// i = 0 -> 1
+// j = 0 -> 1 -> 2 -> 3
+// 4-1-1 = 2
+// j < 2
+// function bubbleSort(arr) {
+//     for(let i = 0; i<arr.length; i++){
+//         for(let j = 0; j<(arr.length-i-1); j++) {
+//             if(arr[j] > arr[j+1]){
+//                 let temp = arr[j]
+//                 arr[j] = arr[j+1]
+//                 arr[j+1] = temp
+//             }
+//         }
+//     }
+//     return arr
+// }
+
+// console.log(bubbleSort([2, 9, 1, 4, 0, 8]))
+
+
+
+
+
+// Insertion Sort :- It is a Sorting algorithm.
+// arr = [ 2, 9, 1, 4, 0, 8] -> [2, 1, 9, 4, 0, 8] -> [1, 2, 9, 4, 0, 8] -> [1, 2, 4, 9, 0, 8] -> [1, 2, 4, 0, 9, 8] -> [1,2,0,4,9,8] -> [1,0,2,4,9,8] -> [0,1,2,4,9,8] -> [0,1,2,4,8,9]
+
+// arr = [2, 9, 1, 4] -> [2, 9, 1, 4] -> [2, 9, 9, 4] -> [2, 2, 9, 4] -> [1, 2, 9, 4] -> [1, 2, 9, 9] -> [1, 2, 4, 9]
+
+// function insertionSort(arr) {
+//     for(let i = 1; i < arr.length; i++) {
+//         let tempElement = arr[i]
+//         let j;
+//         for(j = i-1; j>=0 && arr[j] > tempElement; j--) {
+//             arr [j+1] = arr[j]
+//         }
+//         arr[j+1] = tempElement
+//     }
+//     return arr;
+// }
+// console.log(insertionSort([2,9,1,4]))
+
+
+
+
+
+
+
+
+
+
 
 
 
