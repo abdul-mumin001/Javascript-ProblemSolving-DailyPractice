@@ -206,3 +206,28 @@ function sort(arr)
 }
 console.log(sort([23, 45, 6, 8, 19, 12]))
 
+
+
+// Question 2:- Given two objects, check whether both of them are equal or not.
+// Equal Object means => Both Object have same keys associated with same values.
+
+// example:-
+// Input 1
+Obj1 = { a: 23, b: 34, c: 89 } 
+Obj2 = { a: 23, b: 34, c: 89 } 
+
+// Ouput true;
+
+// Input 2
+Obj1 = { b: 34, a:{v:"90"}, c: 89 } 
+Obj2 = { a: {v:"90"}, b: 34, c: 89 }
+
+// Ouput true;
+
+// Input 3
+
+Obj1 = { b: 34, a: 23, c: 890 } 
+Obj2 = { a: 23, b: 34, c: 89 }
+
+// Ouput false;
+
