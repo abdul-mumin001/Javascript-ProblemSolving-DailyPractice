@@ -231,3 +231,41 @@ Obj2 = { a: 23, b: 34, c: 89 }
 
 // Ouput false;
 
+
+
+
+
+// Recursion. 
+
+function checkObjectsAreSame(obj1, obj2) {
+  var keysOfObj1 = Object.keys(obj1).sort();
+  var keysOfObj2 = Object.keys(obj2).sort();
+
+  if( keysOfObj2.length != keysOfObj1.length ) {
+    return false;
+  }
+
+  for( var index = 0 ; index < keysOfObj1.length; index++ ) {
+    if(keysOfObj1[index] != keysOfObj2[index]) {
+      return false;
+    }
+
+    var value1 = obj1[keysOfObj1[index]];
+    var value2 = obj2[keysOfObj2[index]];
+
+    if( typeof(value1) != typeof(value2)) {
+      return false;
+    }
+
+    if( typeof(value1) == 'object' && !checkObjectsAreSame(value1, value2)) {
+      return false;
+    }
+
+    if(value1 != value2) {
+      return false;
+    }
+  }
+
+  return true;
+}
+console.log(checkObjectsAreSame({v:"90", k: "100"},{v:"90", ko: "100"}))
