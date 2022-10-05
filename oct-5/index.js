@@ -17,3 +17,50 @@
 // ### Sample Output:
 // ```
 // [3, 6]
+
+
+
+
+
+
+function search(arr, target){
+    let start=0;
+    let end=arr.length-1;
+  
+    // finding the last Index;
+    let lastIndex = -1;
+    while(start <= end){
+      let mid = Math.floor((start+end)/2);
+      if(arr[mid]==target){ 
+        lastIndex = mid;
+        start = mid + 1;
+      } else if(target < arr[mid]){
+        end = mid-1;
+      } else{
+        start= mid + 1;
+      }
+    }
+  
+    // find the first Index
+    let firstIndex = -1;
+    while(start <= end){
+      let mid = Math.floor((start+end)/2);
+      if(arr[mid]==target){ 
+        firstIndex = mid;
+        end = mid - 1;
+      } else if(target < arr[mid]){
+        end = mid - 1;
+      } else{
+        start = mid + 1;
+      }
+    }
+    // console.log(lastIndex)
+    // console.log(firstIndex)
+    // if(firstIndex==-1) {
+    //   return  [-1, -1];
+    // }
+    
+    return [firstIndex, lastIndex];
+  }
+  console.log(search([1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5],3));
+  
