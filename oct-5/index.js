@@ -89,3 +89,16 @@ if( x && y ){
 if( x || z ){
   console.log("Code runs");  // This block runs because x || y returns 220(Truthy)
 }
+
+
+
+
+// Example of HOF 
+function higherOrder2() {
+  return function() {
+    return "Do something";
+  }
+}      
+var x = higherOrder2();
+x()   // Returns "Do something"
+13
