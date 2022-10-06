@@ -101,4 +101,3 @@ function higherOrder2() {
 }      
 var x = higherOrder2();
 x()   // Returns "Do something"
-13
