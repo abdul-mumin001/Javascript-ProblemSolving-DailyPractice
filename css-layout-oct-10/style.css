@@ -13,6 +13,7 @@
     align-content: center;
     font-size: 30px;
     height: 10vh;
+    color: aqua;
 
 }
 
@@ -24,7 +25,8 @@
     text-align: center;
     font-size: 30px;
     height: 10vh;
-    
+    color: aqua;
+
 }
 .main{
     margin: 2px;
@@ -32,6 +34,8 @@
     display: flex;
     flex-direction: row;
     font-size: 30px;
+    color: aqua;
+
 }
 .cont1{
     margin: 2px;
@@ -41,6 +45,8 @@
     height:70vh;
     text-align: center;
     font-size: 30px;
+    color: aqua;
+
 }
 .cont2{
     margin: 2px;
@@ -50,6 +56,7 @@
     height: 70vh;
     text-align: center;
     font-size: 30px;
+    color: aqua;
 
 }
 .cont3{
@@ -60,6 +67,8 @@
     height: 70vh;
     text-align: center;
     font-size: 30px;
+    color: aqua;
+
 }
 .footer{
     margin: 2px;
@@ -68,4 +77,6 @@
     text-align: center;
     height: 10vh;
     font-size: 30px;
+    color: aqua;
+
 }
