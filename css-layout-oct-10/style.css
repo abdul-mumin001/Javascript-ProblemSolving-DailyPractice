@@ -7,13 +7,10 @@
     margin: 2px;
     padding: 2px;
     border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+    text-align: center;
     font-size: 30px;
-    height: 10vh;
-    color: aqua;
+    line-height: 10vh;
+   color: aqua;
 
 }
 
@@ -24,7 +21,7 @@
     border: 2px solid black;
     text-align: center;
     font-size: 30px;
-    height: 10vh;
+    line-height: 10vh;
     color: aqua;
 
 }
@@ -42,7 +39,7 @@
     padding: 2px;
     border: 2px solid black;
     width: 25%;
-    height:70vh;
+    line-height: 70vh;
     text-align: center;
     font-size: 30px;
     color: aqua;
@@ -53,7 +50,7 @@
     padding: 2px;
     border: 2px solid black;
     width: 50%;
-    height: 70vh;
+    line-height: 70vh;
     text-align: center;
     font-size: 30px;
     color: aqua;
@@ -64,7 +61,7 @@
     padding: 2px;
     border: 2px solid black;
     width: 25%;
-    height: 70vh;
+    line-height: 70vh;
     text-align: center;
     font-size: 30px;
     color: aqua;
@@ -75,7 +72,7 @@
     padding: 2px;
     border: 2px solid black;
     text-align: center;
-    height: 10vh;
+    line-height: 10vh;
     font-size: 30px;
     color: aqua;
 
