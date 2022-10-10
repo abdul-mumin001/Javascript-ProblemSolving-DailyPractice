@@ -94,6 +94,7 @@ if( x || z ){
 
 
 // Example of HOF 
+
 function higherOrder2() {
   return function() {
     return "Do something";
@@ -101,3 +102,9 @@ function higherOrder2() {
 }      
 var x = higherOrder2();
 x()   // Returns "Do something"
+
+
+
+function higherOrder(){
+  return 
+}
