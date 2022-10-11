@@ -43,7 +43,7 @@ const list={
 let current=list;
 console.log(list)
 while(current !== null){
-    console.log(current)
+   
     if(current % 2==0){
         current.value *=2;
     }else{
