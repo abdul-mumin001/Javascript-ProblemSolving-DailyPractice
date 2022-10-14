@@ -25,3 +25,10 @@
 .left-navbar {
     display: flex;
 }
+.content {
+  
+    background: green;
+}
+.footer {
+    background: black;
+}
