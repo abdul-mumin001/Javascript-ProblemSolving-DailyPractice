@@ -5,8 +5,9 @@
 }
 
 .header{
-    
-    height: 70px;
+    margin: 20px;
+
+    height: 90px;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -20,4 +21,7 @@
     border: none;
     margin: 10px;
     background-color: white;
+}
+.left-navbar {
+    display: flex;
 }
