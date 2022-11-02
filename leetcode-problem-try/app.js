@@ -35,3 +35,25 @@ var haveConflict = function(event1, event2) {
     }
     return event2[0]<=event1[1];
 };
+
+
+
+
+var haveConflict = function(event1, event2) {
+    
+    const [startA, endA] = event1
+    const [startB, endB] = event2
+    
+    
+    if (startA <= startB) {
+        if (endA >= startB)
+            return true
+    } else {
+        if (endB >= startA)
+            return true
+    }
+    
+    
+    
+    return false;
+};
