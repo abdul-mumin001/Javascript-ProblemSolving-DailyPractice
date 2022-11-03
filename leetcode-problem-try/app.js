@@ -57,3 +57,38 @@ var haveConflict = function(event1, event2) {
     
     return false;
 };
+
+
+
+
+// Q.Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+
+ 
+
+// Example 1:
+
+// Input: x = 2.00000, n = 10
+// Output: 1024.00000
+// Example 2:
+
+// Input: x = 2.10000, n = 3
+// Output: 9.26100
+// Example 3:
+
+// Input: x = 2.00000, n = -2
+// Output: 0.25000
+// Explanation: 2-2 = 1/22 = 1/4 = 0.25
+
+
+
+var myPow = function(x, n) {
+    // let pow=1;
+    // for(let i=0;i<n;i++){
+    //     pow=pow*x;
+    // }
+    // return pow;
+    // for the above logic negative testcases not pass 
+    
+
+    return Math.pow(x,n)
+};
