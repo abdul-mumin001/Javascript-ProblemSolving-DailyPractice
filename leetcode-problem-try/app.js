@@ -90,5 +90,29 @@ var myPow = function(x, n) {
     // for the above logic negative testcases not pass 
     
 
-    return Math.pow(x,n)
+    return Math.pow(x,n);
+
+
+    let res = 1;
+    
+    if (n === 0) {
+        return 1;
+    }
+    
+    if ( n < 0) {
+        x = 1 / x;
+        n = -n;
+    }
+    
+    while( (n <= -1) || (n >= 1) ) {
+        
+        
+        if (n % 2 === 1) {
+            res *= x;
+        }
+        x *= x;
+        n = Math.floor(n / 2);
+    }
+    return res;
+    
 };
