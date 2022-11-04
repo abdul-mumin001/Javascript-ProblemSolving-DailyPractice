@@ -113,3 +113,49 @@ var myPow = function(x, n) {
     return res;
     
 };
+
+
+
+
+// Q. Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+// An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+ 
+
+// Example 1:
+
+// Input: s = "anagram", t = "nagaram"
+// Output: true
+// Example 2:
+
+// Input: s = "rat", t = "car"
+// Output: false
+
+
+var isAnagram = function(s, t) {
+    var freqInS={};
+    var freqInT={};
+    for(var i=0;i<s.length;i++){
+        var c=s[i];
+        if(freqInS[c]==undefined){
+            freqInS[c]=1;
+        }else{
+            freqInS[c]++
+        }
+    }
+    for(var i=0;i<t.length;i++){
+        var c=t[i];
+        if(freqInT[c]==undefined){
+            freqInT[c]=1;
+        }else{
+            freqInT[c]++
+        }
+    }
+    for(var char in freqInS){
+        if(freqInS[char] != freqInT[char] || s.length != t.length){
+            return false;
+        }
+    }
+    return true;
+};
