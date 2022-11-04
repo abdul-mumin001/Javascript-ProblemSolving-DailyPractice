@@ -179,8 +179,8 @@ var isAnagram = function(s, t) {
         const countB = map.get(b) || 0
 
 
-        console.log(countA)
-        console.log(countB)
+        // console.log(countA)
+        // console.log(countB)
         
         if (a !== b) {
             map.set(a, countA + 1)
