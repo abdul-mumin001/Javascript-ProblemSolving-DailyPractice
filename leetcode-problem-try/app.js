@@ -159,3 +159,37 @@ var isAnagram = function(s, t) {
     }
     return true;
 };
+
+
+// second method 
+
+var isAnagram = function(s, t) {
+    
+    if (s.length !== t.length) {
+        return false
+    }
+    
+    const map = new Map()
+    
+    for (let i = 0; i < s.length; i++) {
+        const a = s[i]
+        const b = t[i]
+        
+        const countA = map.get(a) || 0
+        const countB = map.get(b) || 0
+        
+        if (a !== b) {
+            map.set(a, countA + 1)
+            map.set(b, countB - 1)
+        }
+    }
+    let sum = 0
+    map.forEach((value) => {
+        sum += Math.abs(value)
+    })
+    return sum === 0
+};
+
+
+
+
