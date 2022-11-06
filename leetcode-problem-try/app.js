@@ -218,17 +218,35 @@ var isAnagram = function(s, t) {
 
 
 var twoSum = function(nums, target) {
-      let newObj = {};
+    //   let newObj = {};
     
-      for(let i = 0; i < nums.length; i++) {
-        const n = nums[i];
-        if(newObj[target - n] !== undefined) {
-          return [newObj[target - n], i];
-        }
-        newObj[n] = i;
-      }
-      return [];
+    //   for(let i = 0; i < nums.length; i++) {
+    //     const n = nums[i];
+    //     if(newObj[target - n] !== undefined) {
+    //       return [newObj[target - n], i];
+    //     }
+    //     newObj[n] = i;
+    //   }
+    //   return [];
+
+
+    const m = new Map();
+    
+    for (let i = 0; i < nums.length; i++) {
+        const curNum = nums[i];
+        
+        if (m.get(curNum) !== undefined)
+            return [i, m.get(curNum)];
+        
+        m.set(target - curNum, i);
+    }
 
     };
+
+
+
+
+
+
     
 
