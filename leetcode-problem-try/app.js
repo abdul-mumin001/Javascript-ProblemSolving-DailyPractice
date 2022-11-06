@@ -8,7 +8,7 @@
 
 // Return true if there is a conflict between two events. Otherwise, return false.
 
- 
+
 
 // Example 1:
 
@@ -27,24 +27,24 @@
 // Explanation: The two events do not intersect.
 
 
-var haveConflict = function(event1, event2) {
-    if(event1[0]>event2[0]){
-        var temp=event2;
-        event2=event1;
-        event1=temp;
+var haveConflict = function (event1, event2) {
+    if (event1[0] > event2[0]) {
+        var temp = event2;
+        event2 = event1;
+        event1 = temp;
     }
-    return event2[0]<=event1[1];
+    return event2[0] <= event1[1];
 };
 
 
 
 
-var haveConflict = function(event1, event2) {
-    
+var haveConflict = function (event1, event2) {
+
     const [startA, endA] = event1
     const [startB, endB] = event2
-    
-    
+
+
     if (startA <= startB) {
         if (endA >= startB)
             return true
@@ -52,9 +52,9 @@ var haveConflict = function(event1, event2) {
         if (endB >= startA)
             return true
     }
-    
-    
-    
+
+
+
     return false;
 };
 
@@ -63,7 +63,7 @@ var haveConflict = function(event1, event2) {
 
 // Q.Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 
- 
+
 
 // Example 1:
 
@@ -78,32 +78,32 @@ var haveConflict = function(event1, event2) {
 
 
 
-var myPow = function(x, n) {
+var myPow = function (x, n) {
     // let pow=1;
     // for(let i=0;i<n;i++){
     //     pow=pow*x;
     // }
     // return pow;
     // for the above logic negative testcases not pass 
-    
 
-    return Math.pow(x,n);
+
+    return Math.pow(x, n);
 
 
     let res = 1;
-    
+
     if (n === 0) {
         return 1;
     }
-    
-    if ( n < 0) {
+
+    if (n < 0) {
         x = 1 / x;
         n = -n;
     }
-    
-    while( (n <= -1) || (n >= 1) ) {
-        
-        
+
+    while ((n <= -1) || (n >= 1)) {
+
+
         if (n % 2 === 1) {
             res *= x;
         }
@@ -111,7 +111,7 @@ var myPow = function(x, n) {
         n = Math.floor(n / 2);
     }
     return res;
-    
+
 };
 
 
@@ -121,7 +121,7 @@ var myPow = function(x, n) {
 
 // An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
- 
+
 
 // Example 1:
 
@@ -133,27 +133,27 @@ var myPow = function(x, n) {
 // Output: false
 
 
-var isAnagram = function(s, t) {
-    var freqInS={};
-    var freqInT={};
-    for(var i=0;i<s.length;i++){
-        var c=s[i];
-        if(freqInS[c]==undefined){
-            freqInS[c]=1;
-        }else{
+var isAnagram = function (s, t) {
+    var freqInS = {};
+    var freqInT = {};
+    for (var i = 0; i < s.length; i++) {
+        var c = s[i];
+        if (freqInS[c] == undefined) {
+            freqInS[c] = 1;
+        } else {
             freqInS[c]++
         }
     }
-    for(var i=0;i<t.length;i++){
-        var c=t[i];
-        if(freqInT[c]==undefined){
-            freqInT[c]=1;
-        }else{
+    for (var i = 0; i < t.length; i++) {
+        var c = t[i];
+        if (freqInT[c] == undefined) {
+            freqInT[c] = 1;
+        } else {
             freqInT[c]++
         }
     }
-    for(var char in freqInS){
-        if(freqInS[char] != freqInT[char] || s.length != t.length){
+    for (var char in freqInS) {
+        if (freqInS[char] != freqInT[char] || s.length != t.length) {
             return false;
         }
     }
@@ -163,25 +163,25 @@ var isAnagram = function(s, t) {
 
 // second method 
 
-var isAnagram = function(s, t) {
-    
+var isAnagram = function (s, t) {
+
     if (s.length !== t.length) {
         return false
     }
-    
+
     const map = new Map()
-    
+
     for (let i = 0; i < s.length; i++) {
         const a = s[i]
         const b = t[i]
-        
+
         const countA = map.get(a) || 0
         const countB = map.get(b) || 0
 
 
         // console.log(countA)
         // console.log(countB)
-        
+
         if (a !== b) {
             map.set(a, countA + 1)
             map.set(b, countB - 1)
@@ -204,7 +204,7 @@ var isAnagram = function(s, t) {
 
 // You can return the answer in any order.
 
- 
+
 
 // Example 1:
 
@@ -217,36 +217,43 @@ var isAnagram = function(s, t) {
 // Output: [1,2]
 
 
-var twoSum = function(nums, target) {
-      let newObj = {};
-    
-      for(let i = 0; i < nums.length; i++) {
+var twoSum = function (nums, target) {
+    let newObj = {};
+
+    for (let i = 0; i < nums.length; i++) {
         const n = nums[i];
-        if(newObj[target - n] !== undefined) {
-          return [newObj[target - n], i];
+        if (newObj[target - n] !== undefined) {
+            return [newObj[target - n], i];
         }
         newObj[n] = i;
-      }
-      return [];
+    }
+    return [];
 
 
-    };
+};
 
 
-    var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
     const m = new Map();
-    
+
     for (let i = 0; i < nums.length; i++) {
         const curNum = nums[i];
-        
+
         if (m.get(curNum) !== undefined)
             return [i, m.get(curNum)];
-        
+
         m.set(target - curNum, i);
     }
-    };
+};
 
 
 
-    
+var twoSum = function (nums, target) {
 
+    let storage = {};
+    for (let [i, num] of nums.entries()) {
+        if (storage[num] !== undefined)
+            return [storage[num], i];
+        storage[target - num] = i;
+    }
+};
