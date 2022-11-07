@@ -363,3 +363,18 @@ var countKDifference = function(nums, k) {
     }
     return ans;
 };
+
+
+// 2nd method 
+var countKDifference = function(nums, k) {
+let count = 0
+// for i of nums
+for (let eli of nums)
+  // for j of nums
+for (let elj of nums)
+  if (Math.abs(eli - elj) === k) ++count
+    // if Math.abs(eli - elj) == k 
+      // ++count
+
+return count / 2
+};
