@@ -427,7 +427,9 @@ var firstUniqChar = function(s) {
                 map.set(s[index],1)
             }
         }
-       
+
+        // console.log(map)
+        
         for(let [key,value] of map.entries())
         {
             if (value==1)
