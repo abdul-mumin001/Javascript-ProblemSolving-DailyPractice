@@ -411,3 +411,30 @@ var firstUniqChar = function(s) {
     return -1
 
 };
+
+
+
+var firstUniqChar = function(s) {
+    let map=new Map()
+    for(let index=0;index<s.length;index++)
+        {
+            if(map.has(s[index]))
+            {
+               map.set(s[index],map.get(s[index])+1)
+            }
+            else
+            {
+                map.set(s[index],1)
+            }
+        }
+        // console.log(map)
+        for(let [key,value] of map.entries())
+        {
+            if (value==1)
+            {
+                return s.indexOf(key)
+            }
+        }
+        return -1
+};
+
