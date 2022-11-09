@@ -18,4 +18,14 @@
 
 const firstPara=document.getElementById("some-para")
 
-firstPara.style.fontSize='50px'
+firstPara.style.fontSize='50px';
+firstPara.style.background="green"
+
+const newstyles={
+    "fontsize":'60px',
+    "color":"white"
+}
+Object.assign(firstPara.style, newstyles)
+
+const b=document.querySelector("body")
+b.style.background="aqua"
