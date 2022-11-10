@@ -49,3 +49,22 @@ var countOperations = function(num1, num2) {
         }
         return count;
     };
+
+
+
+
+    const countOperations = (num1, num2, r = 0) => {
+    if (num1 == 0 || num2 == 0) return r;
+    
+    while (num1 !== 0) {    
+        if (num1 < num2) {
+            num2 = num2 - num1;
+        } else {
+            num1 = num1 - num2;
+        }
+        r += 1;
+    }
+    
+    return r;
+};
+
