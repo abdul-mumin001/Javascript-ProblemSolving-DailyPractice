@@ -12,7 +12,9 @@ var arr=[-3,2,3,3,3,6,8,15];
  }
  currMax=sum;
  for(let i=k;i<arr.length;i++){
+    console.log(i,'i')
     sum=(sum+arr[i])-arr[i-k];
     currMax=Math.max(currMax,sum);
  }
  console.log(currMax);
+
