@@ -489,3 +489,39 @@ function expensive(obj, n){
 
 
 
+
+    // Q. Extract the Last Name from the given string
+
+    // ### Input Format
+    // A string ```string```
+    
+    // ### Output Format
+    // Return last Name
+    
+    // ### Sample Input:
+    // ```
+    // Air Campus
+    // ```
+    
+    // ### Sample Output:
+    // ```
+    // Campus
+    // ```
+    
+    // ### Sample Input:
+    // ```
+    // Aditya Singh
+    // ```
+    
+    // ### Sample Output:
+    // ```
+    // Singh
+
+
+
+    function lastName(str){
+        var name=str.split(' ');
+        var last_name=name[name.length-1];
+        return  last_name;
+      }
+      console.log(lastName('Air Campus'))
