@@ -554,10 +554,10 @@ function expensive(obj, n){
          if(typeof(arr[i])=='string'){
            if(str==''){
              str+=arr[i];
-           
+           // console.log(str)
            }else{
              str+=' '+arr[i];
-             
+             // console.log(str)
            }
          }
        }
