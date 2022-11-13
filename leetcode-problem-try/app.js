@@ -602,22 +602,29 @@ function expensive(obj, n){
     
         while(left <= right){
             let mid = Math.floor((right + left) / 2);
+
+            // console.log(mid)
+
             if(nums[mid] === target) return mid
     
             else if(nums[left] <= nums[mid]){
                 if(target >= nums[left] && target <= nums[mid]){
                     right = mid - 1;
+                    // console.log(right)
                 }
                 else {
                     left = mid + 1;
+                    // console.log(left)
                 }
             }
             else {
                 if(target <= nums[right] && target >= nums[mid]){
                     left = mid + 1;
+                    // console.log(left)
                 }
                 else {
                     right = mid - 1
+                    // console.log(right)
                 }
             }
         }
