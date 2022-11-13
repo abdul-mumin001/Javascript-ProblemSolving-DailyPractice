@@ -675,6 +675,8 @@ var searchRange = function(nums, target) {
         // find the start
         while(low <= high) {
             mid = Math.floor((low+high)/2);
+            // console.log(mid);
+
             if(nums[mid] >= target){
                  high = mid-1;
             }else{
@@ -695,6 +697,7 @@ var searchRange = function(nums, target) {
         // find the end
         while(low <= high) {
             mid = Math.floor((low+high)/2);
+            // console.log(mid);
             if(nums[mid] <= target){
                 low = mid+1;
             }else {
