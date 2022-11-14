@@ -707,3 +707,31 @@ var searchRange = function(nums, target) {
         return [start, high]; 
     };
     
+
+
+
+// Q. You're given the income after tax, you need to return the money that is to be spent on needs, wants and savings.
+// You are supposed to follow 50 30 20 rule. That is 50% needs, 30% wants and 20% savings.
+
+// Input Format
+// An integer salary containing the salary after tax
+
+// Output Format
+// Return an object containing the Needs, Wants and Savings
+
+// Sample Input:
+// 10000
+// Sample Output:
+// { "Needs": 5000, "Wants": 3000, "Savings": 2000 }
+
+
+
+function needsWantsSavings(salary){
+    let obj={
+      Needs:(50/100)*salary,
+      Wants:(30/100)*salary,
+      Savings:(20/100)*salary
+    }
+    return obj;
+  }
+  console.log(needsWantsSavings(10000))
