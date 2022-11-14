@@ -758,3 +758,36 @@ function volume(obj){
     return (obj['width']*obj['length']*obj['height']);
   }
   console.log(volume({ width: 7, length: 2, height: 1 }))
+
+
+
+
+//   Q.Given an object, return the keys and values as seperate arrays
+//   Input Format
+//   An object obj
+  
+//   Output Format
+//   Return keys and values of object as seperate arrays
+  
+//   Sample Input:
+//   { a: 1, b: 2, c: 3 }
+//   Sample Output:
+//   [["a", "b", "c"], [1, 2, 3]]
+
+
+
+
+function keyValue(obj){
+    let arrKey=[];
+    let arrValue=[];
+    let key=Object.keys(obj);
+    for(let i in key){
+      arrKey.push(key[i])
+    }
+     let value=Object.values(obj)
+    for(let j in value){
+      arrValue.push(value[j])
+    }
+   return [arrKey , arrValue]
+  }
+  console.log(keyValue({ a: 1, b: 2, c: 3 }));
