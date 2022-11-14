@@ -785,6 +785,9 @@ function keyValue(obj){
       arrKey.push(key[i])
     }
      let value=Object.values(obj)
+
+     console.log(value);
+     
     for(let j in value){
       arrValue.push(value[j])
     }
