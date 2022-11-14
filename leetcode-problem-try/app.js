@@ -735,3 +735,26 @@ function needsWantsSavings(salary){
     return obj;
   }
   console.log(needsWantsSavings(10000))
+
+
+
+
+
+// Q.Given an object containing the width length and height of a box. Return the volume of the box
+// Input Format
+// An object obj containing widht, length and height
+
+// Output Format
+// Return volume of the box
+
+// Sample Input:
+// { width: 7, length: 2, height: 1 }
+// Sample Output:
+// 14
+
+
+
+function volume(obj){
+    return (obj['width']*obj['length']*obj['height']);
+  }
+  console.log(volume({ width: 7, length: 2, height: 1 }))
