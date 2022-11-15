@@ -836,7 +836,8 @@ function array(obj){
 
 
 function sorting(obj){
-    return obj.sort((a,b)=>(a.price-b.price))
+    let sortObj= obj.sort((a,b)=>(a.price-b.price))
+    return sortObj;
   }
   console.log(sorting([
     {name: "lemonade", price: 50},
