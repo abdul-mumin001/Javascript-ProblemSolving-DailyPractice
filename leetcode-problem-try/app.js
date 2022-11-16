@@ -868,3 +868,40 @@ function keyValue(obj) {
      return newObj;
    }
    console.log(keyValue({ "z": "q", "w": "f" }))
+
+
+
+//    Q.Given an array of objects, push all the names to a new array and return the new array
+//    Input Format
+//    An array of object obj
+   
+//    Output Format
+//    Return an array containing all the names
+   
+//    Sample Input:
+//    [
+//      { name: "John", email: "john@example.com" },
+//      { name: "Jason", email: "jason@example.com" },
+//      { name: "Jeremy", email: "jeremy@example.com" },
+//      { name: "Jacob", email: "jacob@example.com" }
+//    ]
+//    Sample Output
+//    ["John", "Jason", "Jeremy", "Jacob"]
+
+
+
+function destructure(obj){
+ 
+    let newArr=[];
+      for(var value in obj){
+        let temp=obj[value]['name'];
+        newArr.push(temp)
+      }
+     return newArr;
+    }
+    console.log(destructure([
+      { name: "John", email: "john@example.com" },
+      { name: "Jason", email: "jason@example.com" },
+      { name: "Jeremy", email: "jeremy@example.com" },
+      { name: "Jacob", email: "jacob@example.com" }
+    ]))
