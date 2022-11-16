@@ -895,6 +895,9 @@ function destructure(obj){
     let newArr=[];
       for(var value in obj){
         let temp=obj[value]['name'];
+
+        // console.log(temp);
+
         newArr.push(temp)
       }
      return newArr;
