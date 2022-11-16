@@ -843,3 +843,28 @@ function sorting(obj){
     {name: "lemonade", price: 50},
     {name: "lime", price: 10}
   ]));
+
+
+
+//   Q.Given an object, return a new object where the value of the object is key for the new object and the keys for the object is values for the new object.
+//   Input Format
+//   An object obj
+  
+//   Output Format
+//   Return an obj such that keys becomes value and values become keys
+  
+//   Sample Input:
+//   { "z": "q", "w": "f" }
+//   Sample Output:
+//   { "q": "z", "f": "w" }
+
+
+
+function keyValue(obj) {
+    var newObj={};
+     for(var key in obj){
+       newObj[obj[key]]=key;
+     }
+     return newObj;
+   }
+   console.log(keyValue({ "z": "q", "w": "f" }))
