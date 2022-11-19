@@ -31,3 +31,14 @@ var createTargetArray = function(nums, index) {
     }
     return newArr;
 }
+
+
+var createTargetArray = function(nums, index) {
+let newArr=[]
+    for(let i=0;i<index.length;i++){
+        let num=nums[i]
+        let idx=index[i]
+        newArr.splice(idx,0,num)
+    }
+    return newArr;
+};
