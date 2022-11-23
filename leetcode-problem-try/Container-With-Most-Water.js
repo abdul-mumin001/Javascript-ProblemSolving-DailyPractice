@@ -34,3 +34,29 @@ var maxArea = function(height) {
     }
     return ans;
 };
+
+
+
+
+var maxArea = function(height) {
+let maxWater = 0;
+  let leftIndex = 0;
+  let rightIndex = height.length - 1;
+  
+  while (leftIndex < rightIndex) {
+    maxWater = Math.max(
+      maxWater,
+      Math.min(
+        height[leftIndex],
+        height[rightIndex],
+      ) * (rightIndex - leftIndex)
+    );
+    
+    if (height[leftIndex] < height[rightIndex]) {
+      leftIndex += 1;
+    } else {
+      rightIndex -= 1
+    }
+  }
+  return maxWater;
+};
