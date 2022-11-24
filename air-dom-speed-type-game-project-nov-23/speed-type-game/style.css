@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #21252c;
+  }
+  
+  body,
+  .quote-input {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .container {
+    background-color: #282c34;
+    padding: 1rem;
+    color: #abb2bf;
+    border-radius: 0.5rem;
+    width: 700px;
+    max-width: 90%;
+  }
+  
+  .timer {
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: #f0db4f;
+    font-weight: bold;
+  }
+  
+  .quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+  }
+  
+  .quote-input {
+    background-color: transparent;
+    border: 2px solid #abb2bf;
+    color: #abb2bf;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .quote-input:focus {
+    border-color: #21252c;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+    text-decoration: underline;
+  }
+  
