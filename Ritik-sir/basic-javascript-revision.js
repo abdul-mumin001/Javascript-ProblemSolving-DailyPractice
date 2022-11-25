@@ -294,3 +294,172 @@
 // Functions are Objects 
 
 // Callbacks - Functions passed into another function as argument 
+
+
+// Async Await 
+
+// Promises - Pending, Resolved, Rejected 
+
+// const a = new Promise((resolve, reject) => {
+//     let x = 10;
+    
+//     if(x > 5) {
+//         resolve();
+//     }
+//     else {
+//         reject();
+//     }
+// })
+
+// a.then(() => {
+//     console.log("Resolved");
+// }).catch(() => {
+//     console.log("Reject");
+// })
+
+// Async function - Takes time to run
+
+// function afterPurchase(state) {
+//     console.log(state);
+// }
+
+// const payment = new Promise((resolve, reject) => {
+//     let x = 10;
+    
+//     if(x > 5) {
+//         // Success
+//         resolve();
+//     }
+//     else {
+//         // Fail
+//         reject();
+//     }
+// })
+
+// payment.then(() => {
+//     afterPurchase("Success");
+// }).catch(() => {
+//     afterPurchase("Failed");
+// })
+
+// Fall Through
+
+// switch (15)  {
+//     case 10:
+//         console.log("Hello");
+//     case 15:
+//         console.log("Hello again");
+//     default: 
+//         console.log("Hello 2");
+// }
+
+// function setTimeout(fun, time) {
+//     // Logic to wait for the specified time
+//     fun();
+// }
+
+// setTimeout(() => {
+//     console.log('Hello');
+// }, 3000);
+
+// async function abc() {
+//     console.log("Inside function");
+    
+//     let data = await fetch('https://api.github.com/users');
+    
+//     console.log(data);
+    
+//     let users = await data.json();
+    
+//     console.log(users);
+    
+//     return users;
+// }
+
+
+
+// const data = await abc();
+
+// console.log(data);
+// abc().then(data => {
+    
+// }).catch(err => {
+    
+// });
+
+
+// const abc = new Promise(async (resolve, reject) => {
+//     console.log("Inside function");
+    
+//     let data = await fetch('https://api.github.com/users');
+    
+//     console.log(data);
+    
+//     let users = await data.json();
+    
+//     console.log(users);
+    
+//     resolve(users);
+// })
+
+
+
+// fetch('https://api.github.com/users').then((data) => {
+//     console.log(data);
+// }).catch(() => {
+    
+// })
+
+// Promise -> A function that time to execute 
+
+
+// async function abc() {
+//     console.log("Inside function");
+    
+//     // fetch('https://api.github.com/users').then(async (data) => {
+//     //     console.log(data);
+//     //     let users = await data.json();
+    
+//     //     console.log(users);
+//     // }).catch(() => {
+
+//     // }) ;
+    
+//     const data = await fetch("https://api.github.com/users");
+
+//     console.log(data);
+    
+//     let users = await data.json();
+    
+//     console.log(users);
+    
+//     return users;
+// }
+
+// abc().then(data => {
+
+// }).catch(err => {
+
+// });
+
+// console.log(data);
+
+
+
+async function abc() {
+    console.log("Inside function");
+    
+    let data = await fetch('https://api.github.com/users');
+    
+    console.log(data);
+    
+    let users = await data.json();
+    
+    console.log(users);
+    
+    return users;
+}
+
+const data = await abc();
+
+console.log(data);
