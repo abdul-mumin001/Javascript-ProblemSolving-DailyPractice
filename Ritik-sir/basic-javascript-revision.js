@@ -191,3 +191,106 @@
 // if(a) {
 //     console.log("Hello");
 // }
+
+
+
+
+// Class and Object
+
+// class - Type of Function
+
+// Class - Blueprint/Design of an object 
+// this -> Refers to the current calling object 
+
+// class Student {
+//     // constructor() {
+//     //     this.name = "Rahul";
+//     //     this.age = 20;
+//     //     this.id = 2345;
+//     // }
+    
+//     constructor(name, age, id) {
+//         this.name = name;
+//         this.age = age;
+//         this.id = id;
+//     }
+// }
+
+// class Product {
+//     constructor(name, description, price, pid, brand, ratings) {
+        
+//     }
+// }
+
+// const s = {
+//     name: "Rahul",
+//     age: 20,
+//     id: 2345
+// };
+
+// const s2 = {
+//     name: "Rohan",
+//     age: 20,
+//     rollid: 2346
+// }
+
+// const s = new Student();
+// const s2 = new Student("Rahul", 45, 2347);
+// const s3 = new Student("Rohan", 23, 3456);
+
+// console.log(s2, s3);
+
+// const s = {
+//     name: "Rahul",
+//     age: 20
+// }
+
+// console.log(s.name);
+
+// const a = {
+//     name: "Rahul"
+// }
+
+// console.log(a);
+
+// Abstraction, Encapsulation, Inheritance, Polymorshism 
+
+// function fun() {
+//     let a = 20;
+//     let b = 30;
+    
+//     return a+b;
+// }
+
+// function solve(a) {
+//     const val = a();
+    
+//     console.log(val);
+// }
+
+// solve(fun);
+
+// function fun(work) {
+//     let a = 20;
+//     let b = 30;
+    
+//     return work(a,b);
+// }
+
+// function solve(fun) {
+//     const val = fun(function work(a, b) {
+//         return a - b;
+//     })
+    
+//     const val2 = fun(function work(a, b) {
+//         return a + b;
+//     })
+    
+//     console.log(val, val2);
+// }
+
+// solve(fun);
+
+// Functions are Objects 
+
+// Callbacks - Functions passed into another function as argument 
