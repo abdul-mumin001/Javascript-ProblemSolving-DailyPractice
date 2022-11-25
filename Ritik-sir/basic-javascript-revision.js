@@ -159,3 +159,35 @@
 // Object Oriented Programming Language - Java, C++
 
 // Result of a relation, logical expression 
+
+
+// Operators 
+
+// 1. Arithmatic Operators - +, -, *, /, %
+// 2. Relational Operator - <, >, <=, >=, ==, ===, !=
+// 3. Logical Operator - &&, ||, ! 
+// && 
+// t && t = t 
+// t && f = f 
+// f && t = f
+// f && f = f
+
+// ||
+// t || t = t
+// t || f = t
+// f || t = t
+// f || f = f
+
+// !
+// !t = f
+// !f = t
+
+// boolean values - true(1), false(0) 
+
+// let a = 10 === "10" && 3 > 5;
+
+// console.log(typeof(a));
+
+// if(a) {
+//     console.log("Hello");
+// }
