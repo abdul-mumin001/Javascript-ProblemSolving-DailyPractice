@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Container TodoApp">
+      <div class="Section filter_cont">
+          <button class="Btn Btn--link js-filter-btn all" data-filter="all">All</button>
+          <button class="Btn Btn--link js-filter-btn high" data-filter="high">High</button>
+          <button class="Btn Btn--link js-filter-btn moderate" data-filter="moderate">Moderate</button>
+          <button class="Btn Btn--link js-filter-btn low" data-filter="low">Low</button>
+      </div>
+        <div class="Section">
+          <form class="Form">
+            <input type="text" class="Form-input js-form-input" placeholder="add your todo here..."/>
+            <select name="" id="priority_select">
+                <option value="high">High</option>
+                <option value="moderate">Moderate</option>
+                <option value="low">Low</option>
+            </select>
+            <button class="Btn js-btn-add">add</button>
+          </form>
+        </div>  
+      <div class="Section">
+        <ul class="TodoApp-list js-todos-list">
+
+        </ul>  
+        <div class="Alert js-alert"></div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
