@@ -1,30 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.Container{
-    width: 100%;
-    margin-top: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.Container {
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.Section{
-    width: 50%;
+.Section {
+  width: 50%;
 }
-button{
-    width: 20%;
-    padding: 1%;
+.Form input {
+  width: 30%;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-.high{
-    background-color: lightcoral;
+.Form option {
+  width: 20%;
 }
-.moderate{
-    background-color: lightgoldenrodyellow;
+button {
+  width: 20%;
+  padding: 1%;
 }
-.low{
-    background-color: lightgray;
+.high {
+  background-color: lightcoral;
+}
+.moderate {
+  background-color: lightgoldenrodyellow;
+}
+.low {
+  background-color: lightgray;
 }
