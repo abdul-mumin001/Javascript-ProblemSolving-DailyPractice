@@ -18,12 +18,17 @@
   margin: 4px 2px;
   cursor: pointer;
 }
-.Form option {
-  width: 20%;
+select{
+  width: 25%;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 button {
-  width: 20%;
-  padding: 1%;
+    width: 20%;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 .high {
   background-color: lightcoral;
