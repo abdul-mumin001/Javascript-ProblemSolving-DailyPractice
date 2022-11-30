@@ -1,3 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Section{
+    width: 50%;
+}
+button{
+    width: 20%;
+    padding: 1%;
+}
 .high{
     background-color: lightcoral;
 }
