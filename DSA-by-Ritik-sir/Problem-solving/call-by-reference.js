@@ -21,7 +21,7 @@
 
 
 
-//javascript pass by reference
+
 function callByReference(varObj) {
 
     console.log("Inside Call by Reference Method");
