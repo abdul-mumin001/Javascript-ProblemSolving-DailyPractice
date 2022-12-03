@@ -12,7 +12,7 @@
 // Output: 0
 
 
-
+// ans 1
 var countNegatives = function(grid) {
     let count=0;
     for(let i=0;i<grid.length;i++){
@@ -21,3 +21,19 @@ var countNegatives = function(grid) {
     }
     return count;
 };
+
+
+// ans 2
+
+var countNegatives = function(grid) {
+    let neg = [];
+    for(const row of grid){
+        for(const col of row){
+            if(col < 0) neg.push(col);
+        }
+    }
+    return neg.length
+};
+
+
+
