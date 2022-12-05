@@ -30,3 +30,5 @@ var trailingZeroes = function(n) {
     };
     return total;
  };
+
+ console.log(trailingZeroes(5))
