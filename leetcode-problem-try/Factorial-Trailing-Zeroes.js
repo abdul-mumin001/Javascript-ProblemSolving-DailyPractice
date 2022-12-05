@@ -32,3 +32,4 @@ var trailingZeroes = function(n) {
  };
 
  console.log(trailingZeroes(5))
+ console.log(trailingZeroes(10))
