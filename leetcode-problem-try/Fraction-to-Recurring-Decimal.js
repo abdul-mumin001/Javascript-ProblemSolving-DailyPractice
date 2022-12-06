@@ -32,8 +32,8 @@ var fractionToDecimal = function(numerator, denominator) {
    var num = Math.abs(numerator),
      den = Math.abs(denominator);
      
-     console.log(num)
-     console.log(den)
+    //  console.log(num)
+    //  console.log(den)
  
    result += Math.floor(num / den);
  
