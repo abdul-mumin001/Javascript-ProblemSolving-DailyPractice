@@ -57,7 +57,7 @@ var fractionToDecimal = function(numerator, denominator) {
        break;
      }
    }
-   return result.toString();
+   return result;
  };
  console.log(fractionToDecimal(4,333))
  console.log(fractionToDecimal(1,2))
