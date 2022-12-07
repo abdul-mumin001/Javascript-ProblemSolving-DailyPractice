@@ -29,5 +29,13 @@ var deleteNode = function(node) {
     } else {
         node=null;
     }
+    
+};
 
+
+
+
+var deleteNode = function(node) {
+    node.val = node.next.val;
+    node.next = node.next.next;
 };
