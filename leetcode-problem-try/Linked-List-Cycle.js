@@ -29,3 +29,23 @@ var hasCycle = function(head) {
   return false
     
 };
+
+
+
+
+const hasCycle = (head) => {
+    if (!head) return false
+    let slow = head,
+        fast = head.next
+
+    while (fast)  {
+        if (slow === fast) {
+            return true
+        }
+
+        slow = slow.next
+        fast = fast.next?.next
+    }
+
+    return false
+}
