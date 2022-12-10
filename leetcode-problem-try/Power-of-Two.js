@@ -22,6 +22,7 @@ var isPowerOfTwo = function (n) {
   }
   return n == 1;
 };
+console.log(isPowerOfTwo(16))
 
 var isPowerOfTwo = function (n) {
   if (n <= 0) return false;
@@ -29,3 +30,4 @@ var isPowerOfTwo = function (n) {
 
   return false;
 };
+console.log(isPowerOfTwo(6))
