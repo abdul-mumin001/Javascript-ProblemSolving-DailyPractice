@@ -29,3 +29,30 @@ var twoSum = function(nums, target) {
 };
 
 console.log(twoSum([3,2,4],6))
+
+
+
+
+var twoSum = function(nums, target) {
+ const m = new Map();
+    
+    for (let i = 0; i < nums.length; i++) {
+        const curNum = nums[i];
+        
+        if (m.get(curNum) !== undefined)
+            return [i, m.get(curNum)];
+        
+        m.set(target - curNum, i);
+    }
+
+
+
+let storage={};
+for(let [i,num] of nums.entries()){
+    if(storage[num] !== undefined)
+    return [storage[num],i];
+    storage[target-num]=i;
+}
+};
+
+console.log(twoSum([2,7,11,15],9))
