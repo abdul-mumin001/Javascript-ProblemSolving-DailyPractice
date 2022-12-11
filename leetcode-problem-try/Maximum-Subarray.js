@@ -23,4 +23,19 @@ var maxSubArray = function(nums) {
     return MaxSum;
 
 };
-console.log(maxSubArray([4,-1,2,1]))
+console.log(maxSubArray([1]))
+
+
+
+
+var maxSubArray = function(nums) {
+    let MaxSum=-Infinity;
+    let currSum=0;
+    for(let i=0;i<nums.length;i++){
+        currSum=Math.max(nums[i],currSum+nums[i]);
+        MaxSum=Math.max(currSum,MaxSum);
+    }
+    return MaxSum;
+
+};
+console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
