@@ -45,3 +45,5 @@ var sumSubarrayMins = function(arr) {
   return result % ((10 ** 9) + 7);
    
 };
+
+console.log(sumSubarrayMins([3,1,2,4]))
