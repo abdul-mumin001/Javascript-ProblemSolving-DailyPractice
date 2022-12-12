@@ -47,3 +47,26 @@ var sumSubarrayMins = function(arr) {
 };
 
 console.log(sumSubarrayMins([3,1,2,4]))
+
+
+
+const MOD = 10 ** 9 + 7;
+
+var sumSubarrayMins = function(arr) {
+    const stack = [];
+    arr.splice(0, 0, -Infinity);
+    arr.push(-Infinity);
+    let result = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        while (stack.length && arr[i] < arr[stack[stack.length - 1]]) {
+            const mid = stack.pop();
+            const left = mid - stack[stack.length - 1];
+            const right = i - mid;
+            result += left * right * arr[mid];
+        }
+        stack.push(i);
+    }
+    return result % MOD;
+};
+console.log(sumSubarrayMins([11,81,94,43,3]))
