@@ -38,3 +38,4 @@ var longestPalindrome = function(s) {
     return right - left - 1;
       
   };
+  console.log(longestPalindrome("babad"))
