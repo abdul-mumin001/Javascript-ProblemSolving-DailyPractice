@@ -39,3 +39,5 @@ var copyRandomList = function(head) {
 };
 
 console.log(copyRandomList([[7,null],[13,0],[11,4],[10,2],[1,0]]))
+console.log(copyRandomList([[1,1],[2,1]]))
+console.log(copyRandomList([[3,null],[3,0],[3,null]]))
