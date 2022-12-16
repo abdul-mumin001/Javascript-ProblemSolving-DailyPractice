@@ -42,7 +42,7 @@ console.log(climbStairs(6))
 
 // second way 
 
-var climbStairs = function(n) {
+var climbStair = function(n) {
     let memo = new Array(n).fill(0);
     if(n<=2){
         return n;
@@ -55,3 +55,5 @@ var climbStairs = function(n) {
     return memo[n];
     
 };
+
+console.log(climbStair(2))
