@@ -57,3 +57,5 @@ var climbStair = function(n) {
 };
 
 console.log(climbStair(2))
+console.log(climbStair(3))
+console.log(climbStair(4))
