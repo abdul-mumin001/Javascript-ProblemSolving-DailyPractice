@@ -38,3 +38,20 @@ console.log(climbStairs(3))
 console.log(climbStairs(4))
 console.log(climbStairs(5))
 console.log(climbStairs(6))
+
+
+// second way 
+
+var climbStairs = function(n) {
+    let memo = new Array(n).fill(0);
+    if(n<=2){
+        return n;
+    }
+    memo[1] = 1;
+    memo[2] = 2;
+    for(let i = 3; i < n+1 ; i++){
+        memo[i] = memo[i-2] + memo[i-1]
+    }
+    return memo[n];
+    
+};
