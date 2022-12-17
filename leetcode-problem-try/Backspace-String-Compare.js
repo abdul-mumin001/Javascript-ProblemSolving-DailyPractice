@@ -38,3 +38,6 @@ var backspaceCompare = function(s, t) {
   tArr = tArr.join("");
   return sArr === tArr;
 };
+
+
+console.log(backspaceCompare("ab#c","ad#c"))
