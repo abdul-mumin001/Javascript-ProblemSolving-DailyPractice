@@ -29,11 +29,11 @@ var isValid = function(s) {
     return stak.length ?false : true;
 };
 
-console.log(isValid("()[]{}"))
+console.log(isValid("()[]{}"));
 
 
 
-const isValid = (s) => {
+const isValidParenthesis = (s) => {
     const map = {
         "(": ")",
         "{": "}",
@@ -46,3 +46,5 @@ const isValid = (s) => {
     }
     return stack.length === 0
 };
+
+console.log(isValidParenthesis("()"))
