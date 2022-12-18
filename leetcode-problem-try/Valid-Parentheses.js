@@ -28,3 +28,5 @@ var isValid = function(s) {
     }
     return stak.length ?false : true;
 };
+
+console.log(isValid("()[]{}"))
