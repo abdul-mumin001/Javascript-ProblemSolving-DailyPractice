@@ -30,3 +30,19 @@ var isValid = function(s) {
 };
 
 console.log(isValid("()[]{}"))
+
+
+
+const isValid = (s) => {
+    const map = {
+        "(": ")",
+        "{": "}",
+        "[": "]"
+    }
+    const stack = [];
+    for (let i of s) {
+        if (map[i]) stack.push(map[i]) 
+        if (!map[i] && i !== stack.pop()) return false
+    }
+    return stack.length === 0
+};
