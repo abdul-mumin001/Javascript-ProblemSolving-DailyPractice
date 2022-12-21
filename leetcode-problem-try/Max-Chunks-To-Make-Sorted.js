@@ -30,3 +30,4 @@ var maxChunksToSorted = function(arr) {
         }
         return count;    
 };
+console.log(maxChunksToSorted([4,3,2,1,0]))
