@@ -31,3 +31,19 @@ var maxChunksToSorted = function(arr) {
         return count;    
 };
 console.log(maxChunksToSorted([4,3,2,1,0]))
+
+
+var maxChunksToSort = function(arr) {
+    var max = 0;
+   var chunk = 0;
+   
+   for(var i=0; i<arr.length; i++) {
+       max = Math.max(arr[i], max);
+       
+       if(i==max) {
+           chunk++;
+       }
+   }
+   
+   return chunk;
+}
