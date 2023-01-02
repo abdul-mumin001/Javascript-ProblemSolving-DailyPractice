@@ -47,3 +47,32 @@ var isPalindrome = function(head) {
   return true;
     
 };
+
+
+
+
+var isPalindrom = function(head) {
+    
+  const middle = (head) => {
+      let slow = head, fast = head
+      while(fast && fast.next)
+          slow = slow.next, fast = fast.next.next
+      return slow
+  }
+  
+  const reverse = head => {
+      let pre = null, curr = head
+      while(curr)
+          temp = curr.next, curr.next = pre, pre = curr, curr = temp
+      return pre
+  }
+  
+  let mid = middle(head)
+  let last = reverse(mid)
+  // console.log(mid, last)
+  while(last){
+      if(last.val !== head.val) return false
+      else last = last.next, head=head.next
+  }
+  return true
+};
