@@ -48,7 +48,8 @@ var isPalindrome = function(head) {
     
 };
 
-
+console.log(isPalindrome([1,2,2,1]))
+console.log(isPalindrome([1,2]))
 
 
 var isPalindrom = function(head) {
