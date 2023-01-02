@@ -76,3 +76,6 @@ var isPalindrom = function(head) {
   }
   return true
 };
+
+console.log(isPalindrom([1,2,2,1]))
+console.log(isPalindrom([1,2]))
