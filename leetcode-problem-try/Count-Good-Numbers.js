@@ -36,3 +36,5 @@ function moduloPower(base, exp, mod) {
     return a % mod
 }
 
+console.log(countGoodNumbers(4))
+console.log(countGoodNumbers(3))
