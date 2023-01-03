@@ -38,3 +38,4 @@ function moduloPower(base, exp, mod) {
 
 console.log(countGoodNumbers(4))
 console.log(countGoodNumbers(3))
+console.log(countGoodNumbers(50))
