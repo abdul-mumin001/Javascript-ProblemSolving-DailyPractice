@@ -65,3 +65,19 @@ function moduloPower(base, exp, mod) {
 console.log(countGoodNos(4))
 console.log(countGoodNos(3))
 console.log(countGoodNos(50))
+
+
+var countGoodNumber = function(n) {
+let mod = 1000000007n;
+  let result = n % 2 == 0 ? 1n : 5n;
+  let x = 20n;
+  for (let i = parseInt(n / 2); i > 0; i = parseInt(i / 2)) {
+    if (i % 2 != 0) result = (result * x) % mod;
+    x = (x * x) % mod;
+  }
+  return Number(result);
+};
+
+console.log(countGoodNumber(4))
+console.log(countGoodNumber(3))
+console.log(countGoodNumber(50))
