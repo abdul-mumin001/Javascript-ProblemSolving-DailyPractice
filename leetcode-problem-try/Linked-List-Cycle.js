@@ -32,37 +32,36 @@ var hasCycle = function(head) {
 
 
 
+// const hasCycle = (head) => {
+//     if (!head) return false
+//     let slow = head,
+//         fast = head.next
 
-const hasCycle = (head) => {
-    if (!head) return false
-    let slow = head,
-        fast = head.next
+//     while (fast)  {
+//         if (slow === fast) {
+//             return true
+//         }
 
-    while (fast)  {
-        if (slow === fast) {
-            return true
-        }
+//         slow = slow.next
+//         fast = fast.next?.next
+//     }
 
-        slow = slow.next
-        fast = fast.next?.next
-    }
-
-    return false
-}
-
+//     return false
+// }
 
 
-var hasCycle = function(head) {
-  let currentNode = head;
 
-  while (!!currentNode?.next) {
-    if (currentNode.visited) {
-      return true;
-    }
+// var hasCycle = function(head) {
+//   let currentNode = head;
 
-    currentNode.visited = true;
-    currentNode = currentNode.next;
-  }
+//   while (!!currentNode?.next) {
+//     if (currentNode.visited) {
+//       return true;
+//     }
 
-  return false;
-};
+//     currentNode.visited = true;
+//     currentNode = currentNode.next;
+//   }
+
+//   return false;
+// };
