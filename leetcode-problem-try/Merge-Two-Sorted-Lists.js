@@ -34,7 +34,7 @@ var mergeTwoLists = function(list1, list2) {
     
     
 
-    var mergeTwoLists = function (list1, list2) {
+    var mergeTwoList = function (list1, list2) {
         let head = new ListNode()
     
         let lastNode = head
