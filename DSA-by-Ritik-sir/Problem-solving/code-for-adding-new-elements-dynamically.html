@@ -1,4 +1,4 @@
-<html> 
+<!-- <html> 
 <head> 
 <title>t1</title> 
 <script type="text/javascript"> 
@@ -7,10 +7,70 @@
         var textNode = document.createTextNode(" This is a new text node"); 
         newP.appendChild(textNode); 
         document.getElementById("firstP").appendChild(newP); } 
+      
 </script> 
 </head> 
 <body>
     <p id="firstP">firstP<p>
 
 </body> 
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add dynamically</title>
+    <style>
+      html,body {
+            height: 100%;
+            width: 100%;
+        }
+  
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+  
+        .tasks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button id="addTasks"> add task</button>
+    </div>
+    <div class="tasks"></div>
+
+    <script type="text/javascript">
+
+        let task=document.getElementsByClassName("tasks")
+
+        let addTask=document.getElementById("addTasks")
+
+        addTask.addEventListener("click",function(){
+            for(let i=0;i<task.length;i++){
+                let newDiv=document.createElement("div")
+
+                newDiv.setAttribute("class","List")
+                newDiv.innerText="New div created";
+                task[i].append(newDiv)
+            }
+        })
+
+
+    </script>
+    
+</body>
 </html>
