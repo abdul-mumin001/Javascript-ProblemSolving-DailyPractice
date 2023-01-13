@@ -114,4 +114,221 @@
 
 
 //17
+// let name="abdul";
+// function getName(){
+//     console.log(name);
+//     let name="mumin"
+// }
+// getName();
 
+
+
+
+// 18
+// function sumValues(x,y,z){
+// return x+y+z;
+// }
+// console.log(sumValues(...[1,2,3]))
+
+
+//19
+// const name="step by step code";
+// console.log(!typeof name==='object')
+// console.log(!typeof name==="string")
+
+
+
+//20
+// let person={
+//     name:"mumin"
+// }
+// Object.seal(person);
+// person.name="abdul"
+// console.log(person)
+
+
+
+
+// 21 remove first element
+// let data=[5,6,7,8,9];
+// data.shift()
+// console.log(data)
+
+
+
+//22 add from the first
+// let data=[1,2,3,4]
+// data.unshift(1)
+// console.log(data)
+
+
+// 23 remove from the last
+// let data=[1,2,3,4,5];
+// data.pop()
+// console.log(data)
+
+
+// 24 add in the end
+// let data=[1,2,3,4,5];
+// data.push(6)
+// console.log(data)
+
+
+
+// 25 check any value is odd or even
+// let a=32;
+// if(a%2==0){
+//     console.log('even')
+// }else{
+//     console.log('odd')
+// }
+
+
+
+// 26 convert data to boolean false value
+// let data="string"
+// console.log(typeof !data)
+
+
+
+
+// 27 differnce bet map and forEach
+//  map function hamesha kuch na kuch return karega but forEach kuch bhi return nhi karega
+
+
+// 28
+// let data=["abdul","mumin","barbhuiya"];
+//  delete data[1];
+//  console.log(data)
+//  console.log(data.length)
+//  data[1]="mum";
+//  console.log(data)
+// console.log(data.splice(0,1,"mum"))
+// console.log(data);
+// console.log(data.slice(0,2))
+// console.log(data);
+
+
+
+// 29
+// let a=2;
+// setTimeout(()=>{
+//     console.log(a)
+// },0);
+// a=100;
+
+
+
+// 30
+// console.log(a)
+// var a;
+
+
+
+// 31
+// console.log([[[[]]]])
+
+
+// 32 how to find os  name 
+
+
+// 33
+// function furit(){
+//     console.log(name);
+//     console.log(price);
+//     var name="apple";
+//     let price=20;
+// }
+// furit()
+
+
+// 34
+// for(var i=0;i<3;i++){
+//     console.log(i)
+//     setTimeout(()=>{
+//         console.log(i)
+//     },1)
+// }
+
+
+
+
+//35
+// for(let i=0;i<3;i++){
+//         // console.log(i)
+//         setTimeout(()=>{
+//             console.log(i)
+//         },1)
+//     }
+    
+
+
+
+// 36
+// console.log(+true)
+// console.log(typeof +true);
+    
+
+
+//37
+// let data="size";
+// const bird={
+//     size:"small",
+// }
+// console.log(bird[data]);
+// console.log(bird["size"]);
+// console.log(bird.size);
+// console.log(bird.data);
+
+
+
+// 38
+// let a={name:"abdul"}
+// let b;
+// b=a;
+// a.name="mumin"
+// console.log(b.name);
+
+
+
+
+// // 39
+// var a;
+// let a=20;
+// console.log(a)
+// // error like Identifier 'a' has already been declared
+
+
+// //40
+// let a=3;
+// let b=new Number(3)
+
+// console.log(a==b);
+// console.log(a===b);
+
+
+
+// 41
+// let a;
+// let nam={};
+// console.log(a)
+// console.log(nam);
+
+
+
+
+
+// 42
+// function sum(a,b){
+//     return a+b;
+// }
+// console.log(sum(1,'2'))
+
+
+
+
+// 43
+// let i=0;
+// console.log(i++)
+// console.log(++i);
+// console.log(i);
