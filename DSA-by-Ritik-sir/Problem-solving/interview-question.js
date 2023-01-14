@@ -332,3 +332,98 @@
 // console.log(i++)
 // console.log(++i);
 // console.log(i);
+
+
+
+
+// 44
+// const sum=eval(`10*10+5`)
+// console.log(sum)
+
+//45
+// const obj={a:"one",b:"two",a:"repeat"}
+// console.log(obj)
+
+
+// 46
+// for(let i=1;i<5;i++){
+//     if(i===3) continue;
+//     console.log(i)
+// }
+
+
+// 47
+// const foo = ()=> console.log('First');
+// const bar=()=>setTimeout(()=> console.log('second'));
+// const baz=()=> console.log('Third');
+// bar();
+// foo();
+// baz();
+
+
+
+// 48
+// const person ={name:"abdul"};
+
+// function sayHi(age){
+//     return `${this.name} is ${age}`
+
+// }
+// console.log(sayHi.call(person,23));
+// console.log(sayHi.bind(person,21)());
+
+
+
+// 49 convert string to array 
+// console.log([..."mumin"]);
+
+
+
+// 50
+// const firstPromise= new Promise((resolve,reject)=>{
+//     setTimeout(resolve,500,'one')
+// })
+// const secondPromise= new Promise((resolve,reject)=>{
+// setTimeout(resolve,200,'two')
+// })
+
+// Promise.race([firstPromise,secondPromise]).then(resolve=>console.log(resolve));
+
+
+
+// // 51
+// const person={
+//     name:"mumin",
+//     age:23,
+// }
+// for(const key in person){
+//     console.log(key)
+// }
+
+
+
+
+// 52
+// console.log(Object.values(100))
+
+
+// 53
+// console.log(3 + 4 + +'5')
+
+
+
+// 54
+// let data=[1,2,3].map(num=>{
+//     if(typeof num=='number')  return;
+//     return num*2;
+// })
+// console.log(data)
+
+
+// 55
+// console.log(!true -true)
+// console.log(true + +'10')
+
+
+
+
