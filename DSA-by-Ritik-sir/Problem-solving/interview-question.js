@@ -426,4 +426,113 @@
 
 
 
+// //56
+// // Coercion
+//  // Nan
+//  // This keyword
+//  // Bind
+//  // Lexical Environment
+//  // Closures
+//  // Currying
 
+  
+ 
+//  //Currying
+ 
+//  // Transfomation of the function of multiple arguments into a function of single arguments in sequence
+ 
+//   function sum(a, b){
+//     return a + b;
+//  }
+ 
+//  function curryFunc(func){
+//     return function foo(a){
+//        return function bar(b){
+//           return func(a, b);
+//        }
+//     }
+//  }
+ 
+//  curryFunc(sum)(2)(5)
+ 
+//  const addTwo = curryFunc(sum)(2);
+//  const addFive = curryFunc(sum)(5);
+ 
+//  console.log(addTwo(10));
+//  console.log(addFive(10)); 
+ 
+//  // Lexical Environment
+ 
+ 
+//  //closuer
+//  //functions bundled together with its lexical environment;
+ 
+//  function foo(){
+//     let a = 2;
+//     return function bar(){
+//        console.log(a);
+//     }
+//  }
+ 
+// //  const b = foo();
+//  b(); 
+ 
+ 
+//  //NaN
+// //   let a = "Hello"
+//  console.log(NaN);
+  
+ 
+ 
+//  //This keyword
+ 
+//  const obj = {
+//     a: "12",
+//     hello(){ 
+//        console.log(this);
+//     }
+//  }
+ 
+ 
+//  const obj2 = {
+//     b: "aircampus"
+//  };
+  
+//  obj.hello.call(obj2); // List of parameters is sent
+//  obj.hello.apply(obj2); // Array of parameters is sent
+//  const newHello = obj.hello.bind(obj2);
+//  newHello();
+ 
+ 
+//  //Coercion
+ 
+//  let a =  "5";
+//  let b = 12;
+ 
+//  // Implicit Coercion
+//  let c = a + b;
+//  console.log(typeof c) //String
+ 
+//  // Explicit Coering
+//  let d = Number(a) + b;
+//  console.log(typeof d) //Number
+  
+ 
+ 
+//  //Boolena and Logical Coercion
+// //  var x = 220;
+// //  var y = "Hello";
+// //  var z = undefined;
+         
+//  // x | | y    // Returns 220 since the first value is truthy
+         
+//  // x | | z   // Returns 220 since the first value is truthy
+         
+//  // x && y    // Returns "Hello" since both the values are truthy
+         
+//  // y && z   // Returns undefined since the second value is falsy
+         
+ 
+// //  if( x || y ){ 
+// //    console.log("Code runs" ); // This block runs because x && y returns "Hello" (Truthy)
+// //  }
