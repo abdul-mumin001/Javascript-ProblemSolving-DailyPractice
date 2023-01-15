@@ -434,7 +434,57 @@
 //  // Lexical Environment
 //  // Closures
 //  // Currying
+//  // Promises
+ 
+ 
+//  //Promises
+ 
+//  new Promise((resolve, reject) => {
+//    // Promise Syntax
+//  }) 
+ 
+ 
+// //  States of Promise
+//  pending
+//  fullfilled
+//  rejected
+  
+ 
+ 
+//  Handlers
+//  .then
+//  .catch
+  
+ 
+ 
+// //  .catch handler does not catch errors occured in asynchronous functions like setTimeout
 
+ 
+//  const promise =  new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//        reject("Error")
+//     })
+//  })
+ 
+//  console.log(promise); 
+ 
+ 
+//   promise.then((result) => console.log(result))
+//         .catch((err) => console.log(err)) 
+ 
+ 
+//   async function handlePromise(){
+ 
+//     try {
+//        const result = await promise;
+//        console.log(result);
+//     } catch(err){
+//        console.log(err)
+//     }
+ 
+//  }
+ 
+//  handlePromise().catch(err => console.log(err));
   
  
 //  //Currying
@@ -536,3 +586,6 @@
 // //  if( x || y ){ 
 // //    console.log("Code runs" ); // This block runs because x && y returns "Hello" (Truthy)
 // //  }
+
+
+
