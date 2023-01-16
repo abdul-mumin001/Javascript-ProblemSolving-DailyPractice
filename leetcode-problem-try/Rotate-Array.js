@@ -38,3 +38,14 @@ var rotate = function (nums, k) {
 };
 
 console.log(rotate([-1,-100,3,99],2))
+
+
+
+
+
+var rotat = function(nums, k) {
+    k = k % nums.length;
+    nums.unshift(...nums.splice(nums.length - k))
+    
+    return nums;
+};
