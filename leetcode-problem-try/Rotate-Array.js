@@ -46,6 +46,7 @@ console.log(rotate([-1,-100,3,99],2))
 var rotat = function(nums, k) {
     k = k % nums.length;
     nums.unshift(...nums.splice(nums.length - k))
-    
+    // console.log(nums);
     return nums;
 };
+console.log(rotat([1,2,3,4,5,6,7],3))
