@@ -108,3 +108,6 @@ var ispalindrome = function (head) {
   }
   return ispalimdrome
 };
+
+console.log(ispalindrome([1,2,2,1]))
+console.log(ispalindrome([1,2]))
