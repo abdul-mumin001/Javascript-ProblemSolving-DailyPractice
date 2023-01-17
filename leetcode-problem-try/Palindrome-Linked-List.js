@@ -80,3 +80,31 @@ var isPalindrom = function(head) {
 
 console.log(isPalindrom([1,2,2,1]))
 console.log(isPalindrom([1,2]))
+
+
+
+
+var ispalindrome = function (head) {
+  if (head != null && head.next == null) {
+      return true
+  }
+  let arr = []
+  let temp = head
+  while (temp != null) {
+      arr.push(temp.val)
+      temp = temp.next
+  }
+  let i = 0, j = arr.length - 1
+  let ispalimdrome = true
+  while (i < j) {
+      if (arr[i] == arr[j]) {
+          i++
+          j--
+      }
+      else {
+          isPalimdrome=false
+          break
+      }
+  }
+  return ispalimdrome
+};
