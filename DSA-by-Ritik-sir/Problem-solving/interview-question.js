@@ -597,13 +597,69 @@
 
 // window and this keyword
 
-var a=10;
+// var a=10;
  
-function b(){
-    var x=2;
-}
+// function b(){
+//     var x=2;
+// }
 
-console.log(a)
-console.log(window.a)
-console.log(this.a)
-console.log(this===window);
+// console.log(a)
+// console.log(window.a)
+// console.log(this.a)
+// console.log(this===window);
+
+
+
+
+// Higher  Order Function 
+
+// A function which takes another function as an argument or  return a function is known as Higher order function. 
+
+
+
+// eg:
+
+let arr=[1,2,3,4,5,6,7,8,9]
+// function FilterOdd (){
+//     let FilterArr=[];
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]%2 !==0){
+//             FilterArr.push(arr[i])
+//         }
+//     }
+//     return FilterArr;
+// }
+   
+// console.log(FilterOdd(arr))
+
+// function FilterEven (){
+//     let FilterArr=[];
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]%2==0){
+//             FilterArr.push(arr[i])
+//         }
+//     }
+//     return FilterArr;
+// }
+// console.log(FilterEven(arr))
+
+
+
+// function FilterFunction(arr,callBack){
+//     let FilterArr=[];
+//     for(let i=0;i<arr.length;i++){
+//         callBack(arr[i]) ? FilterArr.push(arr[i]):null;
+//     }
+//     return FilterArr;
+// }
+
+
+// function isOdd(x){
+//     return x%2 != 0;
+// }
+// function isEven(x){
+//     return x%2 === 0;
+// }
+
+// console.log(FilterFunction(arr,isOdd));
+// console.log(FilterFunction(arr,isEven));
