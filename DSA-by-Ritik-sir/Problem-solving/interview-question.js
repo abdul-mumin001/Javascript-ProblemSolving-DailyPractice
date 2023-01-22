@@ -197,7 +197,7 @@
 //     }
 
 // 36
-// console.log(+true)
+// console.log(true)
 // console.log(typeof +true);
 
 //37
@@ -577,6 +577,7 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //IIFE
 // An IIFE (immediately Invoked Function Expression)  is  javascript function that runs as soon as it is defined.
 // The name IIFE is promted by Ben Alman in his blog. 
+// Used of it: IIFE can be used to avoid variable hoisting from within blocks. 
 
 // eg:
 // (()=>{
@@ -589,6 +590,79 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //      return name;
 // })();
 // console.log(result);
+
+
+
+
+
+// There are 3 ways of writing function in javascript 
+// Function Declaration 
+// Function Expression 
+// Arrow Function 
+
+
+// // Function Declaration 
+// function add(a,b){
+//     console.log(a+b);
+// }
+// add(2,3)
+
+
+// // Function Expression
+
+// const addfunc = function(a,b){
+//     console.log(a+b);
+// }
+// addfunc(5,5)
+
+
+
+// // Arrow Function 
+
+// let addNum=(a,b)=>a+b;
+// console.log(addNum(4,3));
+
+
+
+
+// null vs. empty 
+// The value of null represents the absence of any  object. while the empty string is an type of string with zero characters.
+// If you try to compare the two they are not the same.
+
+// let  varA = null
+// let  varC=undefined
+//  let varB = ''   /* The empty string */
+// if (varA != null && varA != '') {
+//     console.log("runs");
+//   } console.log("Not runs");
+
+// console.log(varA===varC);
+
+
+
+
+// Currying in javascript
+
+// It is a technique in functional programming, transformation of function of multiple argument into several function of single 
+// argument in sequence.
+
+// eg:
+
+// function calVolm(l,b,h){
+// return l*b*h;
+// }
+// console.log(calVolm(2,3,4));
+
+// // eg:
+// function CalculateVolm(length){
+//     return function(breadth){
+//         return function(height){
+//             return length*breadth*height;
+//         }
+//     }
+// }
+// console.log(CalculateVolm(4)(5)(6));
+
 
 
 
