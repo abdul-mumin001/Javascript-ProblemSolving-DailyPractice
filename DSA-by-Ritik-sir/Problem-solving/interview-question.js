@@ -483,7 +483,7 @@
 
 // eg:
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // function FilterOdd (){
 //     let FilterArr=[];
 //     for(let i=0;i<arr.length;i++){
@@ -667,58 +667,3 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
 
-// use of map
-
-// const arr=[1,2,3]
-
-// function double(x){
-//     return x*2;
-// }
-
-// const output=arr.map(double);
-// console.log(output);
-
-
-
-// binary 
-
-// function binary(x){
-//    return x.toString(2);
-// }
-//  const output=arr.map(binary);
-//  console.log(output);
-
-
-
-
-// filter function
-
-// const arr=[1,2,3]
-
-// function isOdd(x){
-//     return x%2 !=0;
-// }
-
-// const output=arr.filter(isOdd)
-// console.log((output));
-
-
-
-// reduce function 
-
-// function findSum(){
-//     let sum=0;
-//     for(let i=0;i<arr.length;i++){
-//         sum=sum+arr[i]
-//     }
-//     return sum;
-// }
-// console.log(findSum(arr));
-
-
-
-// const output=arr.reduce(function(acc,curr){
-//     acc=acc+curr;
-//     return acc;
-// },0)
-// console.log(output);
