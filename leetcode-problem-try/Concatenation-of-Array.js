@@ -34,3 +34,9 @@ var getConcatenation = function(nums) {
 };
 
 console.log(getConcatenation([1,3,2,1]));
+
+
+
+var getConcatenate = function(nums) {
+    return nums.concat(nums)
+};
