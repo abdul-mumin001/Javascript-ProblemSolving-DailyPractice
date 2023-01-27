@@ -70,3 +70,5 @@ function swap(nums, i, j) {
   nums[i] = nums[j]
   nums[j] = tmp
 }
+console.log(findKthLargest([3,2,3,1,2,4,5,5,6],4));
+console.log(findKthLargest([3,2,1,5,6,4],2));
