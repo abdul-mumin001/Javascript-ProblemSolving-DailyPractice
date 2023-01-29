@@ -25,11 +25,13 @@ let fnContainer = function fn(){
 }
 fnContainer()
 
-// Anonymous function: function which doesn't need name
+// Anonymous function: function which have no name in it.
 let fnCont = function (){
     console.log("Anonymous function");
 }
 fnCont()
+
+
 
 
 
