@@ -3,13 +3,13 @@
 // function statement
 
 //func defination
-function sayHello(para){
-    console.log('hello',para);
+// function sayHello(para){
+//     console.log('hello',para);
 
     // return 'mumin'
-}
+// }
 // func invocation
-sayHello('abdul')
+// sayHello('abdul')
 // console.log("```````````");
 
 // let rVal=sayHello()
@@ -20,18 +20,23 @@ sayHello('abdul')
 //function are treated as a variable
 
 // function expression
-let fnContainer = function fn(){
-    console.log("function expression");
-}
-fnContainer()
+// let fnContainer = function fn(){
+//     console.log("function expression");
+// }
+// fnContainer()
 
 // Anonymous function: function which have no name in it.
-let fnCont = function (){
-    console.log("Anonymous function");
-}
-fnCont()
+// let fnCont = function (){
+//     console.log("Anonymous function");
+// }
+// fnCont()
 
 
 
+// IIFE: immediately invoked function expression 
+
+// (function functn(){
+//     console.log("IIFE Function");
+// })()
 
 
