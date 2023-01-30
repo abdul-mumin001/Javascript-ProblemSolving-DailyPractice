@@ -69,5 +69,5 @@ function outer(){
     }
 }
 let rVal=outer();
-console.log("rval",rVal);
+console.log("rVal",rVal);
 rVal()
