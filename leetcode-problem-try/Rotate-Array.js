@@ -50,3 +50,22 @@ var rotat = function(nums, k) {
     return nums;
 };
 console.log(rotat([1,2,3,4,5,6,7],3))
+
+
+
+var rot = function(nums, k) {
+  let firstHalf = (nums.length - 1) - (k%nums.length)
+  rev(0, firstHalf, nums)
+  rev(firstHalf+1,nums.length-1, nums)
+  rev(0, nums.length-1,nums)
+};
+
+const rev = (l,r,arr) => {
+  while(l <= r){
+      let temp = arr[r]
+      arr[r] = arr[l]
+      arr[l] = temp
+      l++
+      r--
+  }
+}

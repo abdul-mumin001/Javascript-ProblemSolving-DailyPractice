@@ -12,6 +12,17 @@
 // Input: nums = [3,2,3,1,2,4,5,5,6], k = 4
 // Output: 4
 
+// ------
+// In this method all the test cases are not passes in leetcode
+var findKthLargeNum = function(nums, k) {
+    for(let i=0;i<nums.length;i++){
+        if(i>k){
+            return nums[i];
+        }
+    }
+};
+ console.log(findKthLargeNum([3,2,1,5,6,4],2));
+// ------
 
 
 // var findKthLargest = function(nums, k) {
