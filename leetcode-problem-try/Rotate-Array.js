@@ -69,3 +69,4 @@ const rev = (l,r,arr) => {
       r--
   }
 }
+console.log(rot([1,2,3,4,5,6,7],3))
