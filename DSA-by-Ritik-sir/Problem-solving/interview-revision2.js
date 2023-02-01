@@ -84,7 +84,7 @@ rVal()
 // 1. Ability to treat functions as values:
 
 var greet = function() {
-	console.log("Welcome to GeeksforGeeks!");
+	console.log("Welcome to BVEC");
 }
 greet();
 
@@ -116,7 +116,7 @@ var message = greet(student);
 
 var greet = function(){
 	return function(){
-	console.log("Welcome to GeeksforGeeks!");
+	console.log("Welcome to BVEC");
 	}
 }
 greet()();
