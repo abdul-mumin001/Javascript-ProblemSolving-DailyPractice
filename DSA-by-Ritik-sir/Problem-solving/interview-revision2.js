@@ -71,3 +71,55 @@ function outer(){
 let rVal=outer();
 console.log("rVal",rVal);
 rVal()
+
+
+
+// What is First Class Citizen in JavaScript ?
+
+// If any programming language has the ability to treat functions as values, to pass them as arguments and to return 
+// a function from another function then it is said that programming language has First Class Functions and the 
+// functions are called as First Class Citizens in that programming language.
+
+
+// 1. Ability to treat functions as values:
+
+var greet = function() {
+	console.log("Welcome to GeeksforGeeks!");
+}
+greet();
+
+
+// 2. Ability to pass a function as arguments:
+
+
+function teacher(){
+	return "Teacher";
+}
+
+function student(){
+	return "Student";
+}
+
+function greet(user){
+	console.log("Welcome", user());	
+}
+
+// Prints "Welcome Teacher"
+var message = greet(teacher);
+
+// Prints "Welcome Student"
+var message = greet(student);
+
+
+
+// 3. Ability to return a function from another function: 
+
+var greet = function(){
+	return function(){
+	console.log("Welcome to GeeksforGeeks!");
+	}
+}
+greet()();
+
+
+
