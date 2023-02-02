@@ -205,3 +205,19 @@ var promise = new Promise(function(resolve, reject) {
 		  
 		getData().then(data => console.log(data));
 
+
+
+		
+		// Await: Await function is used to wait for the promise. It could be used within the async block only. It makes the code
+		//  wait until the promise returns a result. It only makes the async block wait.
+
+
+
+		const getDat = async() => {
+			var y = await "Hello World";
+			console.log(y);
+		}
+		  
+		console.log(1);
+		getDat();
+		console.log(2);
