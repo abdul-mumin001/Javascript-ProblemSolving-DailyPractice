@@ -155,3 +155,24 @@
 // iii. Perform operations inside the callback function and if everything went well then call resolve.
 // iv. If desired operations do not go well then call reject
 
+// Example:
+
+
+var promise = new Promise(function(resolve, reject) { 
+	const x = "aircampus"; 
+	const y = "aircampus"
+	if(x === y) { 
+	  resolve(); 
+	} else { 
+	  reject(); 
+	} 
+  }); 
+	  
+  promise. 
+	  then(function () { 
+		  console.log('Success, You are a part of aircampus'); 
+	  }). 
+	  catch(function () { 
+		  console.log('Some error has occurred'); 
+	  });
+
