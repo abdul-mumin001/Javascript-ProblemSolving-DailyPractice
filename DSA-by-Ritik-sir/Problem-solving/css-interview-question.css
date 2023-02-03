@@ -1,0 +1,376 @@
+/* Top 75+ CSS Interview Questions and Answers for 2023
+By Simplilearn
+Last updated on Feb 1, 20237122
+Top CSS Interview Questions You Should Prepare for in 2023
+Table of Contents
+Basic CSS Interview QuestionsIntermediate CSS Interview QuestionsAdvanced CSS Interview QuestionsFrequently Asked CSS Interview QuestionsConclusion
+Web applications and websites are increasing in every industry, and CSS is essential to build attractive websites. Currently, there is a tremendous demand for web developers who have a good knowledge of HTML and CSS. To build a career in web designing, candidates need to crack interviews where they ask CSS interview questions. 
+
+In this article, we have consolidated a list of CSS interview questions and divided the questions into four sections: basic CSS interview questions, intermediate CSS interview questions, advanced CSS interview questions, and frequently asked CSS interview questions. This list would be helpful for both experienced professionals and freshers. Let us start with this CSS interview questions guide. 
+
+Basic CSS Interview Questions
+Let us begin with the basic CSS interview questions!
+
+1. Name some CSS frameworks. 
+CSS frameworks are libraries that make web page styling easier. Some of them are Foundation, Bootstrap, Gumby, Ukit, Semantic UI, etc. 
+
+2. What do you understand by the universal sector?
+A universal selector is a selector that matches any element type's name instead of selecting elements of a particular type. 
+
+Example: 
+
+<style>    
+
+* {    
+
+   color: blue;    
+
+   font-size: 10px;    
+
+}     
+
+</style>    
+
+These job-ready skills make you become Top 10%!
+Why don't you upskill right now?ENROLL NOWThese job-ready skills make you become Top 10%!
+3. Tell us about the use of the ruleset.
+The ruleset is used for the identification of selectors, which can be attached with other selectors. The two parts of a ruleset are:
+
+Declaration block: contains one or more semicolon-separated declarations
+Sector: indicates the HTML element needed to be styled
+4. What are the elements of the CSS Box Model?
+The CSS box model defines the layout and design of CSS elements. The elements are content (like text and images, padding (the area around content), border (the area around padding), and margin (the area around the border). 
+
+5. Differentiate between CSS3 and CSS2.
+The main difference between CSS3 and CSS2 is that CSS divides different sections into modules and supports many browsers. It also contains new General Sibling Combinators responsible for matching similar elements. 
+
+6. How can CSS be integrated into an HTML page?
+There are three ways of integrating CSS into HTML: using style tags in the head section, using inline-styling, writing CSS in a separate file, and linking into the HTML page by the link tag. 
+
+7. Explain a few advantages of CSS. 
+With CSS, different documents can be controlled using a single site, styles can be grouped in complex situations using selectors and grouping methods, and multiple HTML elements can have classes. 
+
+8. What is meant by RGB stream?
+RGB represents colors in CSS. The three streams are namely Red, Green, and Blue. The intensity of colors is represented using numbers 0 to 256. This allows CSS to have a spectrum of visible colors. 
+
+9. What was the purpose of developing CSS?
+CSS was developed to define the visual appearances of websites. It allows developers to separate the structure and content of a website that was not possible before. 
+
+10. What is the difference between a class and an ID?
+Ans. Class is a way of using HTML elements for styling. They are not unique and have multiple elements. Whereas ID is unique and it can be assigned to a single element. 
+
+Unlock your potential as a Frontend Developer
+Why not take the opportunity to upskill now?ENROLL FOR FREEUnlock your potential as a Frontend Developer
+Intermediate CSS Interview Questions
+In the next section, let us learn some intermediate level CSS interview questions!
+
+1. Define z-index.
+This is one of the most frequently asked CSS interview questions. Z-index is used to specify the stack order of elements that overlap each other. Its default value is zero and can take both negative and positive values. A higher z-index value is stacked above the lower index element. It takes the following values- auto, number, initial, and inherit. 
+
+2. What are the benefits of CSS Sprites?
+With CSS sprites, loading multiple images is not an issue. 
+
+Blinking is not seen. 
+Advanced downloading of assets does not take place until needed. 
+3. How can you target h3 and h2 with the same styling?
+Multiple elements can be targeted by separating with a comma:
+
+h2, h3 {color: red;}
+
+4. Name media types allowed by CSS.
+The different media types allowed by CSS are: 
+
+speech
+audio
+visual
+tactile media
+continuous or paged media
+grip media or bitmap
+interactive media
+5. How can you use CSS to control image repetition?
+The background-repeat property is used to control the image. Example:
+
+h3 {
+
+background-repeat: none;
+
+ }
+
+Full Stack Mastery Awaits with Our Free Courses
+Why wait? Upskill now!START LEARNINGFull Stack Mastery Awaits with Our Free Courses
+6. Tell us about the property used for image scroll controlling?
+The background-attachment property is used to set whether the background image is fixed or it scrolls with the rest of the page. Example for a fixed background-image:
+
+body {
+
+  background-image: url(‘url_of_image’);
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+}
+
+7. Name some font-related CSS attributes. 
+The font-related attributes are Font- style, variant, weight, family, size, etc. 
+
+8. Define contextual selectors.
+In CSS, contextual selectors allow developers to specify styles of different parts of the document. Styles can be assigned directly to specific HTML tags or create independent classes and assign tags to them. 
+
+9. Explain responsive web design. 
+Responsive Design is a web page creation approach that uses flexible images, flexible layouts, and CSS media queries. This design approach aims to build web pages that detect the orientation and screen size of the visitors so that the layout can be changed accordingly.  
+
+10. Tell us about the general CSS nomenclature.
+In CSS, the styling commands are written in value and property fashion. CSS includes a system terminator- semicolon. The entire style is wrapped in curly braces and attached to the selector. This creates a style sheet that can be applied to an HTML page.
+
+11. What are the limitations of CSS?
+CSS cannot always assure compatibility with every browser; you need to be cautious while choosing the style selector.
+The parent selector tag is not available, thus you can’t select the parent selector tag.
+Some selectors can lead to cross-browser issues due to their less browser-friendly behavior.
+We cannot request a webpage through CSS.
+12. How to include CSS in the webpage?
+With the help of a link tag, you can include an external style sheet file as a CSS file into your HTML file.
+You can add CSS styles included within your HTML page and write it in the stand-alone stylesheet form of CSS.
+CSS can be included directly in the HTML tag by adding an inline style to HTML elements.
+One can import an external stylesheet file as a new CSS file by using the @import rule. 
+13. What are the different types of Selectors in CSS?
+Universal Selector, Element type Selector, ID selector, Class selector, Descendant combinatory, Child Combinator, General Sibling Combinator, Adjacent sibling combinator, and Attribute selector.
+
+These in-demand skills get you into Top companies!
+Why don't you step up with our FREE course?ENROLL NOWThese in-demand skills get you into Top companies!
+14. What is a CSS Preprocessor? What are Sass, Less, and Stylus? Why do people use them?
+CSS preprocessor is a tool used to enhance the basic functionality and let us use the complex logical syntax such as variables, functions, mixins, and code nesting within vanilla CSS scripts themselves.
+
+Sass (Syntactically Awesome Style Sheets) uses .sass extension. It is used for indentation; it doesn’t use semicolons or curly brackets.
+Less (Leener Stylesheets) uses .less extension. It is easy to add to any JavaScript Project by using NPM or less.js file. Here, @ is used to define the variables. 
+Stylus provides great flexibility in writing syntax. It is able to use native CSS as well as the exclusion of brackets, colons, and semicolons. There is no need to use @ or $ to define the variables.
+People use SASS, LESS, and Stylus in order to extend the basic functionality of vanilla CSS.
+
+15. What is VH/VW (viewport height/ viewport width) in CSS?
+VH and VW are CSS units used to measure viewport height and viewport width respectively in percentage form in the responsive design techniques. E.g. If the height of the browser is 1000px, then VH is 1/100 of the height of the viewport that is 1000px*(1/100) = 10px, which is the height of the browser.  The same applies to VW (viewport width).
+
+16. Difference between reset vs normalize CSS? How do they differ?
+Reset CSS is used to remove all built-in styles in the browser such as paddings, margins, and font sizes, and can be reset using all the elements.
+Normalize CSS is used to make all built-in styles in the browser consistent and correct bugs as per varying browsers.
+17. What is the difference between inline, inline-block, and block?
+Block Elements are <div> and <p>. They usually start on a new line and can take space for an entire row or width.
+Inline elements are <a>, <span>, <strong>, and <img> tags. They don't start on a new line. However, they appear on the same line as the content and tags beside them.
+Inline block elements have padding and margins and set height and width values. Though, they are similar to inline elements. 
+18. Is it important to test the webpage in different browsers?
+Yes, it is the most crucial thing or the most important trial to do when you design a webpage for the first time and make changes to it. Testing your website periodically in different browsers will help you make every webpage compatible with it as browsers have been going through many updates.
+
+19. What are Pseudo classes?
+Pseudo-classes are the type of pseudo-elements that don’t exist in a normal document tree. It allows selecting the regular elements under certain conditions especially when we try to hover over the link; the anchor tags are :link, :visited, :hover, :active, :focus
+
+In this example, the color will be red on the anchor tag when it’s hovered.
+
+/* mouse over link */
+
+/* a:hover {
+
+color: #FFOOFF;
+
+}
+
+20. How do you specify units in the CSS? What are the different ways to do it?
+There are mainly four different units in the CSS that are px, em, pt, and percentage (%).
+
+Px (Pixel) is used for fine-grained control and alignment and not cascade. To get it sharp, we can use 1px or multiple of px.
+Em is used to maintain relative size and responsive fonts. 1em = 16px having also the same font size. It is advisable to set the font size to 10px in common practice.
+Pt (point) is a fixed-size unit that is used in print. 1pt = 1/72 inch.
+Percentage (%) is used to set the font size with respect to the font size of the body. Thus, it is necessary to set the reasonable font size of the body.
+21. Does margin-top or margin-bottom have an effect on inline elements?
+No, mMargin-top or margin-bottom does not have an effect on the inline elements.
+
+22. What property is used for changing the font face?
+The font-family property is used for changing the font face that is applied to the element in the DOM.
+
+23. What are the differences between adaptive design and responsive design?
+Adaptive Design:
+Main focus is to develop a website in multiple fixed layout sizes.
+Offers good control over the design to develop variation in screens.
+It is very time-consuming and takes a lot of effort to build the best possible adaptive design as examining it will need to go for many options with respect to the realities of the end user.
+There are six standard screen sizes for the appropriate layouts; they are 320px, 480px, 760px, 960px, 1200px, 1600px to design.
+Responsive Design
+Main focus is to show content with respect to browser space.
+Offers less control over the design.
+It takes less time to build the design and there is no screen size issue irrespective of content.
+It uses CSS media queries to design the screen layouts with respect to specific devices and property changes in the screen.
+Top 10% Companies look for these in-demand skills
+Learn now and climb up to the top!ENROLL NOWTop 10% Companies look for these in-demand skills
+24. How are the CSS selectors matched against the elements by the browser?
+Initially, there is a filtration of elements in the DOM via browsers with respect to key selectors that are traversed until we get parents' elements to determine the matches. Then the browser works on finding all the span elements present in the DOM and traverses them to parent elements to check whether they are matched to paragraph p elements. At last, when the browser finds all matches as parents, the matching process will be stopped and there will be black color applied to the content.
+
+25. How is the border-box different from the content box?
+Border-box consists of properties such as content, padding, and the border with respect to height and width. However, Content-box is a default value property used for the box-sizing as well as it helps to add border and padding to give proper height and width to the box without having a border and padding properties.
+
+26. How is opacity specified in CSS3?
+Opacity is the measure of content transparency. It is measured in the range from 0 to 1. Value 1 means the content is completely opaque. It is not supportable in the internet browser. Also, the 60% of opacity is applicable in the div section where we need to apply the filter property (polyfill) to make it completely opaque.
+
+27. What is cascading in CSS?
+Cascading is defined as the process of style declaration and its weight that will help the browser in selecting the styling rules with respect to time.
+
+28. When does DOM reflow occur?
+DOM reflow occurs when you insert, move, update, remove, and animate the elements in the DOM as well as when you modify content on the page and change style.
+
+29. Different Box Sizing Property?
+Content-box, Padding-box and Border-box
+
+30. How to center align a div inside another div?
+A div inside another div A is center aligned with the help of aligning div property to content via HTML script and CSS to the element in the DOM.
+
+31. What is the grid system?
+The CSS grid system is a type of powerful layout of 2 dimensional systems with respect to columns and rows.
+
+32. What are the different ways to hide the element using CSS?
+display: none, visibility: hidden, position: absolute
+
+33. What does the: root pseudo-class refer to?
+The: root selector pseudo-class refers to the CSS selector level 3. It helps to target the highest-level parent element present in the DOM.
+
+34. What does Accessibility (a11y) mean?
+Accessibility is to make the system accessible in such a manner that the website should have the text-to-speech capability, for people with physical disabilities, designed with the help of software or hardware combinations.
+
+35. How do I restore the default value of a property?
+keyword “initial” is used to restore the default value of a property.
+
+36. Difference between CSS grid vs flexbox?0
+CSS Grid Layout is a two-dimensional system along with rows and columns. It is used for large-sized layouts.
+Flexbox is a Grid layout with a one-dimensional system either within a row or a column. It is used for the components of an application.
+37. How does Calc work?
+Calc can be used to specify the result of the mathematical operation of two or more elements. For example to specify the width elements by the addition of two or more elements, we can write as
+
+.foo {
+
+Width: calc(100px+50px)
+
+}
+
+38. What do CSS Custom properties variables mean?
+CSS Custom properties variables are defined for CSS variables as well as cascading variables with specific values that can be reused.
+
+39. What is the difference between CSS variables and pre-processor (SASS, LESS, Stylus) variables?
+CSS variables don’t need a pre-processor. It is cascaded, accessed, and manipulated in JavaScript.
+Preprocessor variables don’t cascade.
+40. What does * { box-sizing: border-box; } do? What are its advantages?
+Box-sizing: border-box is used to provide the inner dimension for the elements in the document by providing padding and border with respect to the height and width of the content.
+
+41. What does !important mean in CSS?
+The style “!important” in the CSS has the highest precedence. Also, the cascaded property will be overridden with it.
+
+42. What is progressive rendering? How do you implement progressive rendering on the website? What are its advantages?
+Progressive rendering is the process of improving the performance of a webpage with respect to loading time in order to display the content speedily. The use of loading the lazy loading of the image with the help of Intersection Observer API via viewport. 
+
+43. Does style1.css have to be downloaded and parsed before style2.css can be fetched?
+No. The CSS file will be downloaded via browser in order to appear on the HTML page.
+
+44. How to determine if the browser supports a certain feature?
+@support tag in the CSS is used to scan and determine whether the browser supports a certain feature or not.
+
+45. How does absolute positioning work?
+Absolute positioning is used to place the element which is then removed from the HTML document from the normal workflow without creating any space for the element in the HTML page layout. The element can be positioned respectively to the closest positioned ancestor; otherwise, if the ancestor is not found, the element is placed with respect to the initial container box. The values provided to the top, right, left and bottom determine the final position of the element.
+
+46. Does this property work overflow: hidden?
+Overflow: the hidden property is used to specify the content’s clipping. We need to add scrollbars to the content area at the time of specified container size exceeding the content limit where the content gets enclosed. This makes the content invisible via clipping; also the overflow value will be hidden.
+
+Frontend development is an in-demand skill in many global organizations in 2023, making it a high-paid role in the IT industry.
+Multiple career opportunities available:
+CSS Developer | Front-end Developer | Software Developer
+Advanced CSS Interview Questions
+Here are some advanced CSS interview questions!
+
+1. When should you use translate () instead of absolute positioning?
+Translate is a CSS transform value. On changing opacity or transform, browser reflow or repaint is not triggered. Transform requires the browser to create a GPU layer for elements but using the CPU changes absolutes positioning properties. Translate () is more efficient and results in shorter paint times. On using translate (), element occupies original space, unlike in changing absolute positioning. 
+
+2. Name different ways to position some aspects in CSS. 
+The positioning property specifies the positioning method type. The five different position values are fixed, static, absolute, sticky, and relative. The elements are positioned using top, left, right, and bottom properties. These properties need to be set first, and they work depending on position value. 
+
+3. What are mixins?
+A mixin is similar to a function block of code returning a single value—mixin output lines of Sass code that directly compiles into CSS styles. At the same time, the function returns a value that becomes the value for a CSS property or something that can be passed to another mixin.
+
+4. How can you optimize the webpage for prints?
+Identify and control 'content areas' of the website. A website generally has a footer, header, sidebar, navbar, and main content area. Most of the work is done by controlling the content area. So, conquer print media without changing the website's integrity by using page breaks, creating a stylesheet for print, size your page for print, and avoid unnecessary HTML tables.  
+
+5. What is meant by CSS working under the hood?
+When a browser displays a document, it combines style information and document content. The document is processed in two stages:
+
+Conversion of HTML and CSS into Document Object Model
+DOM displays contents of browser
+6. Differentiate between the use of ID selector and class selector.
+ID Selector:
+
+<style>
+
+{
+
+text-align: right;
+
+color: blue;
+
+}
+
+</style>
+
+CSS class Selector: 
+
+<style>
+
+.right {
+
+text-align: right;
+
+color: blue;
+
+}
+
+</style>
+
+7. Tell us about CSS float property.
+The float property of CSS positions an image to the right or left as needed, including text wrapping around it. All properties of elements used before it remain unchanged. 
+
+8. What do you understand by pseudo-elements?
+Pseudo-elements provide special effects to some selectors. CSS finds use in applying styles in HTML markups. If additional markup or style is not feasible for a document, the pseudo-elements help by allowing extra markup without interfering with the original document. 
+
+9. Differentiate between logical and physical tags.
+Logical tags mainly focus on content and are older as compared to physical ones. Logical ones do not find much usage in presentation and terms of aesthetics. At the same time, physical ones find application in presentation. 
+
+10. How media types in CSS work?
+The four types of media properties are print, speech, and screen. Example of using print-media type: 
+
+@media print {
+
+h2 {
+
+background-color: blue;
+
+ }
+
+}
+
+New Course: Full Stack Development for Beginners
+Learn Git Command, Angular, NodeJS, Maven & MoreENROLL NOWNew Course: Full Stack Development for Beginners
+Frequently Asked CSS Interview Questions
+In this last section, we look at the most frequently asked CSS interview questions!
+
+1. Tell us something about CSS3.
+CSS3 is divided into modules and is supported by almost every browser. Many graphics-related characteristics are introduced in CSS3 like box-shadow, Border-radius, and flexbox. A user can create precise multiple background images using properties like background-position, background-repeat, and background-image styles. 
+
+2. How is a CSS selector used?
+With a CSS selector, we can choose the content we want to style to bridge between HTML files and style sheets. CSS selector syntax is "select" HTML elements created on their class, id, type, etc. 
+
+3. What are CSS image scripts?
+A group of images placed into one image is a CSS image script. It can reduce load time and project multiple images into a single web page. 
+
+4. Explain CSS specificity.
+CSS specificity is a rank or score that decides style declaration to be used to an element. ID selectors have high specificity, while universal selector * has low specificity. The four CSS categories that authorize the selector's specificity level are IDs, inline style, elements/pseudo-elements, and classes and attributes. 
+
+5. Define gradients in CSS. 
+A property of CSS that allows displaying smooth transformation between two or more specified colors. The types of gradients are linear and radial. 
+
+6. What are the properties of flexbox?
+The properties of flexbox are flex-direction, wrap, flow, content, and align-items, and content. 
+
+7. Tell us about the use of the CSS Box Model.
+The CSS Box model is a box binding HTML element that includes padding, border, margin, and the actual content. With the box model, we get the authority to add a border all around elements and define space between elements.  */ 
+
+
