@@ -1,14 +1,5 @@
-/* Top 75+ CSS Interview Questions and Answers for 2023
-By Simplilearn
-Last updated on Feb 1, 20237122
-Top CSS Interview Questions You Should Prepare for in 2023
-Table of Contents
-Basic CSS Interview QuestionsIntermediate CSS Interview QuestionsAdvanced CSS Interview QuestionsFrequently Asked CSS Interview QuestionsConclusion
-Web applications and websites are increasing in every industry, and CSS is essential to build attractive websites. Currently, there is a tremendous demand for web developers who have a good knowledge of HTML and CSS. To build a career in web designing, candidates need to crack interviews where they ask CSS interview questions. 
+ /* Top 75+ CSS Interview Questions and Answers for 2023
 
-In this article, we have consolidated a list of CSS interview questions and divided the questions into four sections: basic CSS interview questions, intermediate CSS interview questions, advanced CSS interview questions, and frequently asked CSS interview questions. This list would be helpful for both experienced professionals and freshers. Let us start with this CSS interview questions guide. 
-
-Basic CSS Interview Questions
 Let us begin with the basic CSS interview questions!
 
 1. Name some CSS frameworks. 
@@ -164,9 +155,8 @@ Pseudo-classes are the type of pseudo-elements that don’t exist in a normal do
 
 In this example, the color will be red on the anchor tag when it’s hovered.
 
-/* mouse over link */
 
-/* a:hover {
+ a:hover {
 
 color: #FFOOFF;
 
@@ -374,3 +364,12 @@ The properties of flexbox are flex-direction, wrap, flow, content, and align-ite
 The CSS Box model is a box binding HTML element that includes padding, border, margin, and the actual content. With the box model, we get the authority to add a border all around elements and define space between elements.  */ 
 
 
+
+/* 8. What are the position states in CSS?
+The four-position states in CSS are relative, static, absolute, and fixed. The default position state is static. 
+
+9. Differentiate between absolute and relative in CSS. 
+The main difference is that relative is used for the same tag in CSS. If we write right:20 px, then padding shifts 20 px in the right. Whereas absolute is relative to the non-static parent, i.e., if we write right:20 px, the result will be 20 px far from the right edge of the parent element.  
+
+10. What is common between class and ID?
+Both class and ID are used in HTML to assign a value from CSS. The ID is used as an element, whereas the class is used as a block.  */
