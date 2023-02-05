@@ -54,9 +54,7 @@ This is one of the most frequently asked CSS interview questions. Z-index is use
 
 2. What are the benefits of CSS Sprites?
 With CSS sprites, loading multiple images is not an issue. 
-
-Blinking is not seen. 
-Advanced downloading of assets does not take place until needed. 
+ 
 3. How can you target h3 and h2 with the same styling?
 Multiple elements can be targeted by separating with a comma:
 
@@ -81,8 +79,6 @@ background-repeat: none;
 
  }
 
-Full Stack Mastery Awaits with Our Free Courses
-Why wait? Upskill now!START LEARNINGFull Stack Mastery Awaits with Our Free Courses
 6. Tell us about the property used for image scroll controlling?
 The background-attachment property is used to set whether the background image is fixed or it scrolls with the rest of the page. Example for a fixed background-image:
 
@@ -121,8 +117,7 @@ One can import an external stylesheet file as a new CSS file by using the @impor
 13. What are the different types of Selectors in CSS?
 Universal Selector, Element type Selector, ID selector, Class selector, Descendant combinatory, Child Combinator, General Sibling Combinator, Adjacent sibling combinator, and Attribute selector.
 
-These in-demand skills get you into Top companies!
-Why don't you step up with our FREE course?ENROLL NOWThese in-demand skills get you into Top companies!
+
 14. What is a CSS Preprocessor? What are Sass, Less, and Stylus? Why do people use them?
 CSS preprocessor is a tool used to enhance the basic functionality and let us use the complex logical syntax such as variables, functions, mixins, and code nesting within vanilla CSS scripts themselves.
 
@@ -180,8 +175,7 @@ Main focus is to show content with respect to browser space.
 Offers less control over the design.
 It takes less time to build the design and there is no screen size issue irrespective of content.
 It uses CSS media queries to design the screen layouts with respect to specific devices and property changes in the screen.
-Top 10% Companies look for these in-demand skills
-Learn now and climb up to the top!ENROLL NOWTop 10% Companies look for these in-demand skills
+
 24. How are the CSS selectors matched against the elements by the browser?
 Initially, there is a filtration of elements in the DOM via browsers with respect to key selectors that are traversed until we get parents' elements to determine the matches. Then the browser works on finding all the span elements present in the DOM and traverses them to parent elements to check whether they are matched to paragraph p elements. At last, when the browser finds all matches as parents, the matching process will be stopped and there will be black color applied to the content.
 
@@ -256,12 +250,7 @@ Absolute positioning is used to place the element which is then removed from the
 
 46. Does this property work overflow: hidden?
 Overflow: the hidden property is used to specify the content’s clipping. We need to add scrollbars to the content area at the time of specified container size exceeding the content limit where the content gets enclosed. This makes the content invisible via clipping; also the overflow value will be hidden.
-
-Frontend development is an in-demand skill in many global organizations in 2023, making it a high-paid role in the IT industry.
-Multiple career opportunities available:
-CSS Developer | Front-end Developer | Software Developer
-Advanced CSS Interview Questions
-Here are some advanced CSS interview questions!
+some advanced CSS interview questions!
 
 1. When should you use translate () instead of absolute positioning?
 Translate is a CSS transform value. On changing opacity or transform, browser reflow or repaint is not triggered. Transform requires the browser to create a GPU layer for elements but using the CPU changes absolutes positioning properties. Translate () is more efficient and results in shorter paint times. On using translate (), element occupies original space, unlike in changing absolute positioning. 
@@ -331,10 +320,7 @@ background-color: blue;
 
 }
 
-New Course: Full Stack Development for Beginners
-Learn Git Command, Angular, NodeJS, Maven & MoreENROLL NOWNew Course: Full Stack Development for Beginners
-Frequently Asked CSS Interview Questions
-In this last section, we look at the most frequently asked CSS interview questions!
+*the most frequently asked CSS interview questions!
 
 1. Tell us something about CSS3.
 CSS3 is divided into modules and is supported by almost every browser. Many graphics-related characteristics are introduced in CSS3 like box-shadow, Border-radius, and flexbox. A user can create precise multiple background images using properties like background-position, background-repeat, and background-image styles. 
