@@ -46,10 +46,8 @@ CSS was developed to define the visual appearances of websites. It allows develo
 10. What is the difference between a class and an ID?
 Ans. Class is a way of using HTML elements for styling. They are not unique and have multiple elements. Whereas ID is unique and it can be assigned to a single element. 
 
-Unlock your potential as a Frontend Developer
-Why not take the opportunity to upskill now?ENROLL FOR FREEUnlock your potential as a Frontend Developer
-Intermediate CSS Interview Questions
-In the next section, let us learn some intermediate level CSS interview questions!
+
+ let us learn some intermediate level CSS interview questions!
 
 1. Define z-index.
 This is one of the most frequently asked CSS interview questions. Z-index is used to specify the stack order of elements that overlap each other. Its default value is zero and can take both negative and positive values. A higher z-index value is stacked above the lower index element. It takes the following values- auto, number, initial, and inherit. 
