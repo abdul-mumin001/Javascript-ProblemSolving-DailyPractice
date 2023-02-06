@@ -41,4 +41,46 @@ var findJudge = function(n, trust) {
   };
   console.log(findJudge(3,[[1,3],[2,3]]));
   console.log(findJudge(3,[[1,3],[2,3],[3,1]]));
+
+
+
+
+
+
+
+
+
+  var findJudge = function(n, trust) {
+    let personTrustMap = {}; // who this person trusts
+    let personTrusteeMap = {}; // who trusts this person
+
+    if (n === 1 && trust.length === 0) {
+        return 1;
+    }
+
+    for (let trustPair of trust) {
+        let personA = trustPair[0];
+        let personB = trustPair[1];
+
+        if (!personTrustMap[personA]) {
+            personTrustMap[personA] = 1;
+        } else {
+            personTrustMap[personA]++;
+        }
+
+        if (!personTrusteeMap[personB]) {
+            personTrusteeMap[personB] = 1;
+        } else {
+            personTrusteeMap[personB]++;
+        }
+    }
+
+    for (let i = 1; i <= n; i++) {
+        if (personTrusteeMap[i] === n - 1 && !personTrustMap[i]) {
+            return i;
+        }
+    }
+
+    return -1;
+};
   
