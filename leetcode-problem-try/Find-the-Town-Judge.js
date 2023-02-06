@@ -50,7 +50,7 @@ var findJudge = function(n, trust) {
 
 
 
-  var findJudge = function(n, trust) {
+  var findJudg = function(n, trust) {
     let personTrustMap = {}; 
     let personTrusteeMap = {}; 
 
@@ -84,3 +84,5 @@ var findJudge = function(n, trust) {
     return -1;
 };
   
+console.log(findJudg(3,[[1,3],[2,3]]));
+  console.log(findJudg(3,[[1,3],[2,3],[3,1]]));
