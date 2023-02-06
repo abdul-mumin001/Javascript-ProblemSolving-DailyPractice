@@ -51,8 +51,8 @@ var findJudge = function(n, trust) {
 
 
   var findJudge = function(n, trust) {
-    let personTrustMap = {}; // who this person trusts
-    let personTrusteeMap = {}; // who trusts this person
+    let personTrustMap = {}; 
+    let personTrusteeMap = {}; 
 
     if (n === 1 && trust.length === 0) {
         return 1;
