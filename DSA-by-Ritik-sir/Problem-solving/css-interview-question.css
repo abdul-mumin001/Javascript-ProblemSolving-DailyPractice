@@ -320,28 +320,36 @@ background-color: blue;
 
 }
 
-*the most frequently asked CSS interview questions!
+*The most frequently asked CSS interview questions!
 
 1. Tell us something about CSS3.
-CSS3 is divided into modules and is supported by almost every browser. Many graphics-related characteristics are introduced in CSS3 like box-shadow, Border-radius, and flexbox. A user can create precise multiple background images using properties like background-position, background-repeat, and background-image styles. 
+CSS3 is divided into modules and is supported by almost every browser. Many graphics-related characteristics are introduced in 
+CSS3 like box-shadow, Border-radius, and flexbox. A user can create precise multiple background images using properties like
+background-position, background-repeat, and background-image styles. 
 
 2. How is a CSS selector used?
-With a CSS selector, we can choose the content we want to style to bridge between HTML files and style sheets. CSS selector syntax is "select" HTML elements created on their class, id, type, etc. 
+With a CSS selector, we can choose the content we want to style to bridge between HTML files and style sheets. CSS selector syntax
+ is "select" HTML elements created on their class, id, type, etc. 
 
 3. What are CSS image scripts?
-A group of images placed into one image is a CSS image script. It can reduce load time and project multiple images into a single web page. 
+A group of images placed into one image is a CSS image script. It can reduce load time and project multiple images into a single web 
+page. 
 
 4. Explain CSS specificity.
-CSS specificity is a rank or score that decides style declaration to be used to an element. ID selectors have high specificity, while universal selector * has low specificity. The four CSS categories that authorize the selector's specificity level are IDs, inline style, elements/pseudo-elements, and classes and attributes. 
+CSS specificity is a rank or score that decides style declaration to be used to an element. ID selectors have high specificity, 
+while universal selector * has low specificity. The four CSS categories that authorize the selector's specificity level are IDs,
+ inline style, elements/pseudo-elements, and classes and attributes. 
 
 5. Define gradients in CSS. 
-A property of CSS that allows displaying smooth transformation between two or more specified colors. The types of gradients are linear and radial. 
+A property of CSS that allows displaying smooth transformation between two or more specified colors. The types of gradients are
+ linear and radial. 
 
 6. What are the properties of flexbox?
 The properties of flexbox are flex-direction, wrap, flow, content, and align-items, and content. 
 
 7. Tell us about the use of the CSS Box Model.
-The CSS Box model is a box binding HTML element that includes padding, border, margin, and the actual content. With the box model, we get the authority to add a border all around elements and define space between elements.  */ 
+The CSS Box model is a box binding HTML element that includes padding, border, margin, and the actual content. With the box model, 
+we get the authority to add a border all around elements and define space between elements.  */ 
 
 
 
@@ -349,7 +357,9 @@ The CSS Box model is a box binding HTML element that includes padding, border, m
 The four-position states in CSS are relative, static, absolute, and fixed. The default position state is static. 
 
 9. Differentiate between absolute and relative in CSS. 
-The main difference is that relative is used for the same tag in CSS. If we write right:20 px, then padding shifts 20 px in the right. Whereas absolute is relative to the non-static parent, i.e., if we write right:20 px, the result will be 20 px far from the right edge of the parent element.  
+The main difference is that relative is used for the same tag in CSS. If we write right:20 px, then padding shifts 20 px in the right.
+ Whereas absolute is relative to the non-static parent, i.e., if we write right:20 px, the result will be 20 px far from the right 
+ edge of the parent element.  
 
 10. What is common between class and ID?
 Both class and ID are used in HTML to assign a value from CSS. The ID is used as an element, whereas the class is used as a block.  */
