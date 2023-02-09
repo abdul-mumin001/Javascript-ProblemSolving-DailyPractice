@@ -226,3 +226,77 @@ Inline: Here we use the 'style' attribute inside the HTML element.
 Internal: Here we use the <style> tag inside the <head> tag. To apply the style we bind the elements using 'id' or 'class' attributes.
 External: Here we use the <link> tag inside <head> tag to reference the CSS file into our HTML code. Again the binding between elements
      and styles is done using 'id' or 'class' attributes. -->
+
+
+
+
+     <!-- 26. Difference between link tag <link> and anchor tag <a>?
+        The anchor tag <a> is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are
+             clickable, whereas, link tag <link> defines a link between a document and an external resource and these are not clickable.
+
+        
+        27. How to include javascript code in HTML?
+        HTML provides a <script> tag using which we can run the javascript code and make our HTML page more dynamic.
+        
+        <!DOCTYPE html>
+        <html>
+           <body>
+            <h1>
+                  <span>This is a demo for </span>
+                  <u><span id="demo"></span></u>
+           </h1>
+           <script>
+               document.getElementById("demo").innerHTML = "script Tag"
+           </script>
+           </body>
+        </html>
+        28. When to use scripts in the head and when to use scripts in the body?
+        If the scripts contain some event-triggered functions or jquery library then we should use them in the head section. If the 
+        script writes the content on the page or is not inside a function then it should be placed inside the body section at the 
+        bottom. In short, follow below three points:
+        
+        Place library scripts or event scripts in the head section.
+        Place normal scripts that do not write anything on the page, in the head section until there is any performance issue.
+        Place scripts that render something on the web page at the bottom of the body section.
+        29. What are forms and how to create forms in HTML?
+        The HTML form is used to collect the user inputs. HTML provides a <form> tag to create forms. To take input from the user 
+            we use the <input> tag inside the form so that all collected user data can be sent to the server for processing. There 
+            are different input types like 'button', 'checkbox', 'number', 'text', 'password', 'submit' etc.
+        
+        <form action="/submit_data.php">
+           <label>Enter your name: </label>
+           <input type="text" name="name" /> 
+           <label>Enter Mobile number </label>
+           <input type="number" name="mobile_no"/>
+           <input type="submit" value="Submit">
+        </form>
+        30. How to handle events in HTML?
+        HTML allows event trigger actions in browsers using javascript or JQuery. There are a lot of events like 'onclick', 'ondrag', 
+        'onchange', etc.
+        
+        <!DOCTYPE html>
+        <html>
+           <body style="padding-top:50px">
+               <h3 id="event_demo">0</h3>
+               <input type="button" onclick="myFunction()" value="Click Me" />
+               <input type="reset" onclick="reset()" value="Reset" />
+           </body>
+           
+        <script>
+               function myFunction() {
+                   var value = document.getElementById("event_demo").innerHTML
+                   value = parseInt(value) + 1;
+                   document.getElementById("event_demo").innerHTML = value;
+               }
+               function reset() {
+                   document.getElementById("event_demo").innerHTML = 0;
+               }
+           </script>
+        </html>      -->
+
+
+
+
+        
+
+
