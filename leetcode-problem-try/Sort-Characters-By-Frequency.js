@@ -24,34 +24,66 @@
 
 
 
+// var frequencySort = function(s) {
+//     let map=new Map()
+//     s=s.split("")
+//     s.forEach((item)=>{
+//           if(map.has(item)){
+//               map.set(item,map.get(item)+1)
+//           }
+//           else{
+//               map.set(item ,1)
+//           }
+//     })
+//     let res=[]
+//     map.forEach((key,val)=>{
+//              res.push([key,val])
+//     })
+//     res=res.sort((a,b)=>{
+//         return b[0]-a[0]
+//     })
+//     let result=""
+   
+//    res.forEach((item)=>{
+//        for(let i=0;i<item[0];i++){
+//            result+=item[1]
+//        }
+
+//    })
+   
+
+//     return result
+    
+// };
+
+
+
+
 var frequencySort = function(s) {
-    let map=new Map()
-    s=s.split("")
-    s.forEach((item)=>{
-          if(map.has(item)){
-              map.set(item,map.get(item)+1)
-          }
-          else{
-              map.set(item ,1)
-          }
-    })
-    let res=[]
-    map.forEach((key,val)=>{
-             res.push([key,val])
-    })
-    res=res.sort((a,b)=>{
-        return b[0]-a[0]
-    })
-    let result=""
-   
-   res.forEach((item)=>{
-       for(let i=0;i<item[0];i++){
-           result+=item[1]
-       }
-
-   })
-   
-
-    return result
+    let obj={};
+    let str='';
+for(let i=0;i<s.length;i++) {
+    if(obj[s[i]]){
+        obj[s[i]] += 1;
+    } else {
+        obj[s[i]] = 1
+    }
+}
+let arr = Object.entries(obj);
+for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+        if(arr[j] && arr[j][1] > arr[i][1]){
+            let temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+}
+for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr[i][1];j++){
+        str += arr[i][0]
+    }  
+}
+return str;
     
 };
