@@ -23,42 +23,6 @@
 
 
 
-
-// var frequencySort = function(s) {
-//     let map=new Map()
-//     s=s.split("")
-//     s.forEach((item)=>{
-//           if(map.has(item)){
-//               map.set(item,map.get(item)+1)
-//           }
-//           else{
-//               map.set(item ,1)
-//           }
-//     })
-//     let res=[]
-//     map.forEach((key,val)=>{
-//              res.push([key,val])
-//     })
-//     res=res.sort((a,b)=>{
-//         return b[0]-a[0]
-//     })
-//     let result=""
-   
-//    res.forEach((item)=>{
-//        for(let i=0;i<item[0];i++){
-//            result+=item[1]
-//        }
-
-//    })
-   
-
-//     return result
-    
-// };
-
-
-
-
 var frequencySort = function(s) {
     let obj={};
     let str='';
