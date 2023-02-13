@@ -87,4 +87,3 @@ for(let i=0;i<arr.length;i++){
 return str;
     
 };
-console.log(frequencySort('cccaaa'));
