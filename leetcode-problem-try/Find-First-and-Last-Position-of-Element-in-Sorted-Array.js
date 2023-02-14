@@ -33,3 +33,15 @@ var searchRange = function(nums, target) {
 console.log(searchRange([5,7,7,8,8,10],6));
 console.log(searchRange([5,7,7,8,8,10],8));
 console.log(searchRange([],0));
+
+
+
+// Another way 
+
+var searchRang = function(nums, target) {
+   var s = nums.sort((a,b)=>a-b);
+  return [s.indexOf(target), s.lastIndexOf(target)];
+};
+console.log(searchRang([5,7,7,8,8,10],6));
+console.log(searchRang([5,7,7,8,8,10],8));
+console.log(searchRang([],0));
