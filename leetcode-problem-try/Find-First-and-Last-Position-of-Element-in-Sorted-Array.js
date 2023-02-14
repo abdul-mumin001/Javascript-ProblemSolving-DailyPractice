@@ -30,3 +30,6 @@ var searchRange = function(nums, target) {
         return [result[0], result.pop()]
     }
 };
+console.log(searchRange([5,7,7,8,8,10],6));
+console.log(searchRange([5,7,7,8,8,10],8));
+console.log(searchRange([],0));
