@@ -47,6 +47,3 @@ var maxChunksToSort = function(arr) {
    
    return chunk;
 }
-
-console.log(maxChunksToSort([1,0,2,3,4]))
-console.log(maxChunksToSort([4,3,2,1,0]));
