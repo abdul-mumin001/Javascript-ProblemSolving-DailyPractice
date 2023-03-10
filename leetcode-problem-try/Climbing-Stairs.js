@@ -35,9 +35,7 @@ var climbStairs = function(n) {
 };
 console.log(climbStairs(2))
 console.log(climbStairs(3))
-console.log(climbStairs(4))
-console.log(climbStairs(5))
-console.log(climbStairs(6))
+
 
 
 // second way 
@@ -58,4 +56,3 @@ var climbStair = function(n) {
 
 console.log(climbStair(2))
 console.log(climbStair(3))
-console.log(climbStair(4))
