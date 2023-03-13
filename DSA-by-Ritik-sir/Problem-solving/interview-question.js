@@ -918,3 +918,110 @@
 // },2000)
 
 
+
+// add()
+// function add(){
+//     console.log("adding");
+// }
+// setTimeout(()=>{
+//     console.log("zero");
+// },0)
+
+
+// const sub=function(){
+//     console.log("substracting");
+// }
+// sub()
+
+// setTimeout(()=>{
+//     console.log("vasant");
+// },2000)
+
+// setTimeout(()=>{
+//     console.log("kumar");
+// },2000)
+
+
+
+
+
+
+//IIFE-> Immediately Invoked Function Expression
+
+// (function add(){
+//     console.log("adding")
+// })();
+
+
+
+
+// Object
+
+// let obj={
+//     add(){
+//         console.log(this)
+//     }
+// };
+// obj.add()
+
+
+// let obj={
+//     add:function(){
+//         console.log(this)
+//     }
+// };
+// obj.add()
+
+
+// let obj={
+//     name: "mumin",
+//     add:function(){
+//         console.log(this.name)
+
+//     }
+// }
+// obj.add()
+
+
+
+
+
+
+// const mumin=()=>{
+//     console.log(this)
+// };
+// mumin()
+
+
+// function mumin(){
+//     console.log(this);
+// }
+// new mumin()
+
+
+
+// let obj={
+//         name: "mumin",
+//         add:function(){
+//             mumin=()=>{
+//                 console.log(this.name)
+
+//             }
+//            mumin()
+    
+//         }
+//     }
+//     obj.add()
+
+
+
+
+// let words="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati illo, atque veritatis laudantium molestias quod velit ad aut doloremque aperiam. Quasi expedita cupiditate voluptatem ratione minus, corporis quas asperiores."
+// let splitword=words.split(" ")
+// let [firstword,secondword,...remainingwords]=splitword
+    
+//     console.log(firstword,secondword,remainingwords)
+
+
+
+
