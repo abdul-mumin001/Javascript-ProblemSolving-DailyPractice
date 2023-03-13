@@ -1025,3 +1025,58 @@
 
 
 
+// let obj={
+//     name:"mumin",
+//     age:22,
+//     color:"black"
+
+// }
+// let {name,age,color}=obj;
+// console.log(name,age,color)
+// console.log(obj.name,obj.age,obj.color)
+
+
+
+// let arr=[1,3,4,5]
+// arr.splice(1,0,2)
+// console.log(arr)
+
+
+
+// let arr=[1,3,4,5]
+// arr.splice(3,0,6)
+// console.log(arr)
+
+
+
+// let arr=[1,2,3,"mumin"];
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]==="mumin"){
+//         console.log(i);
+//     }
+// }
+
+
+// let arr=[1,2,3,"mumin"];
+// for(let value of arr){
+//     console.log(value);
+// }
+
+
+
+// let obj={
+//     name:"mumin",
+//     age:22,
+//     city:'silchar',
+
+// }
+// for(let key in obj){
+//     console.log(key,obj[key]);
+// }
+
+
+
+
+// const arr=[1,2,3]
+// arr[121]=201;
+// console.log(arr);
