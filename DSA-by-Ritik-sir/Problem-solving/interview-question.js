@@ -1011,3 +1011,35 @@ console.log(!null);
 // let arr=[1,3,4,5]
 // arr.splice(3,0,6)
 // console.log(arr)
+
+
+
+let a=[1,2,3,"mumin"];
+for(let i=0;i<a.length;i++){
+    if(a[i]==="mumin"){
+        console.log(i);
+    }
+}
+
+
+let ar=[1,2,3,"mumin"];
+for(let value of ar){
+    console.log(value);
+}
+
+
+
+let obj={
+    name:"mumin",
+    age:22,
+    city:'silchar',
+
+}
+for(let key in obj){
+    console.log(key,obj[key]);
+}
+
+
+const arr=[1,2,3]
+arr[121]=201;
+console.log(arr);
