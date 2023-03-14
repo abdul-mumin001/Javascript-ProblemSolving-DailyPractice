@@ -536,9 +536,6 @@
 // console.log("Hey!!")
 
 
-
-
-
 // clouser
 
 // A clouser is the combination of function bundled together with refference to its surrounding state (the lexical environment). 
@@ -571,9 +568,6 @@
 // myFunc();
 
 
-
-
-
 //IIFE
 // An IIFE (immediately Invoked Function Expression)  is  javascript function that runs as soon as it is defined.
 // The name IIFE is promted by Ben Alman in his blog. 
@@ -590,9 +584,6 @@
 //      return name;
 // })();
 // console.log(result);
-
-
-
 
 
 // There are 3 ways of writing function in javascript 
@@ -624,7 +615,6 @@
 
 
 
-
 // null vs. empty 
 // The value of null represents the absence of any  object. while the empty string is an type of string with zero characters.
 // If you try to compare the two they are not the same.
@@ -637,7 +627,6 @@
 //   } console.log("Not runs");
 
 // console.log(varA===varC);
-
 
 
 
@@ -665,7 +654,6 @@
 
 
 
-
 // use of map
 
 // const arr=[1,2,3]
@@ -686,8 +674,6 @@
 // }
 //  const output=arr.map(binary);
 //  console.log(output);
-
-
 
 
 // filter function
@@ -724,9 +710,6 @@
 
 
 
-
-
-
 // ------------------------------------------------------------------*****-------------------------------------------------------------//
 
 // let ischecked=1;
@@ -751,32 +734,32 @@
 // console.log(ischecked,ischecked[0],ischecked[1]);
 
 
-// console.log(10+10);
-// console.log("10"+10);
-// console.log("20"+"10");
-// console.log("20"-"10");
-// console.log("20"-10);
-// console.log("a"-"b");
-// console.log("a"+"b");
+console.log(10+10);
+console.log("10"+10);
+console.log("20"+"10");
+console.log("20"-"10");
+console.log("20"-10);
+console.log("a"-"b");
+console.log("a"+"b");
 
-// console.log(10*20);
-// console.log("10"*2);
-// console.log("b"*2);
+console.log(10*20);
+console.log("10"*2);
+console.log("b"*2);
 
-// console.log(10/2);
-// console.log("10"/2);
-// console.log("b"/2);
+console.log(10/2);
+console.log("10"/2);
+console.log("b"/2);
 
-// console.log(!!1);
-// console.log(!0);
-// console.log(!!0);
-// console.log({}==={});
-// console.log(!'');
-// console.log(!undefined);
-// console.log(false || undefined);
-// console.log(10 &&"dfa");
+console.log(!!1);
+console.log(!0);
+console.log(!!0);
+console.log(!'');
+console.log({}==={});
+console.log(!undefined);
+console.log(false || undefined);
+console.log(10 &&"dfa");
 
-// console.log(!null);
+console.log(!null);
 
 // let news='vasant'
 
@@ -806,7 +789,6 @@
 
 
 
-
 // const sub=function(){
 //     console.log("sub")
 // }
@@ -815,7 +797,6 @@
 // const a=function(){
 //     console.log("sub")
 // }
-
 
 
 // print odd even
@@ -834,7 +815,6 @@
 
 
 
-
 // join two arr together
 
 // let arr1=[1,2,3]
@@ -843,12 +823,10 @@
 // console.log(arr3)
 
 
-
 // let arr1=[1,2,3]
 // let arr2=[4,5,6]
 // let arr3=arr1.concat('abdul',arr2,'mumin')
 // console.log(arr3)
-
 
 
 // let arr1=[1,2,3]
@@ -858,7 +836,6 @@
 
 //difference of concat and spread operator is that,
 //  by using spread operator we can add element befor the first arr but in concat we can't
-
 
 
 // declaration()
@@ -873,8 +850,6 @@
 
 // we can not call function expression befor
 //  but we can call function declaration before
-
-
 
 
 // var name='vasant'
@@ -941,17 +916,11 @@
 //     console.log("kumar");
 // },2000)
 
-
-
-
-
-
 //IIFE-> Immediately Invoked Function Expression
 
 // (function add(){
 //     console.log("adding")
 // })();
-
 
 
 
@@ -981,10 +950,6 @@
 //     }
 // }
 // obj.add()
-
-
-
-
 
 
 // const mumin=()=>{
@@ -1046,37 +1011,3 @@
 // let arr=[1,3,4,5]
 // arr.splice(3,0,6)
 // console.log(arr)
-
-
-
-// let arr=[1,2,3,"mumin"];
-// for(let i=0;i<arr.length;i++){
-//     if(arr[i]==="mumin"){
-//         console.log(i);
-//     }
-// }
-
-
-// let arr=[1,2,3,"mumin"];
-// for(let value of arr){
-//     console.log(value);
-// }
-
-
-
-// let obj={
-//     name:"mumin",
-//     age:22,
-//     city:'silchar',
-
-// }
-// for(let key in obj){
-//     console.log(key,obj[key]);
-// }
-
-
-
-
-// const arr=[1,2,3]
-// arr[121]=201;
-// console.log(arr);
