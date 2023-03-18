@@ -1,3 +1,4 @@
+// sum recursive
 function sum(n) {
     if (n <= 1) {
       return n;

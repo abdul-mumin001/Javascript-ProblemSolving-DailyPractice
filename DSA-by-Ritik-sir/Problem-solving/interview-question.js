@@ -1043,4 +1043,3 @@ for(let key in obj){
 const arr=[1,2,3]
 arr[121]=201;
 console.log(arr);
-
