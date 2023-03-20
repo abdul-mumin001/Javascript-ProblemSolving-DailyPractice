@@ -36,3 +36,4 @@ function checkStringsAnagram(a, b) {
     }
  }
  checkStringsAnagram("indian","ndiani")
+ checkStringsAnagram('hackathon','achcthoon')
