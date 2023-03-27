@@ -71,9 +71,6 @@ console.log("hello console")
 // mumin=savings(12000,13000,2000,4000,5000,23000);
 // joyin=savings(2100,2000,1000,300,4000,500000);
 
-// console.log(prakash)
-// totalsavings= prakash+mumin+joyin;
-// console.log(totalsavings,"totalsavings") 
 
 
 
