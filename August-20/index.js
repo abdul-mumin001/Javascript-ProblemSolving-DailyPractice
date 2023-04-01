@@ -1,5 +1,3 @@
-//ABDUL MUMIN
-
 // Q1. Take a 3 digit number and print the reverse of that number.
 //  i/p=123;  o/p=3,2,1
 
