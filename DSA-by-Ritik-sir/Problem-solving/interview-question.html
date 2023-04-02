@@ -389,3 +389,184 @@ to it, you will love its brevity. $() function is used to wrap any object into a
 
 -->
 
+<!-- 15. What are the advantages of using jQuery?
+Easy to use and learn
+Easily expandable
+Cross-browser support (IE 6.0+, FF 1.5+, Safari 2.0+, Opera 9.0+)
+Easy to use for DOM manipulation and traversal
+Large pool of built-in methods
+AJAX capabilities
+Methods for changing or applying CSS, creating animations
+Event detection and handling
+Tons of plug-ins for all kinds of needs
+16. Explain the difference between ID selector and class selector in jQuery.
+If you have used CSS, then you might know the difference between ID and class selector. It’s the same with jQuery. ID selector uses ID 
+e.g. #element1 to select element, while class selector uses CSS class to select elements. When you just need to select only one element,
+ use ID selector, while if you want to select a group of elements, having the same CSS class then use a class selector. There is a good 
+ chance that the interviewer will ask you to write a code using ID and class selector. From a syntax perspective, as you can see,
+  another difference between ID and class selector is that the former uses “#” and later uses the “.” character.
+
+17. What is the difference between $(this) and this keyword in jQuery?
+This could be a tricky question for many jQuery beginners, but it’s in fact the simplest one. $(this) returns a jQuery object, on which
+ you can call several jQuery methods e.g. text() to retrieve text, val() to retrieve value, etc. While this represents the current element, it’s one of the JavaScript keywords to denote the current DOM element in a context. You can not call the jQuery method on this until it’s wrapped using the $() function i.e. $(this).
+
+18. What is the main advantage of loading the jQuery library using CDN?
+This is a slightly advanced jQuery question, and don’t expect that jQuery beginners can answer that. Well, apart from many advantages 
+including reducing server bandwidth and faster download, one of the most important advantages is that if the browser has already downloaded  the same jQuery version from the same CDN, then it won’t download it again. Nowadays, almost any public website uses jQuery for user interaction and animation, so there is a very good chance that browsers already have the jQuery library downloaded.
+
+
+19. What is “Semantic HTML?”
+Semantic HTML is a coding style where the tags embody what the text is meant to convey. Also known as semantic markup, this HTML
+ introduces meaning to the web page rather than just presentation. For example, a <p> tag indicates that the enclosed text is a paragraph.
+
+Tags for bold and italic are not examples of semantic HTML as they just represent formatting and provide no indication of meaning or 
+structure.
+
+20. What is a class? What is an ID?
+A class is a style (i.e., a group of CSS attributes) that can be applied to one or more HTML elements. This means it can apply to 
+instances of the same element or instances of different elements to which the same style can be attached. Classes are defined in CSS
+ using a period followed by the class name. It is applied to an HTML element via the class attribute and the class name.
+
+The following snippet shows a class defined and its application to an HTML DIV element.
+
+.test {
+font-family: Helvetica;
+font-size: 20;
+background: black;
+}
+test
+Also, you could define a style for all elements with a defined class. This is demonstrated with the following code that selects all P 
+elements with specified column class.
+
+p.column {
+font-color: black;
+}
+An ID selector is a name assigned to a specific style. It can be associated with one HTML element with the assigned ID. Within CSS, ID 
+selectors are defined with the # character followed by the selector name.
+
+The following snippet shows the CSS example1 defined followed by the use of an HTML element’s ID attribute, which pairs it with the CSS 
+selector.
+
+#example1 {
+background: blue;
+}
+21. What is Grouping?
+When more than one selector shares the same declaration, they may be grouped together via a comma-separated list; this allows you to 
+reduce the size of the CSS (every bit and byte is important) and makes it more readable. The following snippet applies the same 
+background to the first three heading elements.h1, h2, h3 {background: red;}
+
+22. Why do we use alternative texts in images?
+Image mapping can get confusing if it is hard to understand which hotspots correspond to a particular link. Alternative texts include a 
+description at each link making it easier to understand the hotspot links.
+
+23. How to create a new HTML element?
+New HTML elements can be created in the following way:
+
+<script>
+document.createElement﴾"myElement"﴿
+</script>
+or
+
+<myElement>hello Intellipaat!</myElement>
+24. What are the uses of a span tag? Explain with an example.
+The span tag is used for styling purposes like:
+
+Adding color to text
+Highlighting any color text
+Adding background on text
+Example:
+
+<span style="color:#ffffff;">
+In this page we use span.
+
+</span>
+25. Explain the key differences between localStorage and sessionStorage objects.
+The key differences between localStorage and sessionStorage objects are:
+
+The localStorage object stores data indefinitely, while sessionStorage object stores them for only one session.
+In the case of a localStorage object, when the browser window is closed, the data will not be erased. However, in the case of 
+sessionStorage objects, the data will get erased after the browser window is closed.
+The data that is stored in the sessionStorage is accessible only in the current browser window. The data that is stored in the 
+localStorage can be accessed by multiple browser windows.
+26. What is the hierarchy when it comes to style sheets?
+If there are three different style definitions in a single selector, precedence is given to the definition that is closest to the
+ actual tag. Inline style sheets take priority over embedded style sheets. Between embedded style sheets an external style sheets, 
+ embedded style takes precedence.
+
+27. How do active links differ from normal links?
+Normal and active links have blue as their default color. Certain browsers are capable of detecting an active link when the mouse 
+cursor hovers over that link. The other browsers detect the active link when the link has the focus. An active link is in the action 
+of opening the resource that is being pointed to.
+
+Normal link contains a pointer to another resource. Those links don't have a mouse cursor over it. A normal link becomes an active 
+link when the user clicks on it.
+
+28. What is the significance of and tag in HTML?
+<head> contains the information about the document. It is always enclosed in the <html> tag. <head> contains the webpage metadata and 
+    tags like <style>, <link>, <meta>, <script>, etc. that are not displayed on the web page. In an HTML document. there can be only 
+    one <head> tag and it is one used before the <body> tag.
+
+<body> defines the body of an HTML document and is always enclosed within the <html> tag. Any content that needs to be displayed on
+     the web page, such as text, audio, images, video, contents, can be done using tags like <p>, <img>, <audio>, <heading>, <video>, 
+        <div>, etc. These tags have to be enclosed within the <body> tag. There can be only one <body> element in an HTML document and
+             it is used after the <head> tag.
+
+29. How can a table be displayed on an HTML webpage?
+Data can be displayed in a tabular format with the help of the <table> tag. It can also be used to manage the layout of the web page.
+     For example, the header section, the navigation bar, the content of the body, and the footer section.
+
+The following HTML tags are used for when building a table on an HTML webpage:
+
+Tag	Description
+<table>	This tag defines the table.
+<tr>	The <tr> tag is used to define a row in the table.
+<th>	It is used for defining the header cell in a table.
+<td>	The <td> tag defines a cell in a table.
+<caption>	It defines the table caption.
+<colgroup>	It specifies a group of one or multiple columns for the purpose of formatting.
+<col>	This tag is used with <colgroup> for specifying column properties for each column.
+<tbody>	<tbody> groups the content of the body in a table.
+<thead>	It groups the header content in a table.
+<tfoot>	<tfoot> groups the footer content in a table.
+30. How do you create links to different sections within the same HTML web page?
+Links to different sections can be created within the same web page by using the <a> tag, along with the # symbol for referencing.
+
+31. How can you create nested web pages in HTML?
+When there are web pages within a webpage, these are called nested web pages. These nested web pages in HTML can be developed with the
+ help of the built-in <iframe> tag. It defines an inline frame. For example:
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>HTML Iframes example</h2>
+    <p>
+      specify the size of the iframe using the height and width attributes:
+    </p>
+    <iframe src="https://intellipaat.com/" height="500" width="700"></iframe>
+  </body>
+</html>
+32. How can you add buttons in HTML?
+Buttons can be added to an HTML web page by using the built-in Button tag.
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Example of HTML Button Tag</h2>
+<button name="button" type="button">CLICK HERE</button>
+</body>
+</html>
+33. What are the different types of headings in HTML?
+There are six different types of headings in HTML. These are defined using the <h1> to <h6> tags. Each heading type has a different text
+     size–<h1> being the largest and <h6> being the smallest. For example:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Place Heading 1 here</h1>
+<h2>Place Heading 2 here</h2>
+<h3>Place Heading 3 here</h3>
+<h4>Place Heading 4 here</h4>
+<h5>Place Heading 5 here</h5>
+<h6>Place Heading 6 here</h6>
+</body>
+</html> -->
