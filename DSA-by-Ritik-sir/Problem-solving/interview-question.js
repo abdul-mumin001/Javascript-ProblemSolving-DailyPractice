@@ -734,32 +734,32 @@
 // console.log(ischecked,ischecked[0],ischecked[1]);
 
 
-console.log(10+10);
-console.log("10"+10);
-console.log("20"+"10");
-console.log("20"-"10");
-console.log("20"-10);
-console.log("a"-"b");
-console.log("a"+"b");
+// console.log(10+10);
+// console.log("10"+10);
+// console.log("20"+"10");
+// console.log("20"-"10");
+// console.log("20"-10);
+// console.log("a"-"b");
+// console.log("a"+"b");
 
-console.log(10*20);
-console.log("10"*2);
-console.log("b"*2);
+// console.log(10*20);
+// console.log("10"*2);
+// console.log("b"*2);
 
-console.log(10/2);
-console.log("10"/2);
-console.log("b"/2);
+// console.log(10/2);
+// console.log("10"/2);
+// console.log("b"/2);
 
-console.log(!!1);
-console.log(!0);
-console.log(!!0);
-console.log(!'');
-console.log({}==={});
-console.log(!undefined);
-console.log(false || undefined);
-console.log(10 &&"dfa");
+// console.log(!!1);
+// console.log(!0);
+// console.log(!!0);
+// console.log(!'');
+// console.log({}==={});
+// console.log(!undefined);
+// console.log(false || undefined);
+// console.log(10 &&"dfa");
 
-console.log(!null);
+// console.log(!null);
 
 // let news='vasant'
 
