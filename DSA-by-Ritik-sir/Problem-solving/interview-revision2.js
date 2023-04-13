@@ -158,23 +158,23 @@
 // Example:
 
 
-var promise = new Promise(function(resolve, reject) { 
-	const x = "aircampus"; 
-	const y = "aircampus"
-	if(x === y) { 
-	  resolve(); 
-	} else { 
-	  reject(); 
-	} 
-  }); 
+// var promise = new Promise(function(resolve, reject) { 
+// 	const x = "aircampus"; 
+// 	const y = "aircampus"
+// 	if(x === y) { 
+// 	  resolve(); 
+// 	} else { 
+// 	  reject(); 
+// 	} 
+//   }); 
 	  
-  promise. 
-	  then(function () { 
-		  console.log('Success, You are a part of aircampus'); 
-	  }). 
-	  catch(function () { 
-		  console.log('Some error has occurred'); 
-	  });
+//   promise. 
+// 	  then(function () { 
+// 		  console.log('Success, You are a part of aircampus'); 
+// 	  }). 
+// 	  catch(function () { 
+// 		  console.log('Some error has occurred'); 
+// 	  });
 
 
 

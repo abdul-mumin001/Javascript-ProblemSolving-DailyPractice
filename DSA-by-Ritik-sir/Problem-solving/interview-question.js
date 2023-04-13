@@ -1014,32 +1014,32 @@
 
 
 
-let a=[1,2,3,"mumin"];
-for(let i=0;i<a.length;i++){
-    if(a[i]==="mumin"){
-        console.log(i);
-    }
-}
+// let a=[1,2,3,"mumin"];
+// for(let i=0;i<a.length;i++){
+//     if(a[i]==="mumin"){
+//         console.log(i);
+//     }
+// }
 
 
-let ar=[1,2,3,"mumin"];
-for(let value of ar){
-    console.log(value);
-}
+// let ar=[1,2,3,"mumin"];
+// for(let value of ar){
+//     console.log(value);
+// }
 
 
 
-let obj={
-    name:"mumin",
-    age:22,
-    city:'silchar',
+// let obj={
+//     name:"mumin",
+//     age:22,
+//     city:'silchar',
 
-}
-for(let key in obj){
-    console.log(key,obj[key]);
-}
+// }
+// for(let key in obj){
+//     console.log(key,obj[key]);
+// }
 
 
-const arr=[1,2,3]
-arr[121]=201;
-console.log(arr);
+// const arr=[1,2,3]
+// arr[121]=201;
+// console.log(arr);
