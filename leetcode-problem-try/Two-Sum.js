@@ -12,27 +12,6 @@
 // Output: [1,2]
 
 
-
-
-var twoSum = function(nums, target) {
-    let newObj = {};
-  
-    for(let i = 0; i < nums.length; i++) {
-      const n = nums[i];
-      if(newObj[target - n] !== undefined) {
-        return [newObj[target - n], i];
-      }
-      newObj[n] = i;
-    }
-    return [];
-
-};
-
-console.log(twoSum([3,2,4],6))
-
-
-
-
 var twoSum = function(nums, target) {
  const m = new Map();
     
