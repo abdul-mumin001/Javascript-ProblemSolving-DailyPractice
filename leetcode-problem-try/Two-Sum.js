@@ -12,26 +12,26 @@
 // Output: [1,2]
 
 
-var twoSum = function(nums, target) {
- const m = new Map();
+// var twoSum = function(nums, target) {
+//  const m = new Map();
     
-    for (let i = 0; i < nums.length; i++) {
-        const curNum = nums[i];
+//     for (let i = 0; i < nums.length; i++) {
+//         const curNum = nums[i];
         
-        if (m.get(curNum) !== undefined)
-            return [i, m.get(curNum)];
+//         if (m.get(curNum) !== undefined)
+//             return [i, m.get(curNum)];
         
-        m.set(target - curNum, i);
-    }
+//         m.set(target - curNum, i);
+//     }
 
 
 
-let storage={};
-for(let [i,num] of nums.entries()){
-    if(storage[num] !== undefined)
-    return [storage[num],i];
-    storage[target-num]=i;
-}
-};
+// let storage={};
+// for(let [i,num] of nums.entries()){
+//     if(storage[num] !== undefined)
+//     return [storage[num],i];
+//     storage[target-num]=i;
+// }
+// };
 
-console.log(twoSum([2,7,11,15],9))
+// console.log(twoSum([2,7,11,15],9))
