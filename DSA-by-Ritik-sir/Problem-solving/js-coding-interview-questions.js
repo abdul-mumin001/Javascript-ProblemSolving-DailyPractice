@@ -35,6 +35,8 @@ function reverseBySeparator(string, separator) {
 
 // Q3: How to check if an object is an array or not? Provide some code.
 
+// Ans-
+
 if(Object.prototype.toString.call(arrayList) === '[object Array]') {
   console.log('Array!');
 }
