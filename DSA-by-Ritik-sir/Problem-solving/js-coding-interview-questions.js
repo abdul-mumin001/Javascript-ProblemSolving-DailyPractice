@@ -43,3 +43,18 @@ if(Object.prototype.toString.call(arrayList) === '[object Array]') {
 else{
   console.log('Not an Array!');
 }
+
+
+
+// Q4: How to empty an array in JavaScript?
+
+// Problem
+var arrayList =  ['a', 'b', 'c', 'd', 'e', 'f'];
+
+// Ans-
+
+arrayList.length = 0;
+var arrayList = ['a', 'b', 'c', 'd', 'e', 'f'];   // Created array
+var anotherArrayList = arrayList;    // Referenced arrayList by another variable
+arrayList.length = 0;   // Empty the array by setting length to 0
+console.log(anotherArrayList);   // Output []
