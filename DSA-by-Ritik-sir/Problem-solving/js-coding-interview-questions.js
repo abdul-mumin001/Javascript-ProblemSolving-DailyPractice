@@ -58,3 +58,17 @@ var arrayList = ['a', 'b', 'c', 'd', 'e', 'f'];   // Created array
 var anotherArrayList = arrayList;    // Referenced arrayList by another variable
 arrayList.length = 0;   // Empty the array by setting length to 0
 console.log(anotherArrayList);   // Output []
+
+
+
+// Q5: How would you check if a number is an integer?
+
+// Ans-
+
+function isInt(num) {
+  return num % 1 === 0;
+}
+
+console.log(isInt(4));  // true
+console.log(isInt(12.2));  // false
+console.log(isInt(0.3));   // false
