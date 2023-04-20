@@ -78,7 +78,7 @@ console.log(isInt(0.3));   // false
 
 // Q6: Implement enqueue and dequeue using only two stacks. 
 // Ans-
-
+// Enqueue means to add an element, dequeue to remove an element.
 
 var inputStack = [];  // First stack
 var outputStack = [];  // Second stack
