@@ -101,3 +101,15 @@ function dequeue(stackInput, stackOutput) {
 
   return stackOutput.pop();
 }
+
+
+// Q7: Make this work
+// Problem
+// duplicate([1, 2, 3, 4, 5]); [1,2,3,4,5,1,2,3,4,5]
+
+// Ans-
+function duplicate(arr) {
+  return arr.concat(arr);
+}
+
+console.log(duplicate([1, 2, 3, 4, 5]));  // output:  [1,2,3,4,5,1,2,3,4,5]
