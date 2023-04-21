@@ -124,9 +124,12 @@ console.log(mul(4)(3)(4)); // output : 48
 
 // Ans- 
 function mul (x) {
-  return function (y) {      // anonymous function
-    return function (z) {    // anonymous function
+  return function (y) {      
+
+    return function (z) { 
+
       return x * y * z;
+      
     };
   };
 }
