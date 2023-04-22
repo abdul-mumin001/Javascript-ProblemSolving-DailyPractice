@@ -162,5 +162,5 @@ function createBase(baseNumber) {
   }
 }
 var addSix = createBase(6);
-addSix(10);
-addSix(21);
+console.log(addSix(10));
+console.log(addSix(21));
