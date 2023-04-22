@@ -136,3 +136,27 @@ function mul (x) {
 
 // Here mul function accept the first argument and return anonymous function which take the second parameter and return anonymous 
 // function which take the third parameter and return multiplication of arguments which is being passed in successive
+
+
+
+
+// Q9: Write a function that would allow you to do this?
+
+// Problem
+// var addSix = createBase(6);
+// addSix(10);   // returns 16
+// addSix(21);   // returns 27
+
+
+// Ans -
+
+function createBase(baseNumber) {
+  return function(N) {
+    // we are referencing baseNumber here even though it was declared
+    // outside of this function. Closures allow us to do this in JavaScript
+    return baseNumber + N;
+  }
+}
+var addSix = createBase(6);
+addSix(10);
+addSix(21);
