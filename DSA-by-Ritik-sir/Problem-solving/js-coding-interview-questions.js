@@ -195,7 +195,8 @@ for (let i = 1; i <= 100; i++) {
 var firstWord = "Mary";
 var secondWord = "Army";
 
-isAnagram(firstWord, secondWord);    // true
+console.log(isAnagram(firstWord, secondWord)); 
+
 
 function isAnagram(first, second) {
   //change both words to lowercase.
