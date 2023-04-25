@@ -183,3 +183,28 @@ for (let i = 1; i <= 100; i++) {
 
   console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
 }
+
+
+
+
+// Q11: Given two strings, return true if they are anagrams of one another 
+// Problem
+// eg.: Mary is an anagram of Army
+
+
+var firstWord = "Mary";
+var secondWord = "Army";
+
+isAnagram(firstWord, secondWord);    // true
+
+function isAnagram(first, second) {
+  //change both words to lowercase.
+  var a = first.toLowerCase();
+  var b = second.toLowerCase();
+
+  // Sort the strings, and join the resulting array to a string
+  a = a.split("").sort().join("");
+  b = b.split("").sort().join("");
+
+  return a === b;
+}
