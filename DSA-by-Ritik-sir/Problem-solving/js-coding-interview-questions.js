@@ -216,6 +216,10 @@ function isAnagram(first, second) {
 
 
 // Q12: How would you use a closure to create a private counter? 
+// Ans-
+// You can create a function within an outer function (a closure) that allows you to update a private variable but the variable 
+// wouldn't be accessible from outside the function without the use of a helper function.
+
 
 function counter() {
   var _counter = 0;
