@@ -238,5 +238,4 @@ c.add(5);
 c.add(9); 
 
 // now we can access the private variable in the following way
-console.log(c.retrieve()); 
-// The counter is currently at: 14
+console.log(c.retrieve());   //output: The counter is currently at: 14
