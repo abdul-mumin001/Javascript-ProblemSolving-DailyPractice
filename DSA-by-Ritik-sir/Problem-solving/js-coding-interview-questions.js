@@ -239,3 +239,19 @@ c.add(9);
 
 // now we can access the private variable in the following way
 console.log(c.retrieve());   //output: The counter is currently at: 14
+
+
+
+
+
+// Q13: Provide some examples of non-bulean value coercion to a boolean one
+
+// Ans- 
+// The question is when a non-boolean value is coerced to a boolean, does it become true or false, respectively?
+
+// The specific list of "falsy" values in JavaScript is as follows:
+
+ ""   //(empty string)
+ 0, -0, NaN   //(invalid number)
+ null, undefined
+ false
