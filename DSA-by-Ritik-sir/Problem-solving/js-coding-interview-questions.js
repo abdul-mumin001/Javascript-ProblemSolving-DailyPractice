@@ -284,5 +284,12 @@ if (1) {
   eval(function foo() {});
   k += typeof foo;
 }
-console.log(k);
-// output 1undefined
+console.log(k);  // output 1undefined
+
+
+var k = 1;
+if (1) {
+  function foo() {};
+  k += typeof foo;
+}
+console.log(k);  // output 1function
