@@ -263,3 +263,16 @@ console.log(c.retrieve());   //output: The counter is currently at: 14
 // [ ], [ 1, "2", 3 ]    //(arrays)
 // { }, { a: 42 }   //(objects)
 // function foo() {..}   //(functions)
+
+
+
+// Q14: What will be the output of the following code?
+ 
+// Problem
+var y = 1;
+if (function f() {}) {
+  console.log(y);
+  y += typeof f;
+  console.log(y);
+}
+console.log(y);
