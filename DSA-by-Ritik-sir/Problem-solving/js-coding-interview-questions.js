@@ -293,3 +293,15 @@ if (1) {
   k += typeof foo;
 }
 console.log(k);  // output 1function
+
+
+
+
+// Q15: What will the following code output?
+// Problem
+
+(function() {
+  var a = b = 5;
+})();
+
+console.log(b);
