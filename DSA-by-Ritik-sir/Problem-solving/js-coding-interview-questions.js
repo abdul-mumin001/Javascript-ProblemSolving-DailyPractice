@@ -305,6 +305,7 @@ console.log(k);  // output 1function
 })();
 
 console.log(b);
+
 // Ans-
 // The code above will output 5 even though it seems as if the variable was declared within a function and can't be accessed outside 
 // of it. This is because
