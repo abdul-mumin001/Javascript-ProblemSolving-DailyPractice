@@ -334,5 +334,5 @@ function multiply(a) {
     return a * b;
   }
 }
-
-multiply(5)(6);
+// multiply(5)(6);
+console.log(multiply(5)(6));
