@@ -317,3 +317,19 @@ var a = b;
 b = 5;
 // But b is not declared anywhere in the function with var so it is set equal to 5 in the global scope.
 
+
+
+
+// Q16: Write a function that would allow you to do this
+// Problem
+// multiply(5)(6);
+
+// Ans-
+
+function multiply(a) {
+  return function(b) {
+    return a * b;
+  }
+}
+
+multiply(5)(6);
