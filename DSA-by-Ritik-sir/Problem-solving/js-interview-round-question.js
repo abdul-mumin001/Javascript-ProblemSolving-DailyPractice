@@ -31,7 +31,7 @@ console.log(typeof a);				// "object"
 // Ans-
 // The object type refers to a compound value where you can set properties (named locations) that each hold their own values of any type.
 var obj = {
-	a: "hello world", // property
+	a: "hello world", 
 	b: 42,
 	c: true
 };
