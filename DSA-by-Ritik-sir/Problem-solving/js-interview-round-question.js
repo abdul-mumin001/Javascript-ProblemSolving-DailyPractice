@@ -22,3 +22,24 @@ console.log(typeof a);			// "undefined"
 
 a = { b: "c" };
 console.log(typeof a);				// "object"
+
+
+
+
+
+// Q2:   What is the object type?  
+// Ans-
+
+var obj = {
+	a: "hello world", // property
+	b: 42,
+	c: true
+};
+
+obj.a;		// "hello world", accessed with doted notation
+obj.b;		// 42
+obj.c;		// true
+
+obj["a"];	// "hello world", accessed with bracket notation
+obj["b"];	// 42
+obj["c"];	// true
