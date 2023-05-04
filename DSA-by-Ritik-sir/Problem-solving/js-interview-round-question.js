@@ -48,6 +48,8 @@ obj["c"];	// true
 
 // Q3:   Explain arrays in JavaScript  
 // Ans-
+// An array is an object that holds values (of any type) not particularly in named properties/keys, but rather in numerically indexed 
+// positions:
 
 var arr = ["hello world",42,true];
 
