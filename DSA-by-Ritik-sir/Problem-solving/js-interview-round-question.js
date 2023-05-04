@@ -43,3 +43,17 @@ obj.c;		// true
 obj["a"];	// "hello world", accessed with bracket notation
 obj["b"];	// 42
 obj["c"];	// true
+
+
+
+// Q3:   Explain arrays in JavaScript  
+// Ans-
+
+var arr = ["hello world",42,true];
+
+arr[0];			//o/p: "hello world"
+arr[1];			//o/p: 42
+arr[2];			//o/p: true
+arr.length;		//o/p: 3
+
+typeof arr;		//o/p: "object"
