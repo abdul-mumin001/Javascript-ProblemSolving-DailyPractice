@@ -69,3 +69,18 @@ typeof arr;		//output: "object"
 // variables are accessed by name. Only code inside that function can access that function's scoped variables.
 //          A variable name has to be unique within the same scope. A scope can be nested inside another scope. If one scope is nested 
 // inside another, code inside the innermost scope can access variables from either scope.
+
+
+
+// Q5:   Explain equality in JavaScript 
+// // Ans-
+// JavaScript has both strict and type–converting comparisons:
+// Strict comparison (e.g., ===) checks for value equality without allowing coercion
+// Abstract comparison (e.g. ==) checks for value equality with coercion allowed
+
+var a = "42";
+var b = 42;
+
+a == b;			// true
+a === b;		// false
+
