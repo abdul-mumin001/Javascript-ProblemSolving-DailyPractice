@@ -89,3 +89,20 @@ a === b;		// false
 // If either value in a comparison could be of these specific values (0, "", or [] -- empty array), avoid == and use ===.
 // In all other cases, you're safe to use ==. Not only is it safe, but in many cases it simplifies your code in a way that improves 
 // readability.
+
+
+
+
+// Q6:   Explain what is Binary Search
+// Ans-
+
+// When the list is sorted we can use the binary search (also known as half-interval search, logarithmic search, or binary chop) technique
+// to find items on the list. Here's a step-by-step description of using binary search:
+// Let min = 1 and max = n.
+// Guess the average of max and min rounded down so that it is an integer.
+// If you guessed the number, stop. You found it!
+// If the guess was too low, set min to be one larger than the guess.
+// If the guess was too high, set max to be one smaller than the guess.
+// Go back to step two.
+
+
