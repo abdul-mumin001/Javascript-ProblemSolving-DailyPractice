@@ -108,6 +108,7 @@ a === b;		// false
 // Implementation
 
 var binarySearch = function(array, value) {
+	
     var guess,
         min = 0,
         max = array.length - 1;	
