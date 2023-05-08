@@ -148,3 +148,10 @@ var binarySearch = function(array, value) {
 // When you ask MySQL something like SELECT x FROM y WHERE z = t, and z is a column without an index, linear search is performed with all the consequences of it. This is why adding an index to searchable columns is important.
 
 
+// Implementation
+function linearSearch(array, toFind){
+	for(let i = 0; i < array.length; i++){
+	  if(array[i] === toFind) return i;
+	}
+	return -1;
+  }
