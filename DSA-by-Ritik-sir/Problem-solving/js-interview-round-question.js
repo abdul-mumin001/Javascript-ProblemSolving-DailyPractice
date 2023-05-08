@@ -125,3 +125,26 @@ var binarySearch = function(array, value) {
 	
      return -1;
 }
+
+
+
+
+
+// Q7:   Explain what is Linear (Sequential) Search and when may we use one? 
+// Ans-
+
+// Linear (sequential) search goes through all possible elements in some array and compare each one with the desired element. It may take
+//  up to O(n) operations, where N is the size of an array and is widely considered to be horribly slow. In linear search when you perform 
+//  one operation you reduce the size of the problem by one (when you do one operation in binary search you reduce the size of the problem
+//  by half). Despite it, it can still be used when:
+
+// You need to perform this search only once,
+// You are forbidden to rearrange the elements and you do not have any extra memory,
+// The array is tiny, such as ten elements or less, or the performance is not an issue at all,
+// Even though in theory other search algorithms may be faster than linear search (for instance binary search), in practice even on medium-sized arrays (around 100 items or less) it might be infeasible to use anything else. On larger arrays, it only makes sense to use other, faster search methods if the data is large enough, because the initial time to prepare (sort) the data is comparable to many linear searches,
+// When the list items are arranged in order of decreasing probability, and these probabilities are geometrically distributed, the cost of linear search is only O(1)
+// You have no idea what you are searching.
+
+// When you ask MySQL something like SELECT x FROM y WHERE z = t, and z is a column without an index, linear search is performed with all the consequences of it. This is why adding an index to searchable columns is important.
+
+
