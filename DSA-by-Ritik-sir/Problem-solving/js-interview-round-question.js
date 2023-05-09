@@ -157,3 +157,21 @@ function linearSearch(array, toFind){
 	}
 	return -1;
   }
+
+
+
+
+//   Q8:   Explain Values and Types in JavaScript  
+
+// Ans-
+// JavaScript has typed values, not typed variables. The following built-in types are available:
+// string
+// number
+// boolean
+// null and undefined
+// object
+// symbol
+
+
+
+
