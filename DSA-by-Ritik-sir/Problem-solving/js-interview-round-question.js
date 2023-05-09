@@ -162,8 +162,8 @@ function linearSearch(array, toFind){
 
 
 //   Q8:   Explain Values and Types in JavaScript  
-
 // Ans-
+
 // JavaScript has typed values, not typed variables. The following built-in types are available:
 // string
 // number
@@ -176,7 +176,7 @@ function linearSearch(array, toFind){
 
 
 // Q9: What is let keyword in JavaScript?  
-
 // Ans-
+
 // In addition to creating declarations for variables at the function level, ES6 lets you declare variables to belong to individual 
 // blocks (pairs of { .. }), using the let keyword.
