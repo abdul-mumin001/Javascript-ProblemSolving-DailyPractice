@@ -161,7 +161,7 @@ function linearSearch(array, toFind){
 
 
 
-//   Q8:   Explain Values and Types in JavaScript  
+//Q8:Explain Values and Types in JavaScript  
 // Ans-
 
 // JavaScript has typed values, not typed variables. The following built-in types are available:
@@ -180,3 +180,14 @@ function linearSearch(array, toFind){
 
 // In addition to creating declarations for variables at the function level, ES6 lets you declare variables to belong to individual 
 // blocks (pairs of { .. }), using the let keyword.
+
+
+
+
+// Q10:Explain the same-origin policy with regards to JavaScript.  
+
+
+// Ans-
+// The same-origin policy prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI
+//  scheme, hostname, and port number. This policy prevents a malicious script on one page from obtaining access to sensitive data on 
+//  another web page through that page's Document Object Model.
