@@ -186,7 +186,6 @@ function linearSearch(array, toFind){
 
 // Q10:Explain the same-origin policy with regards to JavaScript.  
 
-
 // Ans-
 // The same-origin policy prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI
 //  scheme, hostname, and port number. This policy prevents a malicious script on one page from obtaining access to sensitive data on 
@@ -201,6 +200,8 @@ function linearSearch(array, toFind){
 // == is the abstract equality operator while === is the strict equality operator. The == operator will compare for equality after doing 
 // any necessary type conversions. The === operator will not do type conversion, so if two values are not the same type === will simply 
 // return false. When using ==, funky things can happen, such as:
+
+// code :
 
 1 == '1';     // true
 1 == [1];    // true
