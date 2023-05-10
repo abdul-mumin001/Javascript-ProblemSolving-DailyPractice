@@ -191,3 +191,20 @@ function linearSearch(array, toFind){
 // The same-origin policy prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI
 //  scheme, hostname, and port number. This policy prevents a malicious script on one page from obtaining access to sensitive data on 
 //  another web page through that page's Document Object Model.
+
+
+
+
+// Q11:   What is the difference between == and ===?  
+
+// Ans-
+// == is the abstract equality operator while === is the strict equality operator. The == operator will compare for equality after doing 
+// any necessary type conversions. The === operator will not do type conversion, so if two values are not the same type === will simply 
+// return false. When using ==, funky things can happen, such as:
+
+1 == '1';     // true
+1 == [1];    // true
+1 == true;   // true
+0 == '';     // true
+0 == '0';    // true
+0 == false;  // true
