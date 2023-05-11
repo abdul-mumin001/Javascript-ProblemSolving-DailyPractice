@@ -209,3 +209,15 @@ function linearSearch(array, toFind){
 0 == '';     // true
 0 == '0';    // true
 0 == false;  // true
+
+
+
+
+
+// Q12:Is there anyway to force using strict mode in Node.js?
+// Ans-
+// you can place
+   "use strict";
+// at the top of your file in node >= 0.10.7, but if you want your whole app to run in strict (including external modules) you can do this
+
+//    node --use_strict
