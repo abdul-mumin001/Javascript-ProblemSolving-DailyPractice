@@ -235,3 +235,21 @@ function linearSearch(array, toFind){
 // all the images, scripts, links and sub-frames have finished loading.
 // The DOM event DOMContentLoaded will fire after the DOM for the page has been constructed, but do not wait for other resources to finish 
 // loading. This is preferred in certain cases when you do not need the full page to be loaded before initializing.
+
+
+
+
+// Q14:What is strict mode?  
+
+// Ans-
+// Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This 
+// strict context prevents certain actions from being taken and throws more exceptions.
+
+// Non-strict code...
+
+(function(){
+  "use strict";
+  // Define your library strictly...
+})();
+
+// Non-strict code...
