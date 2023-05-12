@@ -252,12 +252,12 @@ function linearSearch(array, toFind){
   // Define your library strictly...
 })();
 
-// Non-strict code...
 
 
 
 
-// Q15:   What's the difference between Host objects and Native objects?  
+// Q15:What's the difference between Host objects and Native objects?  
+
 // Ans-
 // Native objects are objects that are part of the JavaScript language defined by the ECMAScript specification, such as String, Math, 
 // RegExp, Object, Function, etc.
