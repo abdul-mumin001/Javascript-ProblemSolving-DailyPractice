@@ -267,7 +267,8 @@ function linearSearch(array, toFind){
 
 
 
-// Q16:   What language constructions do you use for iterating over object properties and array items?  
+// Q16:What language constructions do you use for iterating over object properties and array items?  
+
 // Ans-
 // For objects:
 // for loops - for (var property in obj) { console.log(property); }. However, this will also iterate through its inherited properties,
@@ -291,7 +292,8 @@ function linearSearch(array, toFind){
 
 
 
-// Q17:   What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+// Q17:What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+
 // Ans-
 // Some examples of languages that compile to JavaScript include CoffeeScript, Elm, ClojureScript, PureScript, and TypeScript.
 // Advantages:
