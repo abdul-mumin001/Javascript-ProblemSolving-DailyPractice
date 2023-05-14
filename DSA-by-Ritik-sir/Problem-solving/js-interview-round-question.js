@@ -313,3 +313,16 @@ function linearSearch(array, toFind){
 // These languages will always be behind the latest JavaScript standard.
 // Developers should be cognizant of what their code is being compiled to — because that is what would actually be running, and that is 
 // what matters in the end.
+
+
+
+
+
+
+
+// Q18:Explain event bubbling and how one may prevent it  
+
+// Ans-
+// Event bubbling is the concept in which an event triggers at the deepest possible element, and triggers on parent elements in nesting 
+// order. As a result, when clicking on a child element one may exhibit the handler of the parent activating.
+// One way to prevent event bubbling is using event.stopPropagation() or event.cancelBubble on IE < 9.
