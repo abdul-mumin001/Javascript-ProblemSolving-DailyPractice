@@ -354,7 +354,7 @@ function linearSearch(array, toFind){
 
 
 
-// Q20:   Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+// Q20:Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
 
 // Ans-
 // Every script has access to the global scope, and if everyone uses the global namespace to define their variables, collisions will likely
@@ -364,11 +364,10 @@ function linearSearch(array, toFind){
 
 
 
-// Q21:   What is a Polyfill?  
+// Q21:What is a Polyfill?  
 
 // Ans-
 // A polyfill is essentially the specific code (or plugin) that would allow you to have some specific functionality that you expect in 
 // current or “modern” browsers to also work in other browsers that do not have the support for that functionality built in.
-
-// Polyfills are not part of the HTML5 standard
-// Polyfilling is not limited to Javascript
+// * Polyfills are not part of the HTML5 standard
+// * Polyfilling is not limited to Javascript
