@@ -371,3 +371,13 @@ function linearSearch(array, toFind){
 // current or “modern” browsers to also work in other browsers that do not have the support for that functionality built in.
 // * Polyfills are not part of the HTML5 standard
 // * Polyfilling is not limited to Javascript
+
+
+
+
+
+// Q22:   Explain Null and Undefined in JavaScript  
+// Ans-
+// JavaScript (and by extension TypeScript) has two bottom types: null and undefined. They are intended to mean different things:
+// Something hasn't been initialised : undefined.
+// Something is currently unavailable: null.
