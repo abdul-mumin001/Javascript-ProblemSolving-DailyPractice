@@ -381,3 +381,17 @@ function linearSearch(array, toFind){
 // JavaScript (and by extension TypeScript) has two bottom types: null and undefined. They are intended to mean different things:
 // Something hasn't been initialised : undefined.
 // Something is currently unavailable: null.
+
+
+
+
+
+
+// Q18:   Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, 
+// and why would you use those?  
+
+// Ans-
+// The load event fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and 
+// all the images, scripts, links and sub-frames have finished loading.
+// The DOM event DOMContentLoaded will fire after the DOM for the page has been constructed, but do not wait for other resources to finish
+//  loading. This is preferred in certain cases when you do not need the full page to be loaded before initializing.
