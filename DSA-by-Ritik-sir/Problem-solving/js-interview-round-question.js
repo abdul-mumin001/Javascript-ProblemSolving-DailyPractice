@@ -376,7 +376,8 @@ function linearSearch(array, toFind){
 
 
 
-// Q22:   Explain Null and Undefined in JavaScript  
+// Q22:Explain Null and Undefined in JavaScript  
+
 // Ans-
 // JavaScript (and by extension TypeScript) has two bottom types: null and undefined. They are intended to mean different things:
 // Something hasn't been initialised : undefined.
@@ -387,8 +388,8 @@ function linearSearch(array, toFind){
 
 
 
-// Q18:   Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, 
-// and why would you use those?  
+// Q18:Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, and 
+// why would you use those?  
 
 // Ans-
 // The load event fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and 
