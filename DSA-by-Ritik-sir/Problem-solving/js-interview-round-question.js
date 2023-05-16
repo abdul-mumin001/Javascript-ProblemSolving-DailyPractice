@@ -388,7 +388,7 @@ function linearSearch(array, toFind){
 
 
 
-// Q18:Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, and 
+// Q23:Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, and 
 // why would you use those?  
 
 // Ans-
