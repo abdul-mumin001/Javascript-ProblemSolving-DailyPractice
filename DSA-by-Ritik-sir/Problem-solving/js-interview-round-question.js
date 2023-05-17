@@ -400,7 +400,7 @@ function linearSearch(array, toFind){
 
 
 
-// Q24:   What is Callback Hell and what is the main cause of it?
+// Q24:What is Callback Hell and what is the main cause of it?
 
 // Ans-
 // Asynchronous JavaScript, or JavaScript that uses callbacks, is hard to get right intuitively. A lot of code ends up looking like this:
@@ -440,11 +440,11 @@ fs.readdir(source, function (err, files) {
 
 
 
-// Q25:   What's the difference between throw Error('msg') vs throw new Error('msg')?  
-
+// Q25:What's the difference between throw Error('msg') vs throw new Error('msg')?  
 // Problem
 var err1 = Error('message');
 var err2 = new Error('message');
+
 // Which one is correct and why?
 
 // Ans-
