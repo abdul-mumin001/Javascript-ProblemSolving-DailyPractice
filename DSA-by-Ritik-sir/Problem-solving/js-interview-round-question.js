@@ -434,3 +434,19 @@ fs.readdir(source, function (err, files) {
 // The cause of callback hell is when people try to write JavaScript in a way where execution happens visually from top to bottom. Lots of
 //  people make this mistake! In other languages like C, Ruby or Python there is the expectation that whatever happens on line 1 will 
 //  finish before the code on line 2 starts running and so on down the file.
+
+
+
+
+
+
+// Q25:   What's the difference between throw Error('msg') vs throw new Error('msg')?  
+
+// Problem
+var err1 = Error('message');
+var err2 = new Error('message');
+// Which one is correct and why?
+
+// Ans-
+// Both are fine; the function call Error(…) is equivalent to the object creation expression new Error(…) with the same arguments.
+
