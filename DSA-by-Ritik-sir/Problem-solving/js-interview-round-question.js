@@ -450,3 +450,17 @@ var err2 = new Error('message');
 // Ans-
 // Both are fine; the function call Error(…) is equivalent to the object creation expression new Error(…) with the same arguments.
 
+
+
+
+// Q43. What is the difference between Call & Apply?
+// The call() method calls a function with a given this value and arguments provided individually.
+
+// Syntax-
+
+fun.call(thisArg[, arg1[, arg2[, ...]]])
+// The apply() method calls a function with a given this value, and arguments provided as an array.
+
+// Syntax-
+
+fun.apply(thisArg, [argsArray])
