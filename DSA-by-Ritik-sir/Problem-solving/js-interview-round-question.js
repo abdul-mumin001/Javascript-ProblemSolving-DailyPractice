@@ -453,24 +453,21 @@ var err2 = new Error('message');
 
 
 
-// Q43. What is the difference between Call & Apply?
+// Q26. What is the difference between Call & Apply?
 // The call() method calls a function with a given this value and arguments provided individually.
 
 // Syntax-
-
 // fun.call(thisArg[, arg1[, arg2[, ...]]])
 // The apply() method calls a function with a given this value, and arguments provided as an array.
 
 // Syntax-
-
 // fun.apply(thisArg, [argsArray])
 
 
 
 
 
-// Q45. What will be the output of the following code?
-
+// Q27. What will be the output of the following code?
 
 var Output = (function(x)
 {
