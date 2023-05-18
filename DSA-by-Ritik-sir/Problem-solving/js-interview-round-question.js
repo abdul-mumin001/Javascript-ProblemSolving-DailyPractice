@@ -458,9 +458,29 @@ var err2 = new Error('message');
 
 // Syntax-
 
-fun.call(thisArg[, arg1[, arg2[, ...]]])
+// fun.call(thisArg[, arg1[, arg2[, ...]]])
 // The apply() method calls a function with a given this value, and arguments provided as an array.
 
 // Syntax-
 
-fun.apply(thisArg, [argsArray])
+// fun.apply(thisArg, [argsArray])
+
+
+
+
+
+// Q45. What will be the output of the following code?
+
+
+var Output = (function(x)
+{
+delete X;
+return X;
+}
+)(0);
+console.log(output);
+
+// The output would be 0. The delete operator is used to delete properties from an object. Here x is not an object but a local variable. 
+// delete operators don’t affect local variables.
+
+// In case you are facing any challenges with these JavaScript Interview Questions, please comment on your problems in the section below.
