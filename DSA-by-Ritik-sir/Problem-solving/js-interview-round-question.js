@@ -405,30 +405,30 @@ function linearSearch(array, toFind){
 // Ans-
 // Asynchronous JavaScript, or JavaScript that uses callbacks, is hard to get right intuitively. A lot of code ends up looking like this:
 
-fs.readdir(source, function (err, files) {
-  if (err) {
-    console.log('Error finding files: ' + err)
-  } else {
-    files.forEach(function (filename, fileIndex) {
-      console.log(filename)
-      gm(source + filename).size(function (err, values) {
-        if (err) {
-          console.log('Error identifying file size: ' + err)
-        } else {
-          console.log(filename + ' : ' + values)
-          aspect = (values.width / values.height)
-          widths.forEach(function (width, widthIndex) {
-            height = Math.round(width / aspect)
-            console.log('resizing ' + filename + 'to ' + height + 'x' + height)
-            this.resize(width, height).write(dest + 'w' + width + '_' + filename, function(err) {
-              if (err) console.log('Error writing file: ' + err)
-            })
-          }.bind(this))
-        }
-      })
-    })
-  }
-})
+// fs.readdir(source, function (err, files) {
+//   if (err) {
+//     console.log('Error finding files: ' + err)
+//   } else {
+//     files.forEach(function (filename, fileIndex) {
+//       console.log(filename)
+//       gm(source + filename).size(function (err, values) {
+//         if (err) {
+//           console.log('Error identifying file size: ' + err)
+//         } else {
+//           console.log(filename + ' : ' + values)
+//           aspect = (values.width / values.height)
+//           widths.forEach(function (width, widthIndex) {
+//             height = Math.round(width / aspect)
+//             console.log('resizing ' + filename + 'to ' + height + 'x' + height)
+//             this.resize(width, height).write(dest + 'w' + width + '_' + filename, function(err) {
+//               if (err) console.log('Error writing file: ' + err)
+//             })
+//           }.bind(this))
+//         }
+//       })
+//     })
+//   }
+// })
 
 // See the pyramid shape and all the }) at the end? This is affectionately known as callback hell.
 // The cause of callback hell is when people try to write JavaScript in a way where execution happens visually from top to bottom. Lots of
@@ -442,8 +442,8 @@ fs.readdir(source, function (err, files) {
 
 // Q25:What's the difference between throw Error('msg') vs throw new Error('msg')?  
 // Problem
-var err1 = Error('message');
-var err2 = new Error('message');
+// var err1 = Error('message');
+// var err2 = new Error('message');
 
 // Which one is correct and why?
 
@@ -469,13 +469,13 @@ var err2 = new Error('message');
 
 // Q27. What will be the output of the following code?
 
-var Output = (function(x)
-{
-delete X;
-return X;
-}
-)(0);
-console.log(output);
+// var Output = (function(x)
+// {
+// delete X;
+// return X;
+// }
+// )(0);
+// console.log(output);
 
 // The output would be 0. The delete operator is used to delete properties from an object. Here x is not an object but a local variable. 
 // delete operators don’t affect local variables.
@@ -502,3 +502,20 @@ function countWord(p){
   return result;
 }
 console.log(countWord(ar));
+
+
+// Method 2: Using an Object
+
+let arra=['hello', 'world','java','hello','java']
+function countWord(p){
+var count={};
+p.forEach((item)=>{
+  if(count[item]){
+    count[item]++
+  }else{
+    count[item]=1;
+  }
+})
+return count;
+}
+console.log(countWord(arra));
