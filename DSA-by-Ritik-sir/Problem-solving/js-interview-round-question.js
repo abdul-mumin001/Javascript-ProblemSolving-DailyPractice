@@ -537,8 +537,11 @@ let people=[
   {name:'Max', age:20},
   {name:'Jane', age:20}
 ];
+
 function groupBy(ar){
+
   var check={};
+
   ar.forEach((item)=>{
     if(!check[item.age]){
       check[item.age]=[item]
@@ -548,4 +551,5 @@ function groupBy(ar){
   })
   return check;
 }
+
 console.log(groupBy(people));
