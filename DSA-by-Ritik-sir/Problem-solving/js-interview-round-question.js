@@ -533,9 +533,12 @@ console.log(countWord(arra));
 // 29. Group items on the basis of age of given array of object
 
 let people=[
+  {name:'Zamzam', age:21},
   {name:'Alice', age:21},
   {name:'Max', age:20},
-  {name:'Jane', age:20}
+  {name:'Jane', age:20},
+  {name:'Sanik', age:19},
+  {name:'Dippu', age:18}
 ];
 
 function groupBy(ar){
