@@ -591,3 +591,4 @@ let str1="({} [] ({}))";
 let str2="}}";
 
 console.log(isValid(str1));
+console.log(isValid(str2));
