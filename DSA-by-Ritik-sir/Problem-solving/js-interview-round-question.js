@@ -565,11 +565,13 @@ console.log(groupBy(people));
 // 30. Program to check a string with balanced brackets.
 
 const isValid=(str)=>{
+
   let s=str.replace(/\s+/g, '');
   if(s.length % 2 !==0) return false;
 
 
   const stack=[];
+
   const map=new Map([
     ['(',')'],
     ['[',']'],
@@ -584,6 +586,7 @@ const isValid=(str)=>{
       return false
     }
   }
+  
   return stack.length === 0;
 }
 
