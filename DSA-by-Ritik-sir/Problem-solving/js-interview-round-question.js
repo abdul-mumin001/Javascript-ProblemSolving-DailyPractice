@@ -595,3 +595,27 @@ let str2="}}";
 
 console.log(isValid(str1));
 console.log(isValid(str2));
+
+
+
+
+
+
+// 31. Find the pairs of array element for which sum is equal to given target value (Two Sum Problem)
+
+let array=[1,2,3,4,5,6,7,8,9];
+
+function twoSum(a,target){
+  let hash={};
+  let sum=[];
+
+  array.forEach((item)=>{
+    let diff=target-item;
+    if(hash[diff.toString()] !== undefined){
+      sum.push([item,diff]);
+    }
+    hash[item.toString()]=item;
+  })
+return sum;
+}
+console.log(twoSum(array,9));
