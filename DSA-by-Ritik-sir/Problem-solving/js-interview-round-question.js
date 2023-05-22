@@ -606,13 +606,13 @@ console.log(isValid(str2));
 let array=[1,2,3,4,5,6,7,8,9];
 
 function twoSum(a,target){
-  
+
   let hash={};
   let sum=[];
 
   array.forEach((item)=>{
-
     let diff=target-item;
+    
     if(hash[diff.toString()] !== undefined){
       sum.push([item,diff]);
     }
