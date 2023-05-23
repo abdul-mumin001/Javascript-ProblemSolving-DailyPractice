@@ -641,6 +641,7 @@ console.log(twoSum(array,9));
 // Print the missing number as a sum.
 
 let arr1=[2,7,8,5,1,4,3,6];
+
 function missing(a){
   let l=a.length;
   let sum=1;
@@ -651,4 +652,5 @@ function missing(a){
   }
   return sum;
 }
+
 console.log(missing(arr1));
