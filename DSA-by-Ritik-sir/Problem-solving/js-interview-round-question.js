@@ -672,12 +672,14 @@ let ar2=[1,3,4,6,7,8,10];
 function Missing(a){
   
   let missing=[];
+
   for(let i=0;i<ar2.length;i++){
     if(!(ar2[i+1]-ar2[i]==1) && !(ar2[i+1] == undefined)){
       missing.push(ar2[i]+1);
 
     }
   }
+  
   return missing;
 }
 
