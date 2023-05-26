@@ -703,3 +703,4 @@ const nthLargest= arr3[arr3.length-2]; //if n=2
 
 
 console.log(nthLargest);
+//if n=2, output =64
