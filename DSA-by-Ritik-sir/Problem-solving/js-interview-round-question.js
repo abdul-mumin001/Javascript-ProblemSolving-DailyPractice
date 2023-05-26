@@ -686,3 +686,17 @@ function Missing(a){
 }
 
 console.log(Missing(ar2));
+
+
+
+
+
+
+// 34. Find the nth largest element in a sorted array
+
+let arr3 = [12,34,21,14,67,35,64,25];
+arr3.sort((a,b)=>a-b);
+
+const nthLargest= arr3[arr3.length-n];
+
+console.log(nthLargest);
