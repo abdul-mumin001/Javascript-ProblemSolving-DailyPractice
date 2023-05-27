@@ -704,3 +704,22 @@ const nthLargest= arr3[arr3.length-2]; //if n=2
 
 console.log(nthLargest);
 //if n=2, output =64
+
+
+
+
+
+
+// 35. Remove duplicates from an array and return unique values in O(n) complexity.
+
+let arr4=[1,2,3,4,3,6,5,4];
+function unique(arr4){
+  let items ={};
+  arr4.forEach((item)=>{
+    if(!items[item]){
+      items[item]=item;
+    }
+  });
+  return Object.values(items);
+}
+console.log(unique(arr4));
