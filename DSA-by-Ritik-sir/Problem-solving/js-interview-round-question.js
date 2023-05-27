@@ -715,12 +715,16 @@ console.log(nthLargest);
 let arr4=[1,2,3,4,3,6,5,4];
 
 function unique(arr4){
+
   let items ={};
+
   arr4.forEach((item)=>{
     if(!items[item]){
       items[item]=item;
     }
   });
+
   return Object.values(items);
+  
 }
 console.log(unique(arr4));
