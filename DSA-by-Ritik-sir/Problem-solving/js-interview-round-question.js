@@ -751,3 +751,33 @@ function removeDuplicates(ar){
 }
 
 console.log(removeDuplicates(arr5));
+
+
+
+
+
+
+
+// 37. Collect books from array of objects and return collection of books as an array.
+
+let friends = [{
+  name: 'Anna',
+  books: ['Bible', 'Harry Potter'],
+  age:21
+},
+{
+  name: 'Bob',
+  books: ['War and Peace', 'Romeo and Juliet'],
+  age:26
+
+},
+{
+  name: 'Alice',
+  books: ['The Lord of the Rings', 'The Shining'],
+  age:18
+}]
+
+let result=friends.reduce((pre,curr)=>{
+  return [...pre, ...curr.books]
+},[]);
+console.log(result);
