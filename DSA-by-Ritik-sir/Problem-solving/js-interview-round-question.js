@@ -760,6 +760,7 @@ console.log(removeDuplicates(arr5));
 
 // 37. Collect books from array of objects and return collection of books as an array.
 
+
 let friends = [
   {
   name: 'Anna',
@@ -780,7 +781,9 @@ let friends = [
 ]
 
 let result=friends.reduce((pre,curr)=>{
-  
+
   return [...pre, ...curr.books]
+
 },[]);
+
 console.log(result);
