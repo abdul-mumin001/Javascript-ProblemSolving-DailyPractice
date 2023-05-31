@@ -814,5 +814,6 @@ const num = 3;
 
 if (num > 0) {
   let result = factorial(num);
+  
   console.log(`The factorial of ${num} is ${result}`);
 }
