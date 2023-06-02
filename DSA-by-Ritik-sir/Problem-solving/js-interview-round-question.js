@@ -824,8 +824,7 @@ if (num > 0) {
 
 // 39. Print numbers from 1 to 10
 
-for(let i = 1; i <= 10; i++)
-{
+for(let i = 1; i <= 10; i++){
     console.log(i);
 }
 
@@ -833,7 +832,6 @@ for(let i = 1; i <= 10; i++)
 
 // 40. Print the odd numbers less than 100
 
-for(let i = 1; i <= 100; i += 2)
-{
+for(let i = 1; i <= 100; i += 2){
    console.log(i);
 }
