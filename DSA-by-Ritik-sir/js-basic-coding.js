@@ -67,3 +67,15 @@ for(let i = 11; i <= 30; i += 2)
 }
 
 console.log(s);
+
+
+
+// 6. Create a function that will convert from Celsius to Fahrenheit
+
+function celsiusToFahrenheit(n)
+{
+    return n * 1.8 + 32;
+}
+
+let r = celsiusToFahrenheit(20);
+console.log(r);
