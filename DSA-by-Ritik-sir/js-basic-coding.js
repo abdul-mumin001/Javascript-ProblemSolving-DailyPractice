@@ -62,6 +62,7 @@ console.log(prod);
 let s = 0;
 
 for(let i = 11; i <= 30; i += 2){
+    
     s += i;
 }
 
@@ -76,4 +77,5 @@ function celsiusToFahrenheit(n){
 }
 
 let r = celsiusToFahrenheit(20);
+
 console.log(r);
