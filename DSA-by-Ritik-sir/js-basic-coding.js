@@ -61,8 +61,7 @@ console.log(prod);
 
 let s = 0;
 
-for(let i = 11; i <= 30; i += 2)
-{
+for(let i = 11; i <= 30; i += 2){
     s += i;
 }
 
@@ -72,8 +71,7 @@ console.log(s);
 
 // 6. Create a function that will convert from Celsius to Fahrenheit
 
-function celsiusToFahrenheit(n)
-{
+function celsiusToFahrenheit(n){
     return n * 1.8 + 32;
 }
 
