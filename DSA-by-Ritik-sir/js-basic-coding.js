@@ -96,3 +96,26 @@ function fahrenheitToCelsius(n){
 let ra = fahrenheitToCelsius(68);
 
 console.log(ra);
+
+
+
+
+
+
+// 8. Calculate the sum of numbers in an array of numbers
+
+function sumArray(ar)
+{
+    let summ = 0;
+    
+    for(let i = 0; i < ar.length; i++)
+    {
+        summ += ar[i];
+    }
+    
+    return summ;
+}
+
+let ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
+let summ = sumArray(ar);
+println(summ);
