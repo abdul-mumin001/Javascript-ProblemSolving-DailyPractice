@@ -104,8 +104,7 @@ console.log(ra);
 
 // 8. Calculate the sum of numbers in an array of numbers
 
-function sumArray(ar)
-{
+function sumArray(ar){
     let summ = 0;
     
     for(let i = 0; i < ar.length; i++)
@@ -118,4 +117,4 @@ function sumArray(ar)
 
 let ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
 let summ = sumArray(ar);
-println(summ);
+console.log(summ);
