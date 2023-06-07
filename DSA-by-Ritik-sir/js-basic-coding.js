@@ -102,7 +102,7 @@ console.log(ra);
 
 
 
-// 8. Calculate the sum of numbers in an array of numbers
+// 8. Calculate the sum of numbers in an array of numbers.
 
 function sumArray(ar){
     let summ = 0;
@@ -118,3 +118,27 @@ function sumArray(ar){
 let ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
 let summ = sumArray(ar);
 console.log(summ);
+
+
+
+
+
+// 9. Calculate the average of the numbers in an array of numbers
+
+function averageArray(arrr)
+{
+    let n = arrr.length;
+    let summm = 0;
+    
+    for(let i = 0; i < n; i++)
+    {
+        summm += ar[i];
+    }
+    
+    return summm / n;
+}
+
+let arrr = [1, 3, 9, 15, 90];
+let avg = averageArray(arrr);
+
+console.log("Average: ", avg);
