@@ -125,13 +125,13 @@ console.log(summ);
 
 // 9. Calculate the average of the numbers in an array of numbers
 
-function averageArray(arrr)
-{
+function averageArray(arrr){
+
     let n = arrr.length;
     let summm = 0;
     
-    for(let i = 0; i < n; i++)
-    {
+    for(let i = 0; i < n; i++){
+        
         summm += ar[i];
     }
     
