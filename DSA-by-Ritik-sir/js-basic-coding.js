@@ -131,7 +131,7 @@ function averageArray(arrr){
     let summm = 0;
     
     for(let i = 0; i < n; i++){
-        
+
         summm += ar[i];
     }
     
@@ -142,3 +142,32 @@ let arrr = [1, 3, 9, 15, 90];
 let avg = averageArray(arrr);
 
 console.log("Average: ", avg);
+
+
+
+
+
+
+// 10.Create a function that receives an array of numbers and returns an array containing only the positive numbers
+
+function getPositives(r)
+{
+    let r2 = [];
+    
+    for(let i = 0; i < r.length; i++)
+    {
+        let el = r[i];
+        
+        if (el >= 0)
+        {
+            r2.push(el);
+        }
+    }
+    
+    return r2;
+}
+
+    r= [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+let r2 = getPositives(r);
+
+console.log(r2);
