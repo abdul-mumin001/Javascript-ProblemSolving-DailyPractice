@@ -150,6 +150,7 @@ console.log("Average: ", avg);
 
 // 10.Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
+// Method 1
 function getPositives(r){
     let r2 = [];
     
@@ -168,3 +169,29 @@ r= [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 let r2 = getPositives(r);
 
 console.log(r2);
+
+
+
+// 10. Create a function that receives an array of numbers and returns an array containing only the positive numbers. 
+
+// Method 2 
+
+function getPositives(r3)
+{
+    let r4 = [];
+    
+    for(let el of r3)
+    {
+        if (el >= 0)
+        {
+            r4.push(el);
+        }
+    }
+    
+    return r4;
+}
+
+let r3 = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+let r4 = getPositives(r3);
+
+console.log(r4);
