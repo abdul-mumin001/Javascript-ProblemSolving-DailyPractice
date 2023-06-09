@@ -176,14 +176,11 @@ console.log(r2);
 
 // Method 2 
 
-function getPositives(r3)
-{
+function getPositives(r3){
     let r4 = [];
     
-    for(let el of r3)
-    {
-        if (el >= 0)
-        {
+    for(let el of r3){
+        if (el >= 0){
             r4.push(el);
         }
     }
