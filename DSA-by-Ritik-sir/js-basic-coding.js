@@ -199,12 +199,13 @@ console.log(r4);
 
 // Method3
 
-function getPositives(r5)
-{
+function getPositives(r5){
+
     return r5.filter(el => el >= 0);
 }
 
 let r5 = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 let r6 = getPositives(r5);
+
 console.log(r6);
 
