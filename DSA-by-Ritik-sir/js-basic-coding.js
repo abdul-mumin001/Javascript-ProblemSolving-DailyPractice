@@ -209,3 +209,27 @@ let r6 = getPositives(r5);
 
 console.log(r6);
 
+
+
+
+
+// 11. Find the maximum number in an array of numbers
+
+function findMax(a)
+{
+    let max = a[0];
+    
+    for(let i = 0; i < a.length; i++)
+    {
+        if (a[i] > max)
+        {
+            max = a[i];
+        }
+    }
+    
+    return max;
+}
+
+let a = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+let max = findMax(a);
+console.log("Max: ", max);
