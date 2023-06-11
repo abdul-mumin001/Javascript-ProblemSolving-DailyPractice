@@ -215,14 +215,11 @@ console.log(r6);
 
 // 11. Find the maximum number in an array of numbers
 
-function findMax(a)
-{
+function findMax(a){
     let max = a[0];
     
-    for(let i = 0; i < a.length; i++)
-    {
-        if (a[i] > max)
-        {
+    for(let i = 0; i < a.length; i++){
+        if (a[i] > max){
             max = a[i];
         }
     }
