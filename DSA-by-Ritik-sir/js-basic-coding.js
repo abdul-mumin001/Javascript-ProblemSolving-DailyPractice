@@ -232,3 +232,24 @@ let a = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 let max = findMax(a);
 
 console.log("Max: ", max);
+
+
+
+
+
+// 12. Print the first 10 Fibonacci numbers without recursion
+
+let f0 = 0;
+console.log(f0);
+
+let f1 = 1;
+console.log(f1);
+
+for(let i = 2; i < 10; i++)
+{
+    let fi = f1 + f0;
+    console.log(fi);
+    
+    f0 = f1;
+    f1 = fi;
+}
