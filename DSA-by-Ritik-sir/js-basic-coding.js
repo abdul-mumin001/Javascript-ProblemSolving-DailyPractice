@@ -260,8 +260,7 @@ for(let i = 2; i < 10; i++){
 
 // 13. Create a function that will find the nth Fibonacci number using recursion
 
-function findFibonacci(n)
-{
+function findFibonacci(n){
     if (n == 0)
         return 0;
         
@@ -272,4 +271,5 @@ function findFibonacci(n)
 }
 
 let n = findFibonacci(10);
+
 console.log(n);
