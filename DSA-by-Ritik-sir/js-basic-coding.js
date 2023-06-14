@@ -279,8 +279,7 @@ console.log(n);
 
 // 14. Create a function that will return a Boolean specifying if a number is prime
 
-function isPrime(n)
-{
+function isPrime(n){
     if (n < 2)
         return false;
         
@@ -289,10 +288,8 @@ function isPrime(n)
     
     let maxDiv = Math.sqrt(n);
     
-    for(let i = 2; i <= maxDiv; i++)
-    {
-        if (n % i == 0)
-        {
+    for(let i = 2; i <= maxDiv; i++){
+        if (n % i == 0){
             return false;
         }
     }
