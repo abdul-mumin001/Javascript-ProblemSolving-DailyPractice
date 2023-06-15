@@ -309,13 +309,11 @@ console.log(9, " is prime? ", isPrime(9));
 
 // 15. Calculate the sum of digits of a positive integer number
 
-function sumDigits(n)
-{
+function sumDigits(n){
     let s = n.toString();
     let sm = 0;
     
-    for(let char of s)
-    {
+    for(let char of s){
         let digit = parseInt(char);
         sm += digit;
     }
