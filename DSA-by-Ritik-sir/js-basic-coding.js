@@ -333,15 +333,12 @@ console.log("Sum: ", sm);
 printPrimes(100);
 
 // Function prints the first nPrimes numbers
-function printPrimes(nPrimes)
-{
+function printPrimes(nPrimes){
     let n = 0;
     let i = 2;
     
-    while(n < nPrimes)
-    {
-        if (isPrime(i))
-        {
+    while(n < nPrimes){
+        if (isPrime(i)){
             console.log(n, " --> ", i);
             n++;
         }
@@ -352,8 +349,7 @@ function printPrimes(nPrimes)
 
 
 // Returns true if a number is prime
-function isPrime(n)
-{
+function isPrime(n){
     if (n < 2)
         return false;
         
@@ -362,10 +358,8 @@ function isPrime(n)
     
     let maxDiv = Math.sqrt(n);
     
-    for(let i = 2; i <= maxDiv; i++)
-    {
-        if (n % i == 0)
-        {
+    for(let i = 2; i <= maxDiv; i++){
+        if (n % i == 0){
             return false;
         }
     }
