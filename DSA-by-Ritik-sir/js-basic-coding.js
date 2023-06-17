@@ -375,16 +375,13 @@ function isPrime(n){
 
 console.log(getPrimes(10, 100));
 
-function getPrimes(nPrimes, startAt)
-{
+function getPrimes(nPrimes, startAt){
     let ar = [];
     
     let i = startAt;
     
-    while(ar.length < nPrimes)
-    {
-        if (isPrime(i))
-        {
+    while(ar.length < nPrimes){
+        if (isPrime(i)){
             ar.push(i);
         }
         
@@ -395,8 +392,7 @@ function getPrimes(nPrimes, startAt)
 }
 
 // Returns true if a number is prime
-function isPrime(n)
-{
+function isPrime(n){
     if (n < 2)
         return false;
         
@@ -405,10 +401,8 @@ function isPrime(n)
     
     let maxDiv = Math.sqrt(n);
     
-    for(let i = 2; i <= maxDiv; i++)
-    {
-        if (n % i == 0)
-        {
+    for(let i = 2; i <= maxDiv; i++){
+        if (n % i == 0){
             return false;
         }
     }
