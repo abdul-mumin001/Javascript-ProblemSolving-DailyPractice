@@ -416,12 +416,12 @@ function isPrime(n){
 
 // 18. Rotate an array to the left 1 position
 
-let ar1 = [1, 2, 3];
+let ar1 = [1, 2, 3,4,5];
 rotateLeft(ar1);
 console.log(ar1);
 
 function rotateLeft(ar1){
     let first = ar1.shift();
-    
+
     ar1.push(first);
 }
