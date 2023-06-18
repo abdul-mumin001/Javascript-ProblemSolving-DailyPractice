@@ -420,8 +420,8 @@ let ar1 = [1, 2, 3];
 rotateLeft(ar1);
 console.log(ar1);
 
-function rotateLeft(ar1)
-{
+function rotateLeft(ar1){
     let first = ar1.shift();
+    
     ar1.push(first);
 }
