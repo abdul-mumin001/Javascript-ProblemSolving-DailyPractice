@@ -436,8 +436,9 @@ let a1 = [1, 2, 3];
 rotateRight(a1);
 console.log(a1);
 
-function rotateRight(a1)
-{
+function rotateRight(a1){
     let last = a1.pop();
     a1.unshift(last);
+
+    
 }
