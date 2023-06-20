@@ -440,5 +440,26 @@ function rotateRight(a1){
     let last = a1.pop();
     a1.unshift(last);
 
+
+}
+
+
+
+
+// 20.Reverse an array
+
+let a2 = [1, 2, 3];
+let a3 = reverseArray(a2);
+console.log(a3);
+
+function reverseArray(a2)
+{
+    let a3 = [];
     
+    for(let i = a2.length - 1; i >= 0; i--)
+    {
+        a3.push(a2[i]);
+    }
+    
+    return a3;
 }
