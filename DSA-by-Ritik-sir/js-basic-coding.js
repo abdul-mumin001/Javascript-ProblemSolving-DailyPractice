@@ -473,12 +473,10 @@ function reverseArray(a2)
 let s1 = reverseString("JavaScript");
 console.log(s1);
 
-function reverseString(s1)
-{
+function reverseString(s1){
     let s2 = "";
     
-    for(let i = s1.length - 1; i >= 0; i--)
-    {
+    for(let i = s1.length - 1; i >= 0; i--){
         let char = s1[i];
         s2 += char;
     }
