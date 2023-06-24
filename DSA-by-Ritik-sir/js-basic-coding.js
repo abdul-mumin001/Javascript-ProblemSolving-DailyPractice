@@ -494,12 +494,15 @@ let arr1 = [1, 2, 3];
 let arr2 = [4, 5, 6];
 
 let arr = mergeArrays(arr1, arr2);
+
 console.log(arr);
 
 function mergeArrays(arr1, arr2){
+
    let arr = [];
    
    for(let el of arr1){
+    
        arr.push(el);
    }
    
