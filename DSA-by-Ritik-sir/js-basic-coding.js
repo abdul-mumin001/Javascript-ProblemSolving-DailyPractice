@@ -527,9 +527,11 @@ let aar1 = [1, 2, 3, 10, 5, 3, 14];
 let aar2 = [1, 4, 5, 6, 14];
 
 let aar = mergeExclusive(aar1, aar2);
+
 console.log(aar);
 
 function mergeExclusive(aar1, aar2){
+
     let aar = [];
     
     for(let el of aar1){
