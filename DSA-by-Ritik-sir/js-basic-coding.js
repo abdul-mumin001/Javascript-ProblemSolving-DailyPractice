@@ -564,14 +564,11 @@ let aarr2 = [-1, 4, 5, 6, 14];
 let aarr = mergeLeft(aarr1, aarr2);
 console.log(aarr);
 
-function mergeLeft(aarr1, aarr2)
-{
+function mergeLeft(aarr1, aarr2){
     let aarr = [];
     
-    for(let el of aarr1)
-    {
-        if (!aarr2.includes(el))
-        {
+    for(let el of aarr1){
+        if (!aarr2.includes(el)){
             aarr.push(el);
         }
     }
