@@ -548,3 +548,33 @@ function mergeExclusive(aar1, aar2){
     
     return aar;
 }
+
+
+
+
+
+
+// 24. Create a function that will receive two arrays and will return an array with elements that are in the first array but not in 
+// the second
+
+
+let aarr1 = [1, 2, 3, 10, 5, 3, 14];
+let aarr2 = [-1, 4, 5, 6, 14];
+
+let aarr = mergeLeft(aarr1, aarr2);
+console.log(aarr);
+
+function mergeLeft(aarr1, aarr2)
+{
+    let aarr = [];
+    
+    for(let el of aarr1)
+    {
+        if (!aarr2.includes(el))
+        {
+            aarr.push(el);
+        }
+    }
+
+    return aarr;
+}
