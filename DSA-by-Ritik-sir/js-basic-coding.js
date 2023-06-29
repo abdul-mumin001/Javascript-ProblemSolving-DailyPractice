@@ -1,579 +1,614 @@
-// 1. Print the multiplication table with 7
+// // 1. Print the multiplication table with 7
 
-for(let i = 1; i <= 10; i++){
-    let row = "7 * " + i + " = " + 7 * i;
-    console.log(row);
-}
-
-
-
-
-// 2. Print all the multiplication tables with numbers from 1 to 10
-
-for(let i = 1; i <= 10; i++){
-    printTable(i);
-    console.log("");
-}
-
-function printTable(n){
-    for(let i = 1; i <= 10; i++)
-    {
-        let row = n + " * " + i + " = " + n * i;
-        console.log(row);
-    }
-}
+// for(let i = 1; i <= 10; i++){
+//     let row = "7 * " + i + " = " + 7 * i;
+//     console.log(row);
+// }
 
 
 
 
+// // 2. Print all the multiplication tables with numbers from 1 to 10
 
+// for(let i = 1; i <= 10; i++){
+//     printTable(i);
+//     console.log("");
+// }
 
-// 3. Calculate the sum of numbers from 1 to 10
-
-let sum = 0;
-
-for(let i = 1; i <= 10; i++){
-    sum += i;
-}
-
-console.log(sum);
-
-
-
-
-
-// 4. Calculate 10!
-
-let prod = 1;
-
-for(let i = 1; i <= 10; i++){
-    prod *= i;
-}
-
-console.log(prod);
+// function printTable(n){
+//     for(let i = 1; i <= 10; i++)
+//     {
+//         let row = n + " * " + i + " = " + n * i;
+//         console.log(row);
+//     }
+// }
 
 
 
 
 
 
-// 5. Calculate the sum of odd numbers greater than 10 and less than 30
+// // 3. Calculate the sum of numbers from 1 to 10
 
-let s = 0;
+// let sum = 0;
 
-for(let i = 11; i <= 30; i += 2){
+// for(let i = 1; i <= 10; i++){
+//     sum += i;
+// }
+
+// console.log(sum);
+
+
+
+
+
+// // 4. Calculate 10!
+
+// let prod = 1;
+
+// for(let i = 1; i <= 10; i++){
+//     prod *= i;
+// }
+
+// console.log(prod);
+
+
+
+
+
+
+// // 5. Calculate the sum of odd numbers greater than 10 and less than 30
+
+// let s = 0;
+
+// for(let i = 11; i <= 30; i += 2){
     
-    s += i;
-}
+//     s += i;
+// }
 
-console.log(s);
-
-
-
-
-
-
-// 6. Create a function that will convert from Celsius to Fahrenheit
-
-function celsiusToFahrenheit(n){
-    return n * 1.8 + 32;
-}
-
-let r = celsiusToFahrenheit(20);
-
-console.log(r);
-
-
-
-
-
-// 7. Create a function that will convert from Fahrenheit to Celsius
-
-function fahrenheitToCelsius(n){
-    return (n - 32) / 1.8;
-}
-
-let ra = fahrenheitToCelsius(68);
-
-console.log(ra);
+// console.log(s);
 
 
 
 
 
 
-// 8. Calculate the sum of numbers in an array of numbers.
+// // 6. Create a function that will convert from Celsius to Fahrenheit
 
-function sumArray(ar){
-    let summ = 0;
+// function celsiusToFahrenheit(n){
+//     return n * 1.8 + 32;
+// }
+
+// let r = celsiusToFahrenheit(20);
+
+// console.log(r);
+
+
+
+
+
+// // 7. Create a function that will convert from Fahrenheit to Celsius
+
+// function fahrenheitToCelsius(n){
+//     return (n - 32) / 1.8;
+// }
+
+// let ra = fahrenheitToCelsius(68);
+
+// console.log(ra);
+
+
+
+
+
+
+// // 8. Calculate the sum of numbers in an array of numbers.
+
+// function sumArray(ar){
+//     let summ = 0;
+    
+//     for(let i = 0; i < ar.length; i++)
+//     {
+//         summ += ar[i];
+//     }
+    
+//     return summ;
+// }
+
+// let ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
+// let summ = sumArray(ar);
+// console.log(summ);
+
+
+
+
+
+// // 9. Calculate the average of the numbers in an array of numbers
+
+// function averageArray(arrr){
+
+//     let n = arrr.length;
+//     let summm = 0;
+    
+//     for(let i = 0; i < n; i++){
+
+//         summm += ar[i];
+//     }
+    
+//     return summm / n;
+// }
+
+// let arrr = [1, 3, 9, 15, 90];
+// let avg = averageArray(arrr);
+
+// console.log("Average: ", avg);
+
+
+
+
+
+
+// // 10.Create a function that receives an array of numbers and returns an array containing only the positive numbers
+
+// // Method 1
+// function getPositives(r){
+//     let r2 = [];
+    
+//     for(let i = 0; i < r.length; i++){
+//         let el = r[i];
+        
+//         if (el >= 0){
+//             r2.push(el);
+//         }
+//     }
+    
+//     return r2;
+// }
+
+// r= [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+// let r2 = getPositives(r);
+
+// console.log(r2);
+
+
+
+// // 10. Create a function that receives an array of numbers and returns an array containing only the positive numbers. 
+
+// // Method 2 
+
+// function getPositives(r3){
+//     let r4 = [];
+    
+//     for(let el of r3){
+//         if (el >= 0){
+//             r4.push(el);
+//         }
+//     }
+    
+//     return r4;
+// }
+
+// let r3 = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+// let r4 = getPositives(r3);
+
+// console.log(r4);
+
+
+
+// // 10. Create a function that receives an array of numbers and returns an array containing only the positive numbers
+
+// // Method3
+
+// function getPositives(r5){
+
+//     return r5.filter(el => el >= 0);
+// }
+
+// let r5 = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+// let r6 = getPositives(r5);
+
+// console.log(r6);
+
+
+
+
+
+// // 11. Find the maximum number in an array of numbers
+
+// function findMax(a){
+    
+//     let max = a[0];
+    
+//     for(let i = 0; i < a.length; i++){
+//         if (a[i] > max){
+//             max = a[i];
+//         }
+//     }
+    
+//     return max;
+// }
+
+// let a = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+// let max = findMax(a);
+
+// console.log("Max: ", max);
+
+
+
+
+
+// // 12. Print the first 10 Fibonacci numbers without recursion
+
+
+// let f0 = 0;
+// console.log(f0);
+
+// let f1 = 1;
+// console.log(f1);
+
+// for(let i = 2; i < 10; i++){
+//     let fi = f1 + f0;
+//     console.log(fi);
+    
+//     f0 = f1;
+//     f1 = fi;
+// }
+
+
+
+
+
+// // 13. Create a function that will find the nth Fibonacci number using recursion
+
+// function findFibonacci(n){
+//     if (n == 0)
+//         return 0;
+        
+//     if (n == 1)
+//         return 1;
+        
+//     return findFibonacci(n - 1) + findFibonacci(n - 2);
+// }
+
+// let n = findFibonacci(10);
+
+// console.log(n);
+
+
+
+
+// // 14. Create a function that will return a Boolean specifying if a number is prime
+
+// function isPrime(n){
+//     if (n < 2)
+//         return false;
+        
+//     if (n == 2)
+//         return true;
+    
+//     let maxDiv = Math.sqrt(n);
+    
+//     for(let i = 2; i <= maxDiv; i++){
+//         if (n % i == 0){
+//             return false;
+//         }
+//     }
+    
+//     return true;
+// }
+
+// console.log(2, " is prime? ", isPrime(2));
+// console.log(3, " is prime? ", isPrime(3));
+// console.log(4, " is prime? ", isPrime(4));
+// console.log(5, " is prime? ", isPrime(5));
+// console.log(9, " is prime? ", isPrime(9));
+
+
+
+
+
+// // 15. Calculate the sum of digits of a positive integer number
+
+// function sumDigits(n){
+//     let s = n.toString();
+//     let sm = 0;
+    
+//     for(let char of s){
+//         let digit = parseInt(char);
+//         sm += digit;
+//     }
+    
+//     return sm;
+// }
+
+// let sm = sumDigits(1235231);
+// console.log("Sum: ", sm);
+
+
+
+
+
+// // 16. Print the first 100 prime numbers
+
+// printPrimes(100);
+
+// // Function prints the first nPrimes numbers
+// function printPrimes(nPrimes){
+//     let n = 0;
+//     let i = 2;
+    
+//     while(n < nPrimes){
+//         if (isPrime(i)){
+//             console.log(n, " --> ", i);
+//             n++;
+//         }
+        
+//         i++;
+//     }
+// }
+
+
+// // Returns true if a number is prime
+// function isPrime(n){
+//     if (n < 2)
+//         return false;
+        
+//     if (n == 2)
+//         return true;
+    
+//     let maxDiv = Math.sqrt(n);
+    
+//     for(let i = 2; i <= maxDiv; i++){
+//         if (n % i == 0){
+//             return false;
+//         }
+//     }
+    
+//     return true;
+// }
+
+
+
+
+
+// // 17. Create a function that will return in an array the first "nPrimes" prime numbers greater than a particular number "startAt"
+
+// console.log(getPrimes(10, 100));
+
+// function getPrimes(nPrimes, startAt){
+//     let ar = [];
+    
+//     let i = startAt;
+    
+//     while(ar.length < nPrimes){
+//         if (isPrime(i)){
+//             ar.push(i);
+//         }
+        
+//         i++;
+//     }
+    
+//     return ar;
+// }
+
+// // Returns true if a number is prime
+// function isPrime(n){
+//     if (n < 2)
+//         return false;
+        
+//     if (n == 2)
+//         return true;
+    
+//     let maxDiv = Math.sqrt(n);
+    
+//     for(let i = 2; i <= maxDiv; i++){
+//         if (n % i == 0){
+//             return false;
+//         }
+//     }
+    
+//     return true;
+// }
+
+
+
+
+
+// // 18. Rotate an array to the left 1 position
+
+// let ar1 = [1, 2, 3,4,5];
+// rotateLeft(ar1);
+// console.log(ar1);
+
+// function rotateLeft(ar1){
+//     let first = ar1.shift();
+
+//     ar1.push(first);
+// }
+
+
+
+
+
+// // 19. Rotate an array to the right 1 position
+
+// let a1 = [1, 2, 3];
+// rotateRight(a1);
+// console.log(a1);
+
+// function rotateRight(a1){
+//     let last = a1.pop();
+//     a1.unshift(last);
+
+
+// }
+
+
+
+
+// // 20.Reverse an array
+
+// let a2 = [1, 2, 3];
+// let a3 = reverseArray(a2);
+// console.log(a3);
+
+// function reverseArray(a2)
+// {
+//     let a3 = [];
+    
+//     for(let i = a2.length - 1; i >= 0; i--)
+//     {
+//         a3.push(a2[i]);
+//     }
+    
+//     return a3;
+// }
+
+
+
+
+
+// // 21. Reverse a string
+
+// let s1 = reverseString("JavaScript");
+// console.log(s1);
+
+// function reverseString(s1){
+//     let s2 = "";
+    
+//     for(let i = s1.length - 1; i >= 0; i--){
+//         let char = s1[i];
+//         s2 += char;
+//     }
+    
+//     return s2;
+// }
+
+
+
+
+
+// // 22.  Create a function that will merge two arrays and return the result as a new array
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+
+// let arr = mergeArrays(arr1, arr2);
+
+// console.log(arr);
+
+// function mergeArrays(arr1, arr2){
+
+//    let arr = [];
+   
+//    for(let el of arr1){
+    
+//        arr.push(el);
+//    }
+   
+//    for(let el of arr2){
+//        arr.push(el);
+//    }
+   
+//    return arr;
+// }
+
+
+
+
+
+
+
+// // 23. Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are 
+// // either in the first array or second array but not in both
+
+
+// let aar1 = [1, 2, 3, 10, 5, 3, 14];
+// let aar2 = [1, 4, 5, 6, 14];
+
+// let aar = mergeExclusive(aar1, aar2);
+
+// console.log(aar);
+
+// function mergeExclusive(aar1, aar2){
+
+//     let aar = [];
+    
+//     for(let el of aar1){
+//         if (!aar2.includes(el)){
+//             aar.push(el);
+//         }
+//     }
+    
+//     for(let el of aar2){
+//         if (!aar1.includes(el)){
+//             aar.push(el);
+//         }
+//     }
+    
+//     return aar;
+// }
+
+
+
+
+
+
+// // 24. Create a function that will receive two arrays and will return an array with elements that are in the first array but not in 
+// // the second
+
+
+// // let aarr1 = [1, 2, 3, 10, 5, 3, 14];
+// // let aarr2 = [-1, 4, 5, 6, 14];
+
+// // let aarr = mergeLeft(aarr1, aarr2);
+
+// // console.log(aarr);
+
+// // function mergeLeft(aarr1, aarr2){
+    
+// //     let aarr = [];
+    
+// //     for(let el of aarr1){
+// //         if (!aarr2.includes(el)){
+// //             aarr.push(el);
+// //         }
+// //     }
+
+// //     return aarr;
+// // }
+
+
+
+
+
+// // 25. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
+
+let ar = getDistinctElements([1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100]);
+console.log(ar);
+
+function getDistinctElements(ar)
+{
+    let ar2 = [];
     
     for(let i = 0; i < ar.length; i++)
     {
-        summ += ar[i];
-    }
-    
-    return summ;
-}
-
-let ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
-let summ = sumArray(ar);
-console.log(summ);
-
-
-
-
-
-// 9. Calculate the average of the numbers in an array of numbers
-
-function averageArray(arrr){
-
-    let n = arrr.length;
-    let summm = 0;
-    
-    for(let i = 0; i < n; i++){
-
-        summm += ar[i];
-    }
-    
-    return summm / n;
-}
-
-let arrr = [1, 3, 9, 15, 90];
-let avg = averageArray(arrr);
-
-console.log("Average: ", avg);
-
-
-
-
-
-
-// 10.Create a function that receives an array of numbers and returns an array containing only the positive numbers
-
-// Method 1
-function getPositives(r){
-    let r2 = [];
-    
-    for(let i = 0; i < r.length; i++){
-        let el = r[i];
-        
-        if (el >= 0){
-            r2.push(el);
+        if (!isInArray(ar[i], ar2))
+        {
+            ar2.push(ar[i]);
         }
     }
     
-    return r2;
+    return ar2;
 }
 
-r= [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let r2 = getPositives(r);
-
-console.log(r2);
-
-
-
-// 10. Create a function that receives an array of numbers and returns an array containing only the positive numbers. 
-
-// Method 2 
-
-function getPositives(r3){
-    let r4 = [];
-    
-    for(let el of r3){
-        if (el >= 0){
-            r4.push(el);
-        }
-    }
-    
-    return r4;
-}
-
-let r3 = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let r4 = getPositives(r3);
-
-console.log(r4);
-
-
-
-// 10. Create a function that receives an array of numbers and returns an array containing only the positive numbers
-
-// Method3
-
-function getPositives(r5){
-
-    return r5.filter(el => el >= 0);
-}
-
-let r5 = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let r6 = getPositives(r5);
-
-console.log(r6);
-
-
-
-
-
-// 11. Find the maximum number in an array of numbers
-
-function findMax(a){
-    
-    let max = a[0];
-    
-    for(let i = 0; i < a.length; i++){
-        if (a[i] > max){
-            max = a[i];
-        }
-    }
-    
-    return max;
-}
-
-let a = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let max = findMax(a);
-
-console.log("Max: ", max);
-
-
-
-
-
-// 12. Print the first 10 Fibonacci numbers without recursion
-
-
-let f0 = 0;
-console.log(f0);
-
-let f1 = 1;
-console.log(f1);
-
-for(let i = 2; i < 10; i++){
-    let fi = f1 + f0;
-    console.log(fi);
-    
-    f0 = f1;
-    f1 = fi;
-}
-
-
-
-
-
-// 13. Create a function that will find the nth Fibonacci number using recursion
-
-function findFibonacci(n){
-    if (n == 0)
-        return 0;
-        
-    if (n == 1)
-        return 1;
-        
-    return findFibonacci(n - 1) + findFibonacci(n - 2);
-}
-
-let n = findFibonacci(10);
-
-console.log(n);
-
-
-
-
-// 14. Create a function that will return a Boolean specifying if a number is prime
-
-function isPrime(n){
-    if (n < 2)
-        return false;
-        
-    if (n == 2)
-        return true;
-    
-    let maxDiv = Math.sqrt(n);
-    
-    for(let i = 2; i <= maxDiv; i++){
-        if (n % i == 0){
-            return false;
-        }
-    }
-    
-    return true;
-}
-
-console.log(2, " is prime? ", isPrime(2));
-console.log(3, " is prime? ", isPrime(3));
-console.log(4, " is prime? ", isPrime(4));
-console.log(5, " is prime? ", isPrime(5));
-console.log(9, " is prime? ", isPrime(9));
-
-
-
-
-
-// 15. Calculate the sum of digits of a positive integer number
-
-function sumDigits(n){
-    let s = n.toString();
-    let sm = 0;
-    
-    for(let char of s){
-        let digit = parseInt(char);
-        sm += digit;
-    }
-    
-    return sm;
-}
-
-let sm = sumDigits(1235231);
-console.log("Sum: ", sm);
-
-
-
-
-
-// 16. Print the first 100 prime numbers
-
-printPrimes(100);
-
-// Function prints the first nPrimes numbers
-function printPrimes(nPrimes){
-    let n = 0;
-    let i = 2;
-    
-    while(n < nPrimes){
-        if (isPrime(i)){
-            console.log(n, " --> ", i);
-            n++;
-        }
-        
-        i++;
-    }
-}
-
-
-// Returns true if a number is prime
-function isPrime(n){
-    if (n < 2)
-        return false;
-        
-    if (n == 2)
-        return true;
-    
-    let maxDiv = Math.sqrt(n);
-    
-    for(let i = 2; i <= maxDiv; i++){
-        if (n % i == 0){
-            return false;
-        }
-    }
-    
-    return true;
-}
-
-
-
-
-
-// 17. Create a function that will return in an array the first "nPrimes" prime numbers greater than a particular number "startAt"
-
-console.log(getPrimes(10, 100));
-
-function getPrimes(nPrimes, startAt){
-    let ar = [];
-    
-    let i = startAt;
-    
-    while(ar.length < nPrimes){
-        if (isPrime(i)){
-            ar.push(i);
-        }
-        
-        i++;
-    }
-    
-    return ar;
-}
-
-// Returns true if a number is prime
-function isPrime(n){
-    if (n < 2)
-        return false;
-        
-    if (n == 2)
-        return true;
-    
-    let maxDiv = Math.sqrt(n);
-    
-    for(let i = 2; i <= maxDiv; i++){
-        if (n % i == 0){
-            return false;
-        }
-    }
-    
-    return true;
-}
-
-
-
-
-
-// 18. Rotate an array to the left 1 position
-
-let ar1 = [1, 2, 3,4,5];
-rotateLeft(ar1);
-console.log(ar1);
-
-function rotateLeft(ar1){
-    let first = ar1.shift();
-
-    ar1.push(first);
-}
-
-
-
-
-
-// 19. Rotate an array to the right 1 position
-
-let a1 = [1, 2, 3];
-rotateRight(a1);
-console.log(a1);
-
-function rotateRight(a1){
-    let last = a1.pop();
-    a1.unshift(last);
-
-
-}
-
-
-
-
-// 20.Reverse an array
-
-let a2 = [1, 2, 3];
-let a3 = reverseArray(a2);
-console.log(a3);
-
-function reverseArray(a2)
+function isInArray(n, ar)
 {
-    let a3 = [];
-    
-    for(let i = a2.length - 1; i >= 0; i--)
+    for(let i = 0; i < ar.length; i++)
     {
-        a3.push(a2[i]);
+        if (ar[i] === n)
+            return true;
     }
     
-    return a3;
-}
-
-
-
-
-
-// 21. Reverse a string
-
-let s1 = reverseString("JavaScript");
-console.log(s1);
-
-function reverseString(s1){
-    let s2 = "";
-    
-    for(let i = s1.length - 1; i >= 0; i--){
-        let char = s1[i];
-        s2 += char;
-    }
-    
-    return s2;
-}
-
-
-
-
-
-// 22.  Create a function that will merge two arrays and return the result as a new array
-
-let arr1 = [1, 2, 3];
-let arr2 = [4, 5, 6];
-
-let arr = mergeArrays(arr1, arr2);
-
-console.log(arr);
-
-function mergeArrays(arr1, arr2){
-
-   let arr = [];
-   
-   for(let el of arr1){
-    
-       arr.push(el);
-   }
-   
-   for(let el of arr2){
-       arr.push(el);
-   }
-   
-   return arr;
-}
-
-
-
-
-
-
-
-// 23. Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are 
-// either in the first array or second array but not in both
-
-
-let aar1 = [1, 2, 3, 10, 5, 3, 14];
-let aar2 = [1, 4, 5, 6, 14];
-
-let aar = mergeExclusive(aar1, aar2);
-
-console.log(aar);
-
-function mergeExclusive(aar1, aar2){
-
-    let aar = [];
-    
-    for(let el of aar1){
-        if (!aar2.includes(el)){
-            aar.push(el);
-        }
-    }
-    
-    for(let el of aar2){
-        if (!aar1.includes(el)){
-            aar.push(el);
-        }
-    }
-    
-    return aar;
-}
-
-
-
-
-
-
-// 24. Create a function that will receive two arrays and will return an array with elements that are in the first array but not in 
-// the second
-
-
-let aarr1 = [1, 2, 3, 10, 5, 3, 14];
-let aarr2 = [-1, 4, 5, 6, 14];
-
-let aarr = mergeLeft(aarr1, aarr2);
-
-console.log(aarr);
-
-function mergeLeft(aarr1, aarr2){
-    
-    let aarr = [];
-    
-    for(let el of aarr1){
-        if (!aarr2.includes(el)){
-            aarr.push(el);
-        }
-    }
-
-    return aarr;
+    return false;
 }
