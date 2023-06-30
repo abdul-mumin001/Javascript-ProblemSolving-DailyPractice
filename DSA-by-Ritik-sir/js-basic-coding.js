@@ -584,14 +584,50 @@
 
 // // 25. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
 
+// Method 1
+
+// let ar = getDistinctElements([1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100]);
+// console.log(ar);
+
+// function getDistinctElements(ar){
+//     let ar2 = [];
+    
+//     for(let i = 0; i < ar.length; i++){
+//         if (!isInArray(ar[i], ar2)){
+//             ar2.push(ar[i]);
+//         }
+//     }
+    
+//     return ar2;
+// }
+
+// function isInArray(n, ar){
+//     for(let i = 0; i < ar.length; i++){
+//         if (ar[i] === n)
+//             return true;
+//     }
+    
+//     return false;
+// }
+
+
+
+
+// Method 2
+
 let ar = getDistinctElements([1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100]);
 console.log(ar);
 
-function getDistinctElements(ar){
+function getDistinctElements(ar)
+{
     let ar2 = [];
     
-    for(let i = 0; i < ar.length; i++){
-        if (!isInArray(ar[i], ar2)){
+    let lastIndex = ar.length - 1;
+    
+    for(let i = 0; i <= lastIndex; i++)
+    {
+        if (!isInArray(ar[i], ar, i + 1, lastIndex))
+        {
             ar2.push(ar[i]);
         }
     }
@@ -599,8 +635,10 @@ function getDistinctElements(ar){
     return ar2;
 }
 
-function isInArray(n, ar){
-    for(let i = 0; i < ar.length; i++){
+function isInArray(n, ar, fromIndex, toIndex)
+{
+    for(let i = fromIndex; i <= toIndex; i++)
+    {
         if (ar[i] === n)
             return true;
     }
