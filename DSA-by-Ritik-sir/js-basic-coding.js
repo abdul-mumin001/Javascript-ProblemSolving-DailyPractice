@@ -618,16 +618,13 @@
 let ar = getDistinctElements([1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100]);
 console.log(ar);
 
-function getDistinctElements(ar)
-{
+function getDistinctElements(ar){
     let ar2 = [];
     
     let lastIndex = ar.length - 1;
     
-    for(let i = 0; i <= lastIndex; i++)
-    {
-        if (!isInArray(ar[i], ar, i + 1, lastIndex))
-        {
+    for(let i = 0; i <= lastIndex; i++){
+        if (!isInArray(ar[i], ar, i + 1, lastIndex)){
             ar2.push(ar[i]);
         }
     }
@@ -635,10 +632,8 @@ function getDistinctElements(ar)
     return ar2;
 }
 
-function isInArray(n, ar, fromIndex, toIndex)
-{
-    for(let i = fromIndex; i <= toIndex; i++)
-    {
+function isInArray(n, ar, fromIndex, toIndex){
+    for(let i = fromIndex; i <= toIndex; i++){
         if (ar[i] === n)
             return true;
     }
