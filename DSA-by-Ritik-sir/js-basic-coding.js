@@ -616,9 +616,11 @@
 // Method 2
 
 let ar = getDistinctElements([1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100]);
+
 console.log(ar);
 
 function getDistinctElements(ar){
+
     let ar2 = [];
     
     let lastIndex = ar.length - 1;
@@ -628,7 +630,6 @@ function getDistinctElements(ar){
             ar2.push(ar[i]);
         }
     }
-    
     return ar2;
 }
 
@@ -637,6 +638,5 @@ function isInArray(n, ar, fromIndex, toIndex){
         if (ar[i] === n)
             return true;
     }
-    
     return false;
 }
