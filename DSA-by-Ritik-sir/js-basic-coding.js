@@ -652,16 +652,13 @@ function isInArray(n, ar, fromIndex, toIndex){
 let n = 10;
 console.log("Sum of first ", n, " primes is ", sumPrimes(10));
 
-function sumPrimes(n)
-{
+function sumPrimes(n){
     let foundPrimes = 0;
     let i = 2;
     let sum = 0;
     
-    while(foundPrimes < n)
-    {
-        if (isPrime(i))
-        {
+    while(foundPrimes < n){
+        if (isPrime(i)){
             foundPrimes++;
             sum += i;
         }
@@ -673,8 +670,7 @@ function sumPrimes(n)
 }
 
 // Returns true if number n is prime
-function isPrime(n)
-{
+function isPrime(n){
     if (n < 2)
         return false;
         
@@ -683,10 +679,8 @@ function isPrime(n)
     
     let maxDiv = Math.sqrt(n);
     
-    for(let i = 2; i <= maxDiv; i++)
-    {
-        if (n % i === 0)
-        {
+    for(let i = 2; i <= maxDiv; i++){
+        if (n % i === 0){
             return false;
         }
     }
