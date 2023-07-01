@@ -656,20 +656,18 @@ function sumPrimes(n){
     let foundPrimes = 0;
     let i = 2;
     let sum = 0;
-    
     while(foundPrimes < n){
         if (isPrime(i)){
             foundPrimes++;
             sum += i;
         }
-        
         i++;
     }
-    
     return sum;
 }
 
 // Returns true if number n is prime
+
 function isPrime(n){
     if (n < 2)
         return false;
@@ -684,6 +682,5 @@ function isPrime(n){
             return false;
         }
     }
-    
     return true;
 }
