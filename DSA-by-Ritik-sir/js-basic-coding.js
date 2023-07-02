@@ -701,11 +701,9 @@ function printDistances(n){
     while(foundPrimes < n){
         if (isPrime(i)){
             console.log(i - lastPrime, "\t", i, " - ", lastPrime);
-
             foundPrimes++;
             lastPrime = i;
         }
-        
         i++;
     }
 }
@@ -718,12 +716,10 @@ function isPrime(n){
         return true;
     
     let maxDiv = Math.sqrt(n);
-    
     for(let i = 2; i <= maxDiv; i++){
         if (n % i === 0){
             return false;
         }
     }
-    
     return true;
 }
