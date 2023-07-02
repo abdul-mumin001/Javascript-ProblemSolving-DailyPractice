@@ -693,16 +693,13 @@ function isPrime(n){
 
 printDistances(100);
 // Print distances between the first n prime numbers
-function printDistances(n)
-{
+function printDistances(n){
     let lastPrime = 2;
     let i = lastPrime + 1;
     let foundPrimes = 1;
     
-    while(foundPrimes < n)
-    {
-        if (isPrime(i))
-        {
+    while(foundPrimes < n){
+        if (isPrime(i)){
             console.log(i - lastPrime, "\t", i, " - ", lastPrime);
 
             foundPrimes++;
@@ -713,8 +710,7 @@ function printDistances(n)
     }
 }
 // Returns true if number n is prime
-function isPrime(n)
-{
+function isPrime(n){
     if (n < 2)
         return false;
         
@@ -723,10 +719,8 @@ function isPrime(n)
     
     let maxDiv = Math.sqrt(n);
     
-    for(let i = 2; i <= maxDiv; i++)
-    {
-        if (n % i === 0)
-        {
+    for(let i = 2; i <= maxDiv; i++){
+        if (n % i === 0){
             return false;
         }
     }
