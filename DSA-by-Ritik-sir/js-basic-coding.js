@@ -738,15 +738,13 @@ let sum = add(n1, n2);
 
 console.log(n1, "\n", n2, "\n", sum);
 
-function add(sNumber1, sNumber2)
-{
+function add(sNumber1, sNumber2){
     let s = "";
     let carry = 0;
     
     let maxSize = Math.max(sNumber1.length, sNumber2.length);
     
-    for(let i = 0; i < maxSize; i++)
-    {
+    for(let i = 0; i < maxSize; i++){
         let digit1 = digitFromRight(sNumber1, i);
         let digit2 = digitFromRight(sNumber2, i);
         
@@ -763,8 +761,7 @@ function add(sNumber1, sNumber2)
     return s;
 }
 
-function digitFromRight(s, digitNo)
-{
+function digitFromRight(s, digitNo){
     if (digitNo >= s.length)
         return 0;
         
