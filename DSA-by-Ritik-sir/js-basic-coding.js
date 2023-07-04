@@ -783,8 +783,7 @@ console.log(n1);
 console.log(n2);
 console.log(sum);
 
-function add(sNumber1, sNumber2)
-{
+function add(sNumber1, sNumber2){
     let maxSize = Math.max(sNumber1.length, sNumber2.length);
     
     let s1 = sNumber1.padStart(maxSize, "0");
@@ -793,8 +792,7 @@ function add(sNumber1, sNumber2)
     let s = "";
     let carry = 0;
     
-    for(let i = maxSize - 1; i >= 0; i--)
-    {
+    for(let i = maxSize - 1; i >= 0; i--){
         let digit1 = parseInt(s1[i]);
         let digit2 = parseInt(s2[i]);
         
