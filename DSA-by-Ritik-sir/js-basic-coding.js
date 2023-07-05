@@ -815,35 +815,29 @@ function add(sNumber1, sNumber2){
 
 // 29. Create a function that will return the number of words in a text
 
-function countWords(text)
-{
+function countWords(text){
     let wasSeparator = true;
     let words = 0;
     
-    for(let c of text)
-    {
+    for(let c of text){
         // if current character is separator then advance and
         // set that the previous character was separator
-        if (isSeparator(c))
-        {
+        if (isSeparator(c)){
             wasSeparator = true;
             continue;
         }
 
         // if current character is not separator
-        // ... but if previous was separator...
-        if (wasSeparator)
-        {
+        // but if previous was separator...
+        if (wasSeparator){
             words++;
             wasSeparator = false;
         }
     }
-    
     return words;
 }
 
-function isSeparator(c)
-{
+function isSeparator(c){
     let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
     return separators.includes(c);
 }
