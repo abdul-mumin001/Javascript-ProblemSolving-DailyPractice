@@ -712,20 +712,17 @@ function add(sNumber1, sNumber2) {
 
 // Method 2
 
-function countWords(text)
-{
+function countWords(text){
     let words = 0;
     
     if (text.length > 0 && !isSeparator(text[0]))
         words++;
     
-    for(let i = 1; i < text.length; i++)
-    {
+    for(let i = 1; i < text.length; i++){
         let currChr = text[i];
         let prevChr = text[i - 1];
         
-        if (!isSeparator(currChr) && isSeparator(prevChr))
-        {
+        if (!isSeparator(currChr) && isSeparator(prevChr)){
             words++;
         }
     }
@@ -733,8 +730,7 @@ function countWords(text)
     return words;
 }
 
-function isSeparator(c)
-{
+function isSeparator(c){
     let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
     return separators.includes(c);
 }
