@@ -674,30 +674,71 @@ function add(sNumber1, sNumber2) {
 
 // 29. Create a function that will return the number of words in a text
 
-function countWords(text) {
-  let wasSeparator = true;
-  let words = 0;
+// Method 1
 
-  for (let c of text) {
-    // if current character is separator then advance and
-    // set that the previous character was separator
-    if (isSeparator(c)) {
-      wasSeparator = true;
-      continue;
+// function countWords(text) {
+//   let wasSeparator = true;
+//   let words = 0;
+
+//   for (let c of text) {
+//     // if current character is separator then advance and
+//     // set that the previous character was separator
+//     if (isSeparator(c)) {
+//       wasSeparator = true;
+//       continue;
+//     }
+//     // if current character is not separator
+//     // but if previous was separator...
+//     if (wasSeparator) {
+//       words++;
+//       wasSeparator = false;
+//     }
+//   }
+//   return words;
+// }
+// function isSeparator(c) {
+//   let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
+//   return separators.includes(c);
+// }
+// console.log(countWords(""));
+// console.log(countWords("            "));
+// console.log(countWords("JavaScript!!!   "));
+// console.log(countWords("     JavaScript"));
+// console.log(countWords("    JavaScript is cool      "));
+// console.log(countWords("I like to learn JavaScript with codeguppy"));
+
+
+
+
+// Method 2
+
+function countWords(text)
+{
+    let words = 0;
+    
+    if (text.length > 0 && !isSeparator(text[0]))
+        words++;
+    
+    for(let i = 1; i < text.length; i++)
+    {
+        let currChr = text[i];
+        let prevChr = text[i - 1];
+        
+        if (!isSeparator(currChr) && isSeparator(prevChr))
+        {
+            words++;
+        }
     }
-    // if current character is not separator
-    // but if previous was separator...
-    if (wasSeparator) {
-      words++;
-      wasSeparator = false;
-    }
-  }
-  return words;
+    
+    return words;
 }
-function isSeparator(c) {
-  let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
-  return separators.includes(c);
+
+function isSeparator(c)
+{
+    let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
+    return separators.includes(c);
 }
+
 console.log(countWords(""));
 console.log(countWords("            "));
 console.log(countWords("JavaScript!!!   "));
