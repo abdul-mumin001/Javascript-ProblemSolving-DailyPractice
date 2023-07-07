@@ -719,6 +719,7 @@ function countWords(text){
         words++;
     
     for(let i = 1; i < text.length; i++){
+
         let currChr = text[i];
         let prevChr = text[i - 1];
         
@@ -726,10 +727,8 @@ function countWords(text){
             words++;
         }
     }
-    
     return words;
 }
-
 function isSeparator(c){
     let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
     return separators.includes(c);
