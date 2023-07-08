@@ -707,31 +707,26 @@ function add(sNumber1, sNumber2) {
 // console.log(countWords("    JavaScript is cool      "));
 // console.log(countWords("I like to learn JavaScript with codeguppy"));
 
-
-
-
 // Method 2
 
-function countWords(text){
-    let words = 0;
-    
-    if (text.length > 0 && !isSeparator(text[0]))
-        words++;
-    
-    for(let i = 1; i < text.length; i++){
+function countWords(text) {
+  let words = 0;
 
-        let currChr = text[i];
-        let prevChr = text[i - 1];
-        
-        if (!isSeparator(currChr) && isSeparator(prevChr)){
-            words++;
-        }
+  if (text.length > 0 && !isSeparator(text[0])) words++;
+
+  for (let i = 1; i < text.length; i++) {
+    let currChr = text[i];
+    let prevChr = text[i - 1];
+
+    if (!isSeparator(currChr) && isSeparator(prevChr)) {
+      words++;
     }
-    return words;
+  }
+  return words;
 }
-function isSeparator(c){
-    let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
-    return separators.includes(c);
+function isSeparator(c) {
+  let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
+  return separators.includes(c);
 }
 
 console.log(countWords(""));
@@ -747,26 +742,29 @@ console.log(countWords("I like to learn JavaScript with codeguppy"));
 
 // 30. Create a function that will capitalize the first letter of each word in a text
 
-console.log(captializeWords("Create a function that will capitalize the first letter of each word in a text"));
 
-function captializeWords(text){
-    let text2 = "";
-    
-    for(let i = 0; i < text.length; i++){
-        let currChr = text[i];
-        let prevChr = i > 0 ? text[i - 1] : " ";
-        
-        if (!isSeparator(currChr) && isSeparator(prevChr)){
-            currChr = currChr.toUpperCase();
-        }
-        
-        text2 += currChr;
+console.log(
+  captializeWords(
+    "Create a function that will capitalize the first letter of each word in a text"
+  )
+);
+
+function captializeWords(text) {
+  let text2 = "";
+
+  for (let i = 0; i < text.length; i++) {
+    let currChr = text[i];
+    let prevChr = i > 0 ? text[i - 1] : " ";
+
+    if (!isSeparator(currChr) && isSeparator(prevChr)) {
+      currChr = currChr.toUpperCase();
     }
-    
-    return text2;
+    text2 += currChr;
+  }
+  return text2;
 }
 
-function isSeparator(c){
-    let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
-    return separators.includes(c);
+function isSeparator(c) {
+  let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
+  return separators.includes(c);
 }
