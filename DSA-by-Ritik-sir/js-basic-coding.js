@@ -749,17 +749,14 @@ console.log(countWords("I like to learn JavaScript with codeguppy"));
 
 console.log(captializeWords("Create a function that will capitalize the first letter of each word in a text"));
 
-function captializeWords(text)
-{
+function captializeWords(text){
     let text2 = "";
     
-    for(let i = 0; i < text.length; i++)
-    {
+    for(let i = 0; i < text.length; i++){
         let currChr = text[i];
         let prevChr = i > 0 ? text[i - 1] : " ";
         
-        if (!isSeparator(currChr) && isSeparator(prevChr))
-        {
+        if (!isSeparator(currChr) && isSeparator(prevChr)){
             currChr = currChr.toUpperCase();
         }
         
@@ -769,8 +766,7 @@ function captializeWords(text)
     return text2;
 }
 
-function isSeparator(c)
-{
+function isSeparator(c){
     let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?"];
     return separators.includes(c);
 }
