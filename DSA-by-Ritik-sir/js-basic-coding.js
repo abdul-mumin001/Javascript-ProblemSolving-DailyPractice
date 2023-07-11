@@ -736,12 +736,7 @@ console.log(countWords("     JavaScript"));
 console.log(countWords("    JavaScript is cool      "));
 console.log(countWords("I like to learn JavaScript with codeguppy"));
 
-
-
-
-
 // 30. Create a function that will capitalize the first letter of each word in a text
-
 
 console.log(
   captializeWords(
@@ -769,61 +764,52 @@ function isSeparator(c) {
   return separators.includes(c);
 }
 
-
-
-
-
-
 // 31. Calculate the sum of numbers received in a comma delimited string
-
 
 console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
 
-function sumCSV(s){
+function sumCSV(s) {
+  let ar = s.split(",");
+  let sum = 0;
 
-    let ar = s.split(",");
-    let sum = 0;
+  for (let n of ar) {
+    sum += parseFloat(n);
+  }
 
-    for(let n of ar){
-        sum += parseFloat(n);
-    }
-    
-    return sum;
+  return sum;
 }
-
-
-
-
 
 // 32. Create a function that will return an array with words inside a text
 
-let text = "Create a function, that will return an array (of string), with the words inside the text";
+
+let text =
+  "Create a function, that will return an array (of string), with the words inside the text";
 
 console.log(getWords(text));
 
-function getWords(text){
-    let startWord = -1;
-    let ar = [];
-    
-    for(let i = 0; i <= text.length; i++){
-        let c = i < text.length ? text[i] : " ";
+function getWords(text) {
+  let startWord = -1;
+  let ar = [];
 
-        if (!isSeparator(c) && startWord < 0){
-            startWord = i;
-        }
-        
-        if (isSeparator(c) && startWord >= 0){
-            let word = text.substring(startWord, i);
-            ar.push(word);
-            
-            startWord = -1;
-        }
+  for (let i = 0; i <= text.length; i++) {
+    let c = i < text.length ? text[i] : " ";
+
+    if (!isSeparator(c) && startWord < 0) {
+      startWord = i;
     }
 
-    return ar;
+    if (isSeparator(c) && startWord >= 0) {
+      let word = text.substring(startWord, i);
+      ar.push(word);
+
+      startWord = -1;
+    }
+  }
+
+  return ar;
 }
 
-function isSeparator(c){
-    let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?", "(", ")"];
-    return separators.includes(c);
+function isSeparator(c) {
+  let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?", "(", ")"];
+  return separators.includes(c);
 }
