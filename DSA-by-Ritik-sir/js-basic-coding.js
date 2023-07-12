@@ -766,50 +766,75 @@ function isSeparator(c) {
 
 // 31. Calculate the sum of numbers received in a comma delimited string
 
-console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
+// console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
 
-function sumCSV(s) {
-  let ar = s.split(",");
-  let sum = 0;
+// function sumCSV(s) {
+//   let ar = s.split(",");
+//   let sum = 0;
 
-  for (let n of ar) {
-    sum += parseFloat(n);
-  }
+//   for (let n of ar) {
+//     sum += parseFloat(n);
+//   }
 
-  return sum;
-}
+//   return sum;
+// }
 
 // 32. Create a function that will return an array with words inside a text
 
 
-let text =
-  "Create a function, that will return an array (of string), with the words inside the text";
+// let text =
+//   "Create a function, that will return an array (of string), with the words inside the text";
 
-console.log(getWords(text));
+// console.log(getWords(text));
 
-function getWords(text) {
-  let startWord = -1;
-  let ar = [];
+// function getWords(text) {
+//   let startWord = -1;
+//   let ar = [];
 
-  for (let i = 0; i <= text.length; i++) {
-    let c = i < text.length ? text[i] : " ";
+//   for (let i = 0; i <= text.length; i++) {
+//     let c = i < text.length ? text[i] : " ";
 
-    if (!isSeparator(c) && startWord < 0) {
-      startWord = i;
+//     if (!isSeparator(c) && startWord < 0) {
+//       startWord = i;
+//     }
+
+//     if (isSeparator(c) && startWord >= 0) {
+//       let word = text.substring(startWord, i);
+//       ar.push(word);
+
+//       startWord = -1;
+//     }
+//   }
+
+//   return ar;
+// }
+
+// function isSeparator(c) {
+//   let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?", "(", ")"];
+//   return separators.includes(c);
+// }
+
+
+
+
+
+
+// 33. Create a function to convert a CSV text to a “bi-dimensional” array
+
+let data = "John;Smith;954-000-0000\nMich;Tiger;305-000-0000\nMonique;Vasquez;103-000-0000";
+
+let arr = csvToArray(data);
+console.log(JSON.stringify(arr));
+
+function csvToArray(data)
+{
+    let arLines = data.split("\n");
+
+    for(let i = 0; i < arLines.length; i++)
+    {
+        let arLine = arLines[i].split(";");
+        arLines[i] = arLine;
     }
-
-    if (isSeparator(c) && startWord >= 0) {
-      let word = text.substring(startWord, i);
-      ar.push(word);
-
-      startWord = -1;
-    }
-  }
-
-  return ar;
-}
-
-function isSeparator(c) {
-  let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?", "(", ")"];
-  return separators.includes(c);
+    
+    return arLines;
 }
