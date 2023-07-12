@@ -781,7 +781,6 @@ function isSeparator(c) {
 
 // 32. Create a function that will return an array with words inside a text
 
-
 // let text =
 //   "Create a function, that will return an array (of string), with the words inside the text";
 
@@ -818,21 +817,19 @@ function isSeparator(c) {
 
 
 
-
 // 33. Create a function to convert a CSV text to a “bi-dimensional” array
 
-let data = "John;Smith;954-000-0000\nMich;Tiger;305-000-0000\nMonique;Vasquez;103-000-0000";
+let data =
+  "John;Smith;954-000-0000\nMich;Tiger;305-000-0000\nMonique;Vasquez;103-000-0000";
 
 let arr = csvToArray(data);
 console.log(JSON.stringify(arr));
 
-function csvToArray(data){
-    let arLines = data.split("\n");
-
-    for(let i = 0; i < arLines.length; i++){
-        let arLine = arLines[i].split(";");
-        arLines[i] = arLine;
-    }
-    
-    return arLines;
+function csvToArray(data) {
+  let arLines = data.split("\n");
+  for (let i = 0; i < arLines.length; i++) {
+    let arLine = arLines[i].split(";");
+    arLines[i] = arLine;
+  }
+  return arLines;
 }
