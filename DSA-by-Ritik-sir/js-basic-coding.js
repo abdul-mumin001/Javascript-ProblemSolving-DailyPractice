@@ -853,15 +853,15 @@ console.log(getChars("I like JavaScript"));
 
 // 35. Create a function that will convert a string in an array containing the ASCII codes of each character.
 
-console.log(getCharCodes("I like JavaScript"));
 
 function getCharCodes(s){
+
     let ar = [];
-    
+
     for(let i = 0; i < s.length; i++){
         let code = s.charCodeAt(i);
         ar.push(code);
     }
-    
     return ar;
 }
+console.log(getCharCodes("I like JavaScript"));
