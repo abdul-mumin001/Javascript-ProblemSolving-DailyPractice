@@ -813,10 +813,6 @@ function isSeparator(c) {
 //   return separators.includes(c);
 // }
 
-
-
-
-
 // 33. Create a function to convert a CSV text to a “bi-dimensional” array
 
 let data =
@@ -834,35 +830,24 @@ function csvToArray(data) {
   return arLines;
 }
 
-
-
-
-
 // 34. Create a function that converts a string to an array of characters
 
-
-function getChars(s){
-    return Array.from(s);
+function getChars(s) {
+  return Array.from(s);
 }
 
 console.log(getChars("I like JavaScript"));
 
-
-
-
-
 // 35. Create a function that will convert a string in an array containing the ASCII codes of each character.
 
+function getCharCodes(s) {
+  let ar = [];
 
-function getCharCodes(s){
-
-    let ar = [];
-
-    for(let i = 0; i < s.length; i++){
-        let code = s.charCodeAt(i);
-        ar.push(code);
-    }
-    return ar;
+  for (let i = 0; i < s.length; i++) {
+    let code = s.charCodeAt(i);
+    ar.push(code);
+  }
+  return ar;
 }
 console.log(getCharCodes("I like JavaScript"));
 
@@ -872,10 +857,13 @@ console.log(getCharCodes("I like JavaScript"));
 
 // 36. Create a function that will convert an array containing ASCII codes in a string
 
-console.log(codesToString([73,32,108,105,107,101,32,74,97,118,97,83,99,114,105,112,116]));
 
-function codesToString(ar){
-
-    return String.fromCharCode(...ar);
-    
+function codesToString(ar) {
+  return String.fromCharCode(...ar);
 }
+
+console.log(
+  codesToString([
+    73, 32, 108, 105, 107, 101, 32, 74, 97, 118, 97, 83, 99, 114, 105, 112, 116,
+  ])
+);
