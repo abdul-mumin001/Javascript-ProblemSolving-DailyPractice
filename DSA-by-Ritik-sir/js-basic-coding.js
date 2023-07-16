@@ -867,3 +867,59 @@ console.log(
     73, 32, 108, 105, 107, 101, 32, 74, 97, 118, 97, 83, 99, 114, 105, 112, 116,
   ])
 );
+
+
+
+
+
+// 37. Implement the Caesar cypher
+
+let text = "I LOVE JAVASCRIPT";
+let textEnc = encrypt(text, 13);
+let textDec = decrypt(textEnc, 13);
+
+console.log(text);
+console.log(textEnc);
+console.log(textDec);
+
+// Decrypt a message by using the same encrypt function
+// ... but using the inverse of the key (e.g. rotate in the other direction)
+function decrypt(msg, key)
+{
+    return encrypt(msg, key * -1);
+}
+
+// Function will implement Caesar Cipher to
+// encrypt / decrypt the msg by shifting the letters
+// of the message acording to the key
+function encrypt(msg, key)
+{
+    let encMsg = "";
+
+    for(let i = 0; i < msg.length; i++)
+    {
+        let code = msg.charCodeAt(i);
+
+        // Encrypt only letters in 'A' ... 'Z' interval
+        if (code >= 65 && code <= 65 + 26 - 1)
+        {
+            code -= 65;
+            code = mod(code + key, 26);
+            code += 65;
+        }
+
+        encMsg += String.fromCharCode(code);
+    }
+
+    return encMsg;
+}
+
+
+// Modulo function: n mod p
+function mod(n, p)
+{
+    if ( n < 0 )
+        n = p - Math.abs(n) % p;
+
+    return n % p;
+}
