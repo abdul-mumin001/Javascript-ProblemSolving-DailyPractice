@@ -924,21 +924,17 @@ console.log(arrr);
 bubbleSort(arrr);
 console.log(arrr);
 
-function bubbleSort(arrr)
-{
+function bubbleSort(arrr){
     let shouldSort = true;
     let length = arrr.length;
 
-    while(shouldSort)
-    {
+    while(shouldSort){
         shouldSort = false;
         length--;
         
-        for(let i = 0; i < length; i++)
-        {
+        for(let i = 0; i < length; i++){
             let a = arrr[i];
-            if ( a > arrr[i+1] )
-            {
+            if ( a > arrr[i+1] ){
                 arrr[i] = arrr[i+1];
                 arrr[i+1] = a;
                 shouldSort = true;
