@@ -946,10 +946,6 @@ function getDistance(x1, y1, x2, y2) {
   return Math.sqrt(l1 * l1 + l2 * l2);
 }
 
-
-
-
-
 // 40. Create a function that will return a Boolean value indicating if two circles defined by center coordinates and radius are
 // intersecting
 
@@ -976,30 +972,25 @@ function getDistance(x1, y1, x2, y2) {
   return Math.sqrt(l1 * l1 + l2 * l2);
 }
 
-
-
-
-
-// 41. Create a function that will receive a bi-dimensional array as argument and a number and will extract as a unidimensional array the 
+// 41. Create a function that will receive a bi-dimensional array as argument and a number and will extract as a unidimensional array the
 // column specified by the number
 
-
-let aar = [ ["John", 120],
-            ["Jane", 115],
-            ["Thomas", 123],
-            ["Mel", 112],
-            ["Charley", 122]
-         ];
+let aar = [
+  ["John", 120],
+  ["Jane", 115],
+  ["Thomas", 123],
+  ["Mel", 112],
+  ["Charley", 122],
+];
 
 let numbers = extractCol(aar, 1);
 console.log(numbers);
 
-function extractCol(aar, colNo){
-  
-    let arCol = [];
-    
-    for(let i = 0; i < aar.length; i++){
-        arCol.push(aar[i][colNo]);
-    }
-    return arCol;
+function extractCol(aar, colNo) {
+  let arCol = [];
+
+  for (let i = 0; i < aar.length; i++) {
+    arCol.push(aar[i][colNo]);
+  }
+  return arCol;
 }
