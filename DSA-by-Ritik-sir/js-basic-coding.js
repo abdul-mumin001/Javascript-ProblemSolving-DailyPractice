@@ -994,14 +994,12 @@ let aar = [ ["John", 120],
 let numbers = extractCol(aar, 1);
 console.log(numbers);
 
-function extractCol(aar, colNo)
-{
+function extractCol(aar, colNo){
+  
     let arCol = [];
     
-    for(let i = 0; i < aar.length; i++)
-    {
+    for(let i = 0; i < aar.length; i++){
         arCol.push(aar[i][colNo]);
     }
-    
     return arCol;
 }
