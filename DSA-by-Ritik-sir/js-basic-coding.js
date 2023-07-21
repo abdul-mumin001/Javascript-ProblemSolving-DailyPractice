@@ -1002,7 +1002,7 @@ function extractCol(aar, colNo) {
 
 console.log(binaryToNumber("11111111"));
 
-function binaryToNumber(sBinary)
-{
+function binaryToNumber(sBinary){
+  
     return parseInt(sBinary, 2);
 }
