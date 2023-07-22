@@ -1003,23 +1003,22 @@ function binaryToNumber(sBinary) {
   return parseInt(sBinary, 2);
 }
 
-
-// 42. Create a function to calculate the sum of all the numbers in a jagged array (array contains numbers or other arrays of numbers 
+// 42. Create a function to calculate the sum of all the numbers in a jagged array (array contains numbers or other arrays of numbers
 // on an unlimited number of levels)
 
 let arrrr = [1, 2, [15, [23], [5, 12]], [100]];
 
 console.log(sumArray(arrrr));
 
-function sumArray(arrrr){
-    let sum = 0;
-    
-    for(let el of arrrr){
-      // console.log(el);
-        if (Array.isArray(el)){
-            el = sumArray(el);
-        }
-        sum += el;
+function sumArray(arrrr) {
+  let sum = 0;
+
+  for (let el of arrrr) {
+    // console.log(el);
+    if (Array.isArray(el)) {
+      el = sumArray(el);
     }
-    return sum;
+    sum += el;
+  }
+  return sum;
 }
