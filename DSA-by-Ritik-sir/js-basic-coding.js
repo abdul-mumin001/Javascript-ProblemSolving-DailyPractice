@@ -1011,20 +1011,15 @@ let arrrr = [1, 2, [15, [23], [5, 12]], [100]];
 
 console.log(sumArray(arrrr));
 
-function sumArray(arrrr)
-{
+function sumArray(arrrr){
     let sum = 0;
     
-    for(let el of arrrr)
-    {
+    for(let el of arrrr){
       // console.log(el);
-        if (Array.isArray(el))
-        {
+        if (Array.isArray(el)){
             el = sumArray(el);
         }
-        
         sum += el;
     }
-    
     return sum;
 }
