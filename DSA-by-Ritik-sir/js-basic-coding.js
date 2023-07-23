@@ -1023,9 +1023,6 @@ function sumArray(arrrr) {
   return sum;
 }
 
-
-
-
 // 43. Find the maximum number in a jagged array of numbers or array of numbers
 
 let arrrrr = [2, 4, 10, [12, 4, [100, 99], 4], [3, 2, 99], 0];
@@ -1034,22 +1031,22 @@ let max = findMax(arrrrr);
 console.log("Max  = ", max);
 
 // Use recursion to find the maximum numeric value in an array of arrays
-function findMax(arrrrr){
-    let max = -Infinity;
+function findMax(arrrrr) {
+  let max = -Infinity;
 
-    // Cycle through all the elements of the array
-    for(let i = 0; i < arrrrr.length; i++){
-        let el = arrrrr[i];
+  // Cycle through all the elements of the array
+  for (let i = 0; i < arrrrr.length; i++) {
+    let el = arrrrr[i];
 
-        // If an element is of type array then invoke the same function
-        // to find out the maximum element of that subarray
-        if ( Array.isArray(el) ){
-            el = findMax( el );
-        }
-
-        if ( el > max ){
-            max = el;
-        }
+    // If an element is of type array then invoke the same function
+    // to find out the maximum element of that subarray
+    if (Array.isArray(el)) {
+      el = findMax(el);
     }
-    return max;
+
+    if (el > max) {
+      max = el;
+    }
+  }
+  return max;
 }
