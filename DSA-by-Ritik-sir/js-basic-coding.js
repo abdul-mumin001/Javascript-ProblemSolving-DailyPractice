@@ -1034,27 +1034,22 @@ let max = findMax(arrrrr);
 console.log("Max  = ", max);
 
 // Use recursion to find the maximum numeric value in an array of arrays
-function findMax(arrrrr)
-{
+function findMax(arrrrr){
     let max = -Infinity;
 
     // Cycle through all the elements of the array
-    for(let i = 0; i < arrrrr.length; i++)
-    {
+    for(let i = 0; i < arrrrr.length; i++){
         let el = arrrrr[i];
 
         // If an element is of type array then invoke the same function
         // to find out the maximum element of that subarray
-        if ( Array.isArray(el) )
-        {
+        if ( Array.isArray(el) ){
             el = findMax( el );
         }
 
-        if ( el > max )
-        {
+        if ( el > max ){
             max = el;
         }
     }
-
     return max;
 }
