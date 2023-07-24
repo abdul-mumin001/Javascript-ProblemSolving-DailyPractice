@@ -1062,8 +1062,7 @@ let max = findMax(arrrrr);
 console.log("Max  = ", max);
 
 // Use a stack to find the maximum numeric value in an array of arrays
-function findMax(arElements)
-{
+function findMax(arElements){
     let max = -Infinity;
 
     // This is the stack on which will put the first array and then 
@@ -1073,30 +1072,25 @@ function findMax(arElements)
     arrays.push(arElements);
 
     // Loop as long as are arrays added to the stack for processing
-    while(arrays.length > 0)
-    {
+    while(arrays.length > 0){
         // Extract an array from the stack
         arrrrr = arrays.pop();
         
         // ... and loop through its elements
-        for(let i = 0; i < arrrrr.length; i++)
-        {
+        for(let i = 0; i < arrrrr.length; i++){
             let el = arrrrr[i];
 
             // If an element is of type array, we'll add it to stack
             // to be processed later
-            if ( Array.isArray(el) )
-            {
+            if ( Array.isArray(el) ){
                 arrays.push(el);
                 continue;
             }
             
-            if ( el > max )
-            {
+            if ( el > max ){
                 max = el;
             }
         }
     }
-
     return max;
 }
