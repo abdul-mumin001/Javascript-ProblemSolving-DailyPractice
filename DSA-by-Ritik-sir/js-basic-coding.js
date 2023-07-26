@@ -1102,19 +1102,14 @@ let ar2 = copyArray(ar1);
 
 console.log(ar2);
 
-function copyArray(ar)
-{
+function copyArray(ar){
     let ar2 = [];
     
-    for(let el of ar)
-    {
-        if (Array.isArray(el))
-        {
+    for(let el of ar){
+        if (Array.isArray(el)){
             el = copyArray(el);
         }
-        
         ar2.push(el);
     }
-    
     return ar2;
 }
