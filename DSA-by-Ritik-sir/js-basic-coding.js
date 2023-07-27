@@ -1112,3 +1112,81 @@ function copyArray(ar) {
   }
   return ar2;
 }
+
+
+// 45. Create a function to return the longest word(s) in a string
+
+let txt = "Create a function to return the longest word(s) in a sentance.";
+
+console.log(getLongestWords(txt));
+
+function getLongestWords(txt)
+{
+    let words = getWords(txt);
+    
+    let maxSize = 0;
+    let maxPositions = [];
+    
+    for(let i = 0; i < words.length; i++)
+    {
+        let currWordSize = words[i].length;
+        
+        if (currWordSize > maxSize)
+        {
+            maxSize = currWordSize;
+            maxPositions = [ i ];
+        }
+        else if (currWordSize === maxSize)
+        {
+            maxPositions.push(i);
+        }
+    }
+
+    return getElements(words, maxPositions);
+}
+
+// Get only the elements from specified positions from the array
+function getElements(ar, arPositions)
+{
+    let arNew = [];
+    
+    for(let pos of arPositions)
+    {
+        arNew.push(ar[pos]);
+    }
+    
+    return arNew;
+}
+
+// Returns an array with the words from specified text
+function getWords(txt)
+{
+    let startWord = -1;
+    let ar = [];
+    
+    for(let i = 0; i <= txt.length; i++)
+    {
+        let c = i < txt.length ? txt[i] : " ";
+
+        if (!isSeparator(c) && startWord < 0)
+        {
+            startWord = i;
+        }
+        
+        if (isSeparator(c) && startWord >= 0)
+        {
+            let word = txt.substring(startWord, i);
+            ar.push(word);
+            
+            startWord = -1;
+        }
+    }
+
+    return ar;
+}
+
+function isSeparator(c)
+{
+    let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?", "(", ")"];
+    return separators.includes(c);
+}
