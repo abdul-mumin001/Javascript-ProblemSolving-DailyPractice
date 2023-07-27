@@ -1120,24 +1120,20 @@ let txt = "Create a function to return the longest word(s) in a sentance.";
 
 console.log(getLongestWords(txt));
 
-function getLongestWords(txt)
-{
+function getLongestWords(txt){
     let words = getWords(txt);
     
     let maxSize = 0;
     let maxPositions = [];
     
-    for(let i = 0; i < words.length; i++)
-    {
+    for(let i = 0; i < words.length; i++){
         let currWordSize = words[i].length;
         
-        if (currWordSize > maxSize)
-        {
+        if (currWordSize > maxSize){
             maxSize = currWordSize;
             maxPositions = [ i ];
         }
-        else if (currWordSize === maxSize)
-        {
+        else if (currWordSize === maxSize){
             maxPositions.push(i);
         }
     }
@@ -1146,12 +1142,10 @@ function getLongestWords(txt)
 }
 
 // Get only the elements from specified positions from the array
-function getElements(ar, arPositions)
-{
+function getElements(ar, arPositions){
     let arNew = [];
     
-    for(let pos of arPositions)
-    {
+    for(let pos of arPositions){
         arNew.push(ar[pos]);
     }
     
@@ -1159,22 +1153,18 @@ function getElements(ar, arPositions)
 }
 
 // Returns an array with the words from specified text
-function getWords(txt)
-{
+function getWords(txt){
     let startWord = -1;
     let ar = [];
     
-    for(let i = 0; i <= txt.length; i++)
-    {
+    for(let i = 0; i <= txt.length; i++){
         let c = i < txt.length ? txt[i] : " ";
 
-        if (!isSeparator(c) && startWord < 0)
-        {
+        if (!isSeparator(c) && startWord < 0){
             startWord = i;
         }
         
-        if (isSeparator(c) && startWord >= 0)
-        {
+        if (isSeparator(c) && startWord >= 0){
             let word = txt.substring(startWord, i);
             ar.push(word);
             
@@ -1185,8 +1175,7 @@ function getWords(txt)
     return ar;
 }
 
-function isSeparator(c)
-{
+function isSeparator(c){
     let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?", "(", ")"];
     return separators.includes(c);
 }
