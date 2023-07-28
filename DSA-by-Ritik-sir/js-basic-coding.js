@@ -1169,11 +1169,37 @@ function getWords(txt) {
       startWord = -1;
     }
   }
-
   return ar;
 }
 
 function isSeparator(c) {
   let separators = [" ", "\t", "\n", "\r", ",", ";", ".", "!", "?", "(", ")"];
   return separators.includes(c);
+}
+
+// 46. Shuffle an array of strings
+
+let aarr = ["Shuffle", "an", "array", "of", "strings"];
+
+console.log(shuffleArray(aarr));
+
+// Shuffle array implemented using Fisher–Yates shuffle algorithm
+function shuffleArray(aarr)
+{
+    for(let i = aarr.length - 1; i > 0; i--)
+    {
+        let j = randomInt(0, i - 1);
+        
+        let t = aarr[i];
+        aarr[i] = aarr[j];
+        aarr[j] = t;
+    }
+    
+    return ar;
+}
+
+// Get a random int between min and max (both included)
+function randomInt(min, max) 
+{
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
