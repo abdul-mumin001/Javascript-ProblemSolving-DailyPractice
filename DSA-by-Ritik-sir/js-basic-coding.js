@@ -1184,10 +1184,8 @@ let aarr = ["Shuffle", "an", "array", "of", "strings"];
 console.log(shuffleArray(aarr));
 
 // Shuffle array implemented using Fisher–Yates shuffle algorithm
-function shuffleArray(aarr)
-{
-    for(let i = aarr.length - 1; i > 0; i--)
-    {
+function shuffleArray(aarr){
+    for(let i = aarr.length - 1; i > 0; i--){
         let j = randomInt(0, i - 1);
         
         let t = aarr[i];
@@ -1195,11 +1193,10 @@ function shuffleArray(aarr)
         aarr[j] = t;
     }
     
-    return ar;
+    return aarr;
 }
 
 // Get a random int between min and max (both included)
-function randomInt(min, max) 
-{
+function randomInt(min, max){
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
