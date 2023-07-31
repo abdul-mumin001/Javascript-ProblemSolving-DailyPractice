@@ -1242,27 +1242,20 @@ function randomInt(min, max) {
 let aarrr = getCharFrequency("Find the frequency of characters inside a string");
 console.log(JSON.stringify(aarrr));
 
-function getCharFrequency(text)
-{
+function getCharFrequency(text){
     let aarrr = [];
-
-    for(let chr of text)
-    {
+    for(let chr of text){
         updateFrequency(aarrr, chr);
     }
     
     return aarrr;
 }
 
-function updateFrequency(aarrr, chr)
-{
-    for(let el of aarrr)
-    {
-        if (el.chr === chr)
-        {
+function updateFrequency(aarrr, chr){
+    for(let el of aarrr){
+        if (el.chr === chr){
             el.count++;
         }
     }
-    
     aarrr.push({ chr : chr, count : 1 });
 }
