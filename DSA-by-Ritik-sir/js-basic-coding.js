@@ -1235,27 +1235,28 @@ function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
-// 48. Find the frequency of characters inside a string. Return the result as an array of objects. Each object 
+// 48. Find the frequency of characters inside a string. Return the result as an array of objects. Each object
 // has 2 fields: character and number of occurrences.
 
-let aarrr = getCharFrequency("Find the frequency of characters inside a string");
+let aarrr = getCharFrequency(
+  "Find the frequency of characters inside a string"
+);
 console.log(JSON.stringify(aarrr));
 
-function getCharFrequency(text){
-    let aarrr = [];
-    for(let chr of text){
-        updateFrequency(aarrr, chr);
-    }
-    
-    return aarrr;
+function getCharFrequency(text) {
+  let aarrr = [];
+  for (let chr of text) {
+    updateFrequency(aarrr, chr);
+  }
+
+  return aarrr;
 }
 
-function updateFrequency(aarrr, chr){
-    for(let el of aarrr){
-        if (el.chr === chr){
-            el.count++;
-        }
+function updateFrequency(aarrr, chr) {
+  for (let el of aarrr) {
+    if (el.chr === chr) {
+      el.count++;
     }
-    aarrr.push({ chr : chr, count : 1 });
+  }
+  aarrr.push({ chr: chr, count: 1 });
 }
