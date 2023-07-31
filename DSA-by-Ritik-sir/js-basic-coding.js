@@ -1235,8 +1235,8 @@ function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// 48. Find the frequency of characters inside a string. Return the result as an array of objects. Each object
-// has 2 fields: character and number of occurrences.
+// 48. Find the frequency of characters inside a string. Return the result as an array of objects. Each 
+// object has 2 fields: character and number of occurrences.
 
 let aarrr = getCharFrequency(
   "Find the frequency of characters inside a string"
