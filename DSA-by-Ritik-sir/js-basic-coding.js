@@ -1235,7 +1235,7 @@ function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// 48. Find the frequency of characters inside a string. Return the result as an array of objects. Each 
+// 48. Find the frequency of characters inside a string. Return the result as an array of objects. Each
 // object has 2 fields: character and number of occurrences.
 
 let aarrr = getCharFrequency(
@@ -1261,53 +1261,49 @@ function updateFrequency(aarrr, chr) {
   aarrr.push({ chr: chr, count: 1 });
 }
 
-
 // 49. Calculate Fibonacci(500) with high precision (all digits)
 
 console.log(fibonacci(500));
 
-function fibonacci(n){
-    if (n === 0)
-        return "0";
+function fibonacci(n) {
+  if (n === 0) return "0";
 
-    if (n === 1)
-        return "1";
+  if (n === 1) return "1";
 
-    let n1 = "0";
-    let n2 = "1";
+  let n1 = "0";
+  let n2 = "1";
 
-    for(let i = 2; i <= n; i++){
-        let sum = add(n1, n2);
+  for (let i = 2; i <= n; i++) {
+    let sum = add(n1, n2);
 
-        n1 = n2;
-        n2 = sum;
-    }
+    n1 = n2;
+    n2 = sum;
+  }
 
-    return n2;
+  return n2;
 }
 
-function add(sNumber1, sNumber2){
-    let maxSize = Math.max(sNumber1.length, sNumber2.length);
-    
-    let s1 = sNumber1.padStart(maxSize, "0");
-    let s2 = sNumber2.padStart(maxSize, "0");
+function add(sNumber1, sNumber2) {
+  let maxSize = Math.max(sNumber1.length, sNumber2.length);
 
-    let s = "";
-    let carry = 0;
-    
-    for(let i = maxSize - 1; i >= 0; i--){
-        let digit1 = parseInt(s1[i]);
-        let digit2 = parseInt(s2[i]);
-        
-        let sum = digit1 + digit2 + carry;
-        let digitSum = sum % 10;
-        carry = sum >= 10 ? 1 : 0;
+  let s1 = sNumber1.padStart(maxSize, "0");
+  let s2 = sNumber2.padStart(maxSize, "0");
 
-        s = digitSum.toString() + s;
-    }
-    
-    if (carry > 0)
-        s = carry + s;
-    
-    return s;
+  let s = "";
+  let carry = 0;
+
+  for (let i = maxSize - 1; i >= 0; i--) {
+    let digit1 = parseInt(s1[i]);
+    let digit2 = parseInt(s2[i]);
+
+    let sum = digit1 + digit2 + carry;
+    let digitSum = sum % 10;
+    carry = sum >= 10 ? 1 : 0;
+
+    s = digitSum.toString() + s;
+  }
+
+  if (carry > 0) s = carry + s;
+
+  return s;
 }
