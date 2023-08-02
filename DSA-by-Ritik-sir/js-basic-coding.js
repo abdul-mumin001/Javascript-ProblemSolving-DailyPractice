@@ -1314,12 +1314,10 @@ function add(sNumber1, sNumber2) {
 console.log(factorial(70));
 
 // Calculate factorial(n) ... using big number calculations
-function factorial(n)
-{
+function factorial(n){
     let prod = "1";
     
-    for(let i = 2; i <= n; i++)
-    {
+    for(let i = 2; i <= n; i++){
         prod = mult(prod, i.toString());
     }
     
@@ -1328,13 +1326,11 @@ function factorial(n)
 
 // Multiplies sNumber1 * sNumber2
 // Each number is provided as string
-function mult(sNumber1, sNumber2)
-{
+function mult(sNumber1, sNumber2){
     // Calculate partial results according to multiplication algorithm
     let partialResults = [];
     
-    for(let i = sNumber2.length - 1; i >= 0; i--)
-    {
+    for(let i = sNumber2.length - 1; i >= 0; i--){
         let digit = parseInt(sNumber2[i]);
         
         let partialResult = multDigit(sNumber1, digit);
@@ -1346,8 +1342,7 @@ function mult(sNumber1, sNumber2)
     // Sum partial results to obtain the product
     let sum = "";
     
-    for(let r of partialResults)
-    {
+    for(let r of partialResults){
         sum = add(sum, r);
     }
     
@@ -1355,13 +1350,11 @@ function mult(sNumber1, sNumber2)
 }
 
 // Multiplies number sNumber (as string) with a single digit number
-function multDigit(sNumber, digit)
-{
+function multDigit(sNumber, digit){
     let p = "";
     let carry = 0;
     
-    for(let i = sNumber.length - 1; i >= 0; i--)
-    {
+    for(let i = sNumber.length - 1; i >= 0; i--){
         let numberDigit = parseInt(sNumber[i]);
         
         let prod = digit * numberDigit + carry;
@@ -1377,8 +1370,7 @@ function multDigit(sNumber, digit)
     return p;
 }
 
-function add(sNumber1, sNumber2)
-{
+function add(sNumber1, sNumber2){
     let maxSize = Math.max(sNumber1.length, sNumber2.length);
     
     let s1 = sNumber1.padStart(maxSize, "0");
@@ -1387,8 +1379,7 @@ function add(sNumber1, sNumber2)
     let s = "";
     let carry = 0;
     
-    for(let i = maxSize - 1; i >= 0; i--)
-    {
+    for(let i = maxSize - 1; i >= 0; i--){
         let digit1 = parseInt(s1[i]);
         let digit2 = parseInt(s2[i]);
         
