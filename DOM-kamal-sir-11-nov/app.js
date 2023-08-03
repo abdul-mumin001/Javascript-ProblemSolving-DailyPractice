@@ -25,6 +25,7 @@ const newstyles={
     "fontsize":'60px',
     "color":"white"
 }
+
 Object.assign(firstPara.style, newstyles)
 
 const b=document.querySelector("body")
