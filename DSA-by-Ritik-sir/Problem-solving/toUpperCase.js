@@ -6,3 +6,4 @@ function toUpper(string) {
 }
 console.log(toUpper("aircampus"));
 console.log(toUpper("Javascript"));
+console.log(toUpper("barakvalley"));
