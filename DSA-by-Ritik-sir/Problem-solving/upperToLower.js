@@ -14,6 +14,8 @@ function upperLower(strings) {
   let arr = strings.split("");
 
   for (let i = 0; i < arr.length; i++) {
+    // console.log(arr[i]);
+    // console.log(a[i]);
     if (arr[i] == a[i]) {
       upperToLower.push(arr[i].toLowerCase());
     } else {
