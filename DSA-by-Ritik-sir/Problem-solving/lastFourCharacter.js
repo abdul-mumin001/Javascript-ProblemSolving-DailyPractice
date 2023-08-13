@@ -8,6 +8,7 @@ function lastFour(string) {
   let lastFourDigits = "";
   if (string.length > 4) {
     lastFourDigits = string.substring(string.length - 4);
+    // console.log(string.substring(string.length-4));
   } else {
     lastFourDigits = string;
   }
