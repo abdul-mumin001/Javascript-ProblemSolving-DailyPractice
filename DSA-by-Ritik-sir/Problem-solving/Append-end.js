@@ -6,6 +6,7 @@
 // Javascript
 
 function appendEnd(str1, str2) {
+    console.log(str1,str2);
   let x = str1.concat(str2);
   return x;
 }
