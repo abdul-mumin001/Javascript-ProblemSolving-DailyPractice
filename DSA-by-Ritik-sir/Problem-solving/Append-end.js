@@ -5,12 +5,8 @@
 // Output:
 // Javascript
 
-
-
-function appendEnd(str1, str2){
-  
-    let x=str1.concat(str2)
-    return x;
-  }
-  console.log(appendEnd('Java',
-  'script'))
+function appendEnd(str1, str2) {
+  let x = str1.concat(str2);
+  return x;
+}
+console.log(appendEnd("Java", "script"));
