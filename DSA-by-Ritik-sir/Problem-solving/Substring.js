@@ -4,8 +4,7 @@
 // output:
 // script
 
-
-function substring(str, a, b){
-    return str.substring(a,b)
-  }
-  console.log(substring('javascript', 4, 10))
+function substring(str, a, b) {
+  return str.substring(a, b);
+}
+console.log(substring("javascript", 4, 10));
