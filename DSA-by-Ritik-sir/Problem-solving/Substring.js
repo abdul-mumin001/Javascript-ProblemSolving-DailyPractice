@@ -8,3 +8,4 @@ function substring(str, a, b) {
   return str.substring(a, b);
 }
 console.log(substring("javascript", 4, 10));
+console.log(substring("frontenddeveloper",8,17));
