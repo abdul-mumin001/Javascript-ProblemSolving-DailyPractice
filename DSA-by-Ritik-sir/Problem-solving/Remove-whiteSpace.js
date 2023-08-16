@@ -9,3 +9,4 @@ function removeSpace(str) {
   return str.replace(/ /g, "");
 }
 console.log(removeSpace("    java script"));
+console.log(removeSpace(" mumin "));
