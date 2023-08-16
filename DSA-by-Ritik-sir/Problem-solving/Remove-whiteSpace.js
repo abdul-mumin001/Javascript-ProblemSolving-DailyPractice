@@ -5,7 +5,7 @@
 // Output:
 // javascript
 
-function removeSpace(str){
-    return str.replace(/ /g,'')
-   }
-   console.log(removeSpace("    java script"))
+function removeSpace(str) {
+  return str.replace(/ /g, "");
+}
+console.log(removeSpace("    java script"));
