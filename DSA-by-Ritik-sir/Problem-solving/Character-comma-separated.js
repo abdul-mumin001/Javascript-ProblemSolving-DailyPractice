@@ -9,3 +9,4 @@ function commaSep(str){
     return str.split('').join()
    }
    console.log(commaSep('Javascript'))
+   console.log(commaSep('AbdulMumin'))
