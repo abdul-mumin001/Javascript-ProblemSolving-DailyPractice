@@ -11,13 +11,15 @@ function isArray(arr1,arr2){
     let X=0;
     for(let i=0;i<arr1.length;i++){
         X+=arr1[i]
-        console.log(arr1[i]);
+        // console.log(arr1[i]);
+        console.log(X);
     }
 
     let Y=0;
     for(let j=0;j<arr2.length;j++){
         Y+=arr2[j]
-        console.log(arr2[j]);
+        // console.log(arr2[j]);
+        console.log(Y);
     }
     
     if(X==Y){
