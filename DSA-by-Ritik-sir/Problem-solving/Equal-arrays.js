@@ -30,3 +30,4 @@ function isArray(arr1,arr2){
 }
 console.log(isArray([1, 5, 7, 8], [5, 8, 7, 1]));
 console.log(isArray([1, 2, 3], [2, 4, 6]));
+console.log(isArray([2, 4, 6], [6, 4, 2]));
