@@ -15,3 +15,4 @@ function lastFour(string) {
   return lastFourDigits;
 }
 console.log(lastFour("Javascript"));
+console.log(lastFour("DailyCodingPractice"));
