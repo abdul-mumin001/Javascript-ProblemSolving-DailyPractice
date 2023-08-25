@@ -28,3 +28,4 @@ function operations(arr) {
   return newArray;
 }
 console.log(operations([2, "ADD_BEG", 3, "ADD_BEG", "REM_BEG", 4, "ADD_END"]));
+console.log(operations([2, 'ADD_BEG', 'REM_BEG', 3, 'ADD_BEG', 'REM_BEG', 4, 'ADD_END', 'REM_BEG']));
