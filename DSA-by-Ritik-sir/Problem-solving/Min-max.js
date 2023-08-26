@@ -18,8 +18,11 @@ function find_min_max(arr) {
   let max = arr[0];
   let i = arr.length;
   while (i--) {
+    console.log(min);
     min = arr[i] < min ? arr[i] : min;
+    console.log(min);
     max = arr[i] > max ? arr[i] : max;
+    console.log(max);
   }
   return [max, min];
 }
