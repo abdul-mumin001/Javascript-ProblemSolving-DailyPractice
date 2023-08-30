@@ -14,3 +14,4 @@ function square(arr, start, end) {
   return arr;
 }
 console.log(square([2, 5, 10, 7, 5, 5, 17, 20, 15, 44, 55], 4, 8));
+console.log(square([1, 2, 3, 4, 5] ,1, 3));
