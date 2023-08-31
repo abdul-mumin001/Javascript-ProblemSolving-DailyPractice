@@ -22,4 +22,5 @@ function binary_search(arr){
     }
   
   console.log(binary_search([1, 5, 7, 8]))
-  
+  console.log(binary_search([1,3,2]));
+
