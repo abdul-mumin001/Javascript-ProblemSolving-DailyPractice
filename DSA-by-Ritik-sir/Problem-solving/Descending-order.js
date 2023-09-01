@@ -23,3 +23,4 @@ function descending_order(arr){
    
  }
  console.log(descending_order([1, 5, 7, 8]))
+ console.log(descending_order([1, 2, 3, 4, 3]));
