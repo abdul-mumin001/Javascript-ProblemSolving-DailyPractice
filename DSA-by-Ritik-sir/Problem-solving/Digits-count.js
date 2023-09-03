@@ -7,3 +7,4 @@ const digits = (num, count = 0) => {
 };
 console.log(digits(num));
 console.log(digits(123456));
+console.log(digits(12345789));
