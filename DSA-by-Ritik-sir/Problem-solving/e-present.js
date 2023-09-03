@@ -10,3 +10,4 @@ function counte(string) {
   return count;
 }
 console.log(counte("I love india"));
+console.log(counte('i love my motherland'));
