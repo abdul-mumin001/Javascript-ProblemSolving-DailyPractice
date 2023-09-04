@@ -1,24 +1,23 @@
 // Q Think a series exactly like the one shown in example.
 
-// Figure out the pattern. 
+// Figure out the pattern.
 
 // and find sum of all numbers in pattern
 
-// Input: 
+// Input:
 // number of lines will be provided as function parameter.
 
-
-// Eg: 
+// Eg:
 
 // n = 5
 
-// output: 
+// output:
 
 // 55
 
 // explanation :
 
-// This will be pattern: 
+// This will be pattern:
 // 5
 // 4 5
 // 3 4 5
@@ -27,29 +26,27 @@
 
 // sum of every element in this is 55
 
-
 // eg:
 
-// n = 2 
+// n = 2
 
 // output:
 
 // 5
 
-// explanation: 
+// explanation:
 
 // 2
 // 1 2
 
-
-function pattern(n){
-    let sum=0;
-    for(let i=n;i>=1;i--){
-      for(let j=i;j<=n;j++){
-        sum+=j
-      }
+function pattern(n) {
+  let sum = 0;
+  for (let i = n; i >= 1; i--) {
+    for (let j = i; j <= n; j++) {
+      sum += j;
     }
-    return sum
   }
-  console.log(pattern(5))
-  console.log(pattern(2));
+  return sum;
+}
+console.log(pattern(5));
+console.log(pattern(2));
