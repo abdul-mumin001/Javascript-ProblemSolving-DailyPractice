@@ -52,3 +52,4 @@ function pattern(n){
     return sum
   }
   console.log(pattern(5))
+  console.log(pattern(2));
