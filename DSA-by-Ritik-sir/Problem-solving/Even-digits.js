@@ -32,3 +32,4 @@ function evenDigits(n) {
   }
 }
 console.log(evenDigits(12034));
+console.log(evenDigits(12345));
