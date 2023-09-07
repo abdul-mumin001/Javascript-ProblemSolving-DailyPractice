@@ -21,3 +21,4 @@ function sum(n) {
   }
 }
 sum(5);
+// sum(6)
