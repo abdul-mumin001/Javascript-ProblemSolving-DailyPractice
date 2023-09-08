@@ -9,18 +9,17 @@
 // number of digits
 // Input
 
-// eg 1: 
+// eg 1:
 // n = 10
 // output:
 // 2
 
-function numberOfDigits(n){
-    if(n<10){
-      return n;
-    }
-     let last=n%10;
-     let remaining=Math.floor(n/10)
-     return numberOfDigits((last+1)+ numberOfDigits(remaining));
-   
-   }
-   console.log(numberOfDigits(10))
+function numberOfDigits(n) {
+  if (n < 10) {
+    return n;
+  }
+  let last = n % 10;
+  let remaining = Math.floor(n / 10);
+  return numberOfDigits(last + 1 + numberOfDigits(remaining));
+}
+console.log(numberOfDigits(10));
