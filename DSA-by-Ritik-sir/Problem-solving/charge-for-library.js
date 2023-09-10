@@ -19,6 +19,7 @@
 
 function calculateCharge(number_of_days) {
   let a = number_of_days;
+
   if (a > 15) {
     return 5 * 3 + 5 * 4 + (a - 15) * 5;
   } else if (a > 10) {
@@ -29,4 +30,5 @@ function calculateCharge(number_of_days) {
     return 0;
   }
 }
+
 console.log(calculateCharge(10));
