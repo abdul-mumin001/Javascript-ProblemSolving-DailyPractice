@@ -4,38 +4,29 @@
 // 11 to 15 days  : Rs 4/day
 // After 15 days    : Rs 5/day
 
-// constraints: 
+// constraints:
 // 0<=day<=365
 
-// input: 
-// Already given as function parameter 
-// Output: 
+// input:
+// Already given as function parameter
+// Output:
 // Total charge
-// Eg:  
-// input:  
-// 10 
-// Output:  
+// Eg:
+// input:
+// 10
+// Output:
 // 15
 
-function calculateCharge(number_of_days){
-
-    let a=number_of_days;
-    if(a>15){
-      return (5*3)+(5*4)+((a-15)*5);
-    }
-    
-    else if(a>10)
-    {
-     return (5*3)+((a-10)*4);
-      
-    }  else if(a>5)
-    {
-      return ((a-5)*3);
-    }
-    else{
-      return 0;
-    }
-   
+function calculateCharge(number_of_days) {
+  let a = number_of_days;
+  if (a > 15) {
+    return 5 * 3 + 5 * 4 + (a - 15) * 5;
+  } else if (a > 10) {
+    return 5 * 3 + (a - 10) * 4;
+  } else if (a > 5) {
+    return (a - 5) * 3;
+  } else {
+    return 0;
   }
-  console.log(calculateCharge(10))
-  
+}
+console.log(calculateCharge(10));
