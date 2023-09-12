@@ -28,3 +28,4 @@ function students(a, b) {
 }
 
 console.log(students(20, 30));
+console.log(students(10,20));
