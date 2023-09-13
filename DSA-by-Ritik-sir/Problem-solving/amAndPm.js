@@ -25,3 +25,4 @@ function amPm(hr,min){
    return (hr+":"+min+" "+s)
  }
  console.log(amPm(13,56))
+ console.log(amPm(7,25));
