@@ -43,6 +43,7 @@ function biggest(a,b,c){
         return ( "None of them is biggest");
         break;
     }
+   
   }
   console.log(biggest(10,30,20))
-  
+  console.log(biggest(20,10,20))
