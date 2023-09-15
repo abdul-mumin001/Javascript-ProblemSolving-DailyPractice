@@ -27,4 +27,4 @@ function totalBalls(n){
      return sum;
    }
    console.log(totalBalls(5))
-   
+   console.log(totalBalls(10));
