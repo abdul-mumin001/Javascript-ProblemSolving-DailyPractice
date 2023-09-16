@@ -36,4 +36,5 @@ function checkNumber(n){
      }
    }
    console.log(checkNumber(49))
-   
+   console.log(checkNumber(10))
+   console.log(checkNumber(5));
