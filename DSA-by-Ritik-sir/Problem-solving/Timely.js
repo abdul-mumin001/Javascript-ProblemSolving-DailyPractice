@@ -21,3 +21,4 @@ function time(seconds){
      
     }
     console.log(time(5000))
+    console.log(time(3000));
