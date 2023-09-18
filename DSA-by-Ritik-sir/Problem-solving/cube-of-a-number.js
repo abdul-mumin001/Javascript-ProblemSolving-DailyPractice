@@ -17,6 +17,7 @@
 function cube(a){
   let z=a**3;
     return z;
-    
+
   }
   console.log(cube(3))
+  console.log(cube(5));
