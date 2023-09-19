@@ -23,10 +23,11 @@
 function quo_rem(a,b){
 
     let ans= b==0 ? `-1,-1`:``;
-    
+
     let quo=Math.floor(a/b);
     let rem=a%b;
     return (quo+","+rem)
 
 }
 console.log(quo_rem(7,3));
+console.log(quo_rem(10,2));
