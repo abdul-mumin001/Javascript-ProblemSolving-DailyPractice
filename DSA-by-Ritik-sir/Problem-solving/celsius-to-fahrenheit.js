@@ -18,3 +18,4 @@ function celToFah(a){
     return Fah;
 }
 console.log(celToFah(25));
+console.log(celToFah(37));
