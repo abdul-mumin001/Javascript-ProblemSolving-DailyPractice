@@ -20,3 +20,4 @@ function ftoc(a){
 
   }
   console.log(ftoc(77))
+  console.log(ftoc(98.5))
