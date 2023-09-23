@@ -23,3 +23,4 @@ function swap(a,b){
 
   } 
   console.log(swap(-10,2))
+  console.log(swap(2,10));
