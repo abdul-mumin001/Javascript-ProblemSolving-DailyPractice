@@ -18,3 +18,4 @@ function average_salary(a,b,c,d,e){
    
   }
   console.log(average_salary(10,20,30,40,50))
+  console.log(average_salary(10,22,31,40,50));
