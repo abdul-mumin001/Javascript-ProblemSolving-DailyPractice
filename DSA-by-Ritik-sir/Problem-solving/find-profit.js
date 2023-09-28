@@ -14,5 +14,5 @@ function find_profit(sellPrice,costPrice){
     
   }
   console.log(find_profit(100,120))
- 
+  console.log(find_profit(7,3))
 
