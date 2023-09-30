@@ -12,9 +12,12 @@
 // 5
 
 function first_digit(a) {
-  //write your code here
-  let z = Math.floor(a / 100);
-  return z;
-  // return the output
+  a=Math.abs(a);
+  let firstDigit=a;
+  while(firstDigit>=10){
+    firstDigit=Math.floor(firstDigit/10)
+  }
+  return firstDigit
 }
 console.log(first_digit(123));
+console.log(first_digit(-534));
