@@ -24,6 +24,7 @@ function basicArithmetic(num1, num2) {
     let quo= Math.floor(num1 / num2);
     let mod=num1 % num2;
     return (sum+" "+sub+" "+mul+" "+quo+" "+mod);
-    
+
   }
   console.log(basicArithmetic(2,10));
+  console.log(basicArithmetic(4,20));
