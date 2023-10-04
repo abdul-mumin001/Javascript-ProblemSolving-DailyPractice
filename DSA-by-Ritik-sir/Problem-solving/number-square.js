@@ -8,7 +8,7 @@
 // ```
 // 4
 // ```
-// Explanation 1: 
+// Explanation 1:
 // ```
 // 2 * 2 = 4
 // ```
@@ -20,17 +20,15 @@
 // ```
 // 121
 // ```
-// Explanation 2: 
+// Explanation 2:
 // ```
 // 11 * 11 = 121
 // ```
 
 function numberSquare(num) {
- 
-    let a=num;
-    a=num**2
-    return a;
-
-  }
-  console.log(numberSquare(5))
-  console.log(numberSquare(11))
+  let a = num;
+  a = num ** 2;
+  return a;
+}
+console.log(numberSquare(5));
+console.log(numberSquare(11));
