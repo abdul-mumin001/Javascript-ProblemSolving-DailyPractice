@@ -33,4 +33,4 @@ function numberSquare(num) {
 
   }
   console.log(numberSquare(5))
-  
+  console.log(numberSquare(11))
