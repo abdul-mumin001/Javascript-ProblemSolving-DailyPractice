@@ -8,19 +8,17 @@
 // ```
 // 1
 // ```
-// Explanation 1: 
+// Explanation 1:
 // ```
 // 3 / 2 = 1.5
 // The integer part is 1
 // ```
 
 function quotient(num1, num2) {
-
-    let a=num1;
-    let b=num2;
-    z=Math.floor(a/b);
-    return z;
-
-  }
-  console.log(quotient(3,2))
-  console.log(quotient(5,2));
+  let a = num1;
+  let b = num2;
+  z = Math.floor(a / b);
+  return z;
+}
+console.log(quotient(3, 2));
+console.log(quotient(5, 2));
