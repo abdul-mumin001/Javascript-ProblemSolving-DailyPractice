@@ -18,3 +18,4 @@ function power(num,exp){
     return p;
 }
 console.log(power(2,5));
+console.log(power(5,2));
