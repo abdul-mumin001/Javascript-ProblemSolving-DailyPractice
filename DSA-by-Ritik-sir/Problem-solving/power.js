@@ -8,14 +8,14 @@
 // ```
 // 32
 // ```
-// Explanation 1: 
+// Explanation 1:
 // ```
 // 2 * 2 * 2 * 2 * 2 = 32
 // ```
 
-function power(num,exp){
-    let p=num**exp;
-    return p;
+function power(num, exp) {
+  let p = num ** exp;
+  return p;
 }
-console.log(power(2,5));
-console.log(power(5,2));
+console.log(power(2, 5));
+console.log(power(5, 2));
