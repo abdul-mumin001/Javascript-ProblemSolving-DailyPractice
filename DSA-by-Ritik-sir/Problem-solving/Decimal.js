@@ -15,7 +15,7 @@
 // ```
 
 function decimal(num1, num2){
-    
+
     let a=num1;
     let b=num2;
     c=a/b;
@@ -25,3 +25,4 @@ function decimal(num1, num2){
     
   }
   console.log(decimal(3,2))
+  console.log(decimal(6,4));
