@@ -23,3 +23,4 @@ function profit(costPrice, sellingPrice){
     return z;
   }
   console.log(profit(50,100))
+  console.log(profit(30,20));
