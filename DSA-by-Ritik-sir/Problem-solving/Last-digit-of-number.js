@@ -10,18 +10,16 @@
 // ```
 // 3
 // ```
-// Explanation 1: 
+// Explanation 1:
 
 // ```
 // Last Digit of 123 is 3
 // ````
 
-function lastDigit(num){
-
-    let a=num;
-    b=Math.ceil(a%10)
-    return b;
-
-  }
-  console.log(lastDigit(123)) 
-  console.log(lastDigit(12345));
+function lastDigit(num) {
+  let a = num;
+  b = Math.ceil(a % 10);
+  return b;
+}
+console.log(lastDigit(123));
+console.log(lastDigit(12345));
