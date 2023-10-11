@@ -21,6 +21,7 @@ function lastDigit(num){
     let a=num;
     b=Math.ceil(a%10)
     return b;
-    
+
   }
   console.log(lastDigit(123)) 
+  console.log(lastDigit(12345));
