@@ -25,3 +25,4 @@ function firstAndLast(num) {
   
   }
   console.log(firstAndLast(123))
+  console.log(firstAndLast(219));
