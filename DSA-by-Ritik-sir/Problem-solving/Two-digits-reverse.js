@@ -6,7 +6,7 @@
 // ```
 // 10 < a < 100
 // ```
-// Input 
+// Input
 // ```
 // 32
 // ```
@@ -15,19 +15,17 @@
 // ```
 // 23
 // ```
-// Explanation : 
+// Explanation :
 // ```
 // Reverse of 32 will be 23
 // ```
 
 function twoDigitReverse(num) {
-
-    let a = num;
-    let first_part = Math.floor(a / 10)
-    let second_part = a % 10
-    let reverse_number = second_part * 10 + first_part
-    return reverse_number;
-  
-  }
-  console.log(twoDigitReverse(32))
-  console.log(twoDigitReverse(47));
+  let a = num;
+  let first_part = Math.floor(a / 10);
+  let second_part = a % 10;
+  let reverse_number = second_part * 10 + first_part;
+  return reverse_number;
+}
+console.log(twoDigitReverse(32));
+console.log(twoDigitReverse(47));
