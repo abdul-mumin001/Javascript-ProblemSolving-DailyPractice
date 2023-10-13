@@ -30,3 +30,4 @@ function twoDigitReverse(num) {
   
   }
   console.log(twoDigitReverse(32))
+  console.log(twoDigitReverse(47));
