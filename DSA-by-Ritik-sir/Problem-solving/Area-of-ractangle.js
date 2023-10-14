@@ -13,10 +13,10 @@
 // 21
 
 function rectangle_area(length,breadth){
-    // write your code here
+    
   let areaOfRectangle=length*breadth;
     return areaOfRectangle;
-    // return your answer
+    
   }
   console.log(rectangle_area(10,2))
-  
+  console.log(rectangle_area(7,3))
