@@ -18,6 +18,8 @@ function sum(length,breadth){
     let sum=0;
     let area=length*breadth;
     let perimeter=2*(length+breadth);
+    console.log(area);
+    console.log(perimeter);
     sum=area+perimeter;
     return sum;
    
