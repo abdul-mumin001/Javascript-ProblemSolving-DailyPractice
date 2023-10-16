@@ -20,3 +20,4 @@ function days(years,months,days){
   
   }
   console.log(days(1,3,12))
+  console.log(days(0,1,5))
