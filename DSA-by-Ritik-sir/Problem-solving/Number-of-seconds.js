@@ -19,3 +19,4 @@ function seconds(hours,minutes,seconds){
    
   }
   console.log(seconds(1,2,32))
+  console.log(seconds(0,5,59));
