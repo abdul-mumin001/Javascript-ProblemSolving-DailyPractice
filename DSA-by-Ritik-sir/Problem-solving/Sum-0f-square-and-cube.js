@@ -17,3 +17,5 @@ function sum(num) {
 }
 console.log(sum(10));
 console.log(sum(25));
+console.log(sum(30));
+
