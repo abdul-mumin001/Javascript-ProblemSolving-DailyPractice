@@ -17,5 +17,6 @@ function seconds(hours, minutes, seconds) {
 }
 console.log(seconds(1, 2, 32));
 console.log(seconds(0, 5, 59));
+
 console.log(seconds(2, 3, 20));
 console.log(seconds(3, 7, 49));
