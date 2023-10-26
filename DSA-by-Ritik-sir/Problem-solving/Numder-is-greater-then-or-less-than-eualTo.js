@@ -29,3 +29,4 @@ function checkNumber(num){
    
   }  
   console.log(checkNumber(10))
+  console.log(checkNumber(-7))
