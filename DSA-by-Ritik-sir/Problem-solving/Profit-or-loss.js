@@ -2,9 +2,9 @@
 // Aman is buying the apple at price x and selling the same apple to Ankush at price y. Check if Aman is in Profit
 // or Loss.
 
-// Eg 1: 
+// Eg 1:
 // x = 50, y = 70
-// Output: 
+// Output:
 // profit
 
 // Eg 2:
@@ -12,14 +12,12 @@
 // output :
 // loss
 
-function determine(x,y){
-   
-  if(x<y){
-    return "profit"
-  }else{
-    return "loss"
+function determine(x, y) {
+  if (x < y) {
+    return "profit";
+  } else {
+    return "loss";
   }
-    
-  }
-  console.log(determine(50,70))
-  console.log(determine(50,30))
+}
+console.log(determine(50, 70));
+console.log(determine(50, 30));
