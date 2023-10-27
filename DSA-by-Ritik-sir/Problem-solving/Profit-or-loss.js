@@ -22,3 +22,4 @@ function determine(x,y){
     
   }
   console.log(determine(50,70))
+  console.log(determine(50,30))
