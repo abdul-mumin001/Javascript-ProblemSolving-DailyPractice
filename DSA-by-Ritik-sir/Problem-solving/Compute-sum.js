@@ -26,3 +26,4 @@ function compute_sum(num1,num2){
 
   }
   console.log(compute_sum(10,2))
+  console.log(compute_sum(7,7))
