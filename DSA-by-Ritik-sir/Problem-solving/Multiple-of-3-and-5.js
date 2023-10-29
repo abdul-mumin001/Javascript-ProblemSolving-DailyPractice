@@ -21,3 +21,4 @@ function is_multiple(num){
     
   }
   console.log(is_multiple(15))
+  console.log(is_multiple(10))
