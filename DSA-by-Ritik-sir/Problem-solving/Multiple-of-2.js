@@ -22,3 +22,4 @@ function is_multiple(num){
    
   }
   console.log(is_multiple(7))
+  console.log(is_multiple(10))
