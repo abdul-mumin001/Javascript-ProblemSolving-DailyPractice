@@ -22,3 +22,4 @@ function hello_bye(num){
   
   }
   console.log(hello_bye(7))
+  console.log(hello_bye(10))
