@@ -1,9 +1,9 @@
 // Q Average Marks
 // Write a program to check if the average marks of 5 students is less than 60 or not.
 
-// Eg 1: 
+// Eg 1:
 // num1=10,num2=20,num3=30,num4=40,num5=50 <br>
-// Output: 
+// Output:
 // no
 
 // Eg 2:
@@ -11,14 +11,12 @@
 // Output :
 // yes
 
-function average_marks(num1,num2,num3,num4,num5){
-    
-  if((num1+num2+num3+num4+num5)/5<60){
-    return "no"
-  }else{
-    return "yes"
+function average_marks(num1, num2, num3, num4, num5) {
+  if ((num1 + num2 + num3 + num4 + num5) / 5 < 60) {
+    return "no";
+  } else {
+    return "yes";
   }
-    
-  }
-  console.log(average_marks(67,72,55,98,86))
-  console.log(average_marks(10,20,30,40,50))
+}
+console.log(average_marks(67, 72, 55, 98, 86));
+console.log(average_marks(10, 20, 30, 40, 50));
