@@ -21,3 +21,4 @@ function average_marks(num1,num2,num3,num4,num5){
     
   }
   console.log(average_marks(67,72,55,98,86))
+  console.log(average_marks(10,20,30,40,50))
