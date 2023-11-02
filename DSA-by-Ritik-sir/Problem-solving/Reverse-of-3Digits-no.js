@@ -24,4 +24,5 @@ function reverse(num){
   }
   console.log(reverse(111))
   console.log(reverse(101))
+  console.log(reverse(527))
   
