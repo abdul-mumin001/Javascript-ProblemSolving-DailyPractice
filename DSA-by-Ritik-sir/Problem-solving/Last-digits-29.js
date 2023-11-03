@@ -22,3 +22,4 @@ function last_digit(num){
    
   }
   console.log(last_digit(7))
+  console.log(last_digit(10))
