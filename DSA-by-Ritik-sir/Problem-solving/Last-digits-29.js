@@ -1,9 +1,9 @@
 // Q Last Digit
 // Write a program to check whether the last digit of a number is divisible by 2 or not.
 
-// Eg 1: 
+// Eg 1:
 // 10 <br>
-// Output: 
+// Output:
 // yes
 
 // Eg 2:
@@ -11,15 +11,13 @@
 // Output :
 // no
 
-function last_digit(num){
-   
-  let x=(num%10)%2;
-    if(x==0){
-      return "yes"
-    }else{
-      return "no"
-    }
-   
+function last_digit(num) {
+  let x = (num % 10) % 2;
+  if (x == 0) {
+    return "yes";
+  } else {
+    return "no";
   }
-  console.log(last_digit(7))
-  console.log(last_digit(10))
+}
+console.log(last_digit(7));
+console.log(last_digit(10));
