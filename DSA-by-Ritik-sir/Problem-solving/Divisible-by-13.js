@@ -22,4 +22,5 @@ function divisible(num){
   }
 
   }
+  console.log(divisible(10))
   console.log(divisible(13))
