@@ -21,3 +21,4 @@ const hypotenuse = (perpendicular, base) => {
     console.log(sum)
   }
   console.log(hypotenuse(4,3))
+  console.log(hypotenuse(3,4))
