@@ -13,12 +13,11 @@
 // ```
 
 const hypotenuse = (perpendicular, base) => {
-
-    const b=base**2;
-    const p=perpendicular**2;
-    const sum= Math.sqrt(b+p);
-    return sum;
-    console.log(sum)
-  }
-  console.log(hypotenuse(4,3))
-  console.log(hypotenuse(3,4))
+  const b = base ** 2;
+  const p = perpendicular ** 2;
+  const sum = Math.sqrt(b + p);
+  return sum;
+  console.log(sum);
+};
+console.log(hypotenuse(4, 3));
+console.log(hypotenuse(3, 4));
