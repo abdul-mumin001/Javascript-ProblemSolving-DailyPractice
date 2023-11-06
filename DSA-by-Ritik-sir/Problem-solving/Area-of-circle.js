@@ -20,10 +20,8 @@
 // ```
 
 const calculateArea = (radius) => {
-
-  
-    const z= Math.PI*radius*radius;
-    return z;
-  }
-  console.log(calculateArea (4))
-  console.log(calculateArea (37))
+  const z = Math.PI * radius * radius;
+  return z;
+};
+console.log(calculateArea(4));
+console.log(calculateArea(37));
