@@ -26,3 +26,4 @@ const calculateArea = (radius) => {
     return z;
   }
   console.log(calculateArea (4))
+  console.log(calculateArea (37))
