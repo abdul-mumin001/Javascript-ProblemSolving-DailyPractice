@@ -20,8 +20,8 @@
 // ```
 
 const difference = (num) => {
-    const z=num-13;
-    return z;
-  }
-  console.log(difference(17))
-  console.log(difference(12))
+  const z = num - 13;
+  return z;
+};
+console.log(difference(17));
+console.log(difference(12));
