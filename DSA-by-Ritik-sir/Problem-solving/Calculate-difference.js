@@ -24,3 +24,4 @@ const difference = (num) => {
     return z;
   }
   console.log(difference(17))
+  console.log(difference(12))
