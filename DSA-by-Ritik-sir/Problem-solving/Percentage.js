@@ -20,6 +20,7 @@ function percent(num, percentage) {
     let b=percentage;
     let z=a/100*b
     return z;
-    
+
   }
   console.log(percent(20,5))
+  console.log(percent(100,5))
