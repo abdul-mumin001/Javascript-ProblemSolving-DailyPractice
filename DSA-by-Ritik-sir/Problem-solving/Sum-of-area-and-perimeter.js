@@ -11,15 +11,12 @@
 // 2120.5750411731105
 // ```
 
-
-function sumAreaPerimeter(radius){
-
-    let sum=0;
-    let x= Math.PI*radius*radius;
-    let y=2*Math.PI*radius;
-    sum=x+y;
-    return(sum)
-  
-  }
-  console.log(sumAreaPerimeter(25))
-  console.log(sumAreaPerimeter(5))
+function sumAreaPerimeter(radius) {
+  let sum = 0;
+  let x = Math.PI * radius * radius;
+  let y = 2 * Math.PI * radius;
+  sum = x + y;
+  return sum;
+}
+console.log(sumAreaPerimeter(25));
+console.log(sumAreaPerimeter(5));
