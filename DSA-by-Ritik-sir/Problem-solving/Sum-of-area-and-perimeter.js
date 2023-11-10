@@ -22,3 +22,4 @@ function sumAreaPerimeter(radius){
   
   }
   console.log(sumAreaPerimeter(25))
+  console.log(sumAreaPerimeter(5))
