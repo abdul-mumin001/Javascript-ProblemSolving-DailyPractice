@@ -32,6 +32,7 @@ function time(seconds){
     let m=Math.floor(num/60)-h*60;
     let s=num%60
     return (h+":"+m+":"+s)
-    
+
   }
   console.log(time(2000))
+  console.log(time(1000));
