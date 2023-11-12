@@ -34,3 +34,4 @@ function time(seconds) {
 }
 console.log(time(2000));
 console.log(time(1000));
+console.log(time(3600));
