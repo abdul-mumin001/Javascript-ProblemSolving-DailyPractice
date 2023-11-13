@@ -41,3 +41,4 @@ function yearMonthDaysSum(num){
 
   }
   console.log(yearMonthDaysSum(2000))
+  console.log(yearMonthDaysSum(3000))
