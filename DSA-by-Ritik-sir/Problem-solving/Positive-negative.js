@@ -25,3 +25,4 @@ function is_positive(number){
    
   }
   console.log(is_positive(-2))
+  console.log(is_positive(2))
