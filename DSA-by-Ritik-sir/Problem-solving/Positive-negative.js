@@ -5,9 +5,9 @@
 // Output: <br>
 // Return the answer.
 
-// Eg 1: 
+// Eg 1:
 // 127
-// output: 
+// output:
 // positive
 
 // Eg 2:
@@ -15,14 +15,12 @@
 // output :
 // negative
 
-function is_positive(number){
-    
-  if(number>0){
+function is_positive(number) {
+  if (number > 0) {
     return "positive";
-  }else{
+  } else {
     return "negative";
   }
-   
-  }
-  console.log(is_positive(-2))
-  console.log(is_positive(2))
+}
+console.log(is_positive(-2));
+console.log(is_positive(2));
