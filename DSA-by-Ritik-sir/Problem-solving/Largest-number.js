@@ -6,9 +6,9 @@
 // Output: <br>
 // Return the largest number.
 
-// Eg 1: 
+// Eg 1:
 // num1 = 10, num2 = 20
-// output: 
+// output:
 // 20
 
 // Eg 2:
@@ -16,15 +16,14 @@
 // output :
 // 70
 
-function largest(num1,num2){
+function largest(num1, num2) {
+  //   if(num1>num2){
+  //     return num1;
+  //   }else{
+  //     return num2;
+  //   }
 
-//   if(num1>num2){
-//     return num1;
-//   }else{
-//     return num2;
-//   }
-
-let x=Math.max(num1,num2)
-    return x;
-  }
-  console.log(largest(30,50))
+  let x = Math.max(num1, num2);
+  return x;
+}
+console.log(largest(30, 50));
