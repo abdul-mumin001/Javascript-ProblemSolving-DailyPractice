@@ -18,11 +18,13 @@
 
 function largest(num1,num2){
 
-  if(num1>num2){
-    return num1;
-  }else{
-    return num2;
-  }
+//   if(num1>num2){
+//     return num1;
+//   }else{
+//     return num2;
+//   }
 
+let x=Math.max(num1,num2)
+    return x;
   }
   console.log(largest(30,50))
