@@ -20,3 +20,4 @@ function sum_range(num1, num2) {
   }
 }
 console.log(sum_range(30, 40));
+console.log(sum_range(10, 20));
