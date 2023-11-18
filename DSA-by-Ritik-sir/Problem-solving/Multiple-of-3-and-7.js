@@ -20,3 +20,4 @@ function check(num1){
     
   }
   console.log(check(21))
+  console.log(check(10))
