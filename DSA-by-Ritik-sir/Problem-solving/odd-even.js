@@ -21,3 +21,4 @@ function odd_even(num){
 
   }
   console.log(odd_even(8))
+  console.log(odd_even(5))
