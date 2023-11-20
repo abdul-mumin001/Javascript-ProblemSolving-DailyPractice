@@ -1,9 +1,9 @@
 // Q Odd Even Number
 // Given a number, determine whether it is odd or even.
 
-// Eg 1: 
+// Eg 1:
 // 5
-// output: 
+// output:
 // odd
 
 // Eg 2:
@@ -11,14 +11,12 @@
 // output :
 // even
 
-function odd_even(num){
-   
-  if(num%2==0){
+function odd_even(num) {
+  if (num % 2 == 0) {
     return "even";
-  }else{
+  } else {
     return "odd";
   }
-
-  }
-  console.log(odd_even(8))
-  console.log(odd_even(5))
+}
+console.log(odd_even(8));
+console.log(odd_even(5));
