@@ -1,10 +1,10 @@
 // Q Equal Numbers
-// Write a JavaScript program to check if the two numbers are equal or not. If the two numbers are equal, 
+// Write a JavaScript program to check if the two numbers are equal or not. If the two numbers are equal,
 // return “Yeah!!” else “OOPS!”.
 
-// Eg 1: 
+// Eg 1:
 // num1 = 50, num2 = 50
-// output: 
+// output:
 // Yeah!!
 
 // Eg 2:
@@ -12,14 +12,12 @@
 // output :
 // OOPS!
 
-function equal_numbers(num1,num2){
-    
-  if(num1==num2){
+function equal_numbers(num1, num2) {
+  if (num1 == num2) {
     return "Yeah!!";
-  }else{
-    return "OOPS!"; 
+  } else {
+    return "OOPS!";
   }
-   
-  }
-   console.log(equal_numbers(50,50))
-   console.log(equal_numbers(20,21))
+}
+console.log(equal_numbers(50, 50));
+console.log(equal_numbers(20, 21));
