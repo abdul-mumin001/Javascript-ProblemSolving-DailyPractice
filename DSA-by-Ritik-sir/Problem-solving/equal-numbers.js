@@ -21,4 +21,5 @@ function equal_numbers(num1,num2){
   }
    
   }
-   console.log(equal_numbers(50,55))
+   console.log(equal_numbers(50,50))
+   console.log(equal_numbers(20,21))
