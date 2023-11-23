@@ -22,3 +22,4 @@ function average_salary(sal1,sal2,sal3,sal4,sal5){
    
   }
   console.log(average_salary(10000,20000,30000,50000,40000))
+  console.log(average_salary(100000,120000,30000,500000,40000))
