@@ -1,4 +1,4 @@
-// Q Create an Array with the following elements: `“Bike”, “Scooter”, “Car”, “Truck”, “JCB” , “Helicopter”` 
+// Q Create an Array with the following elements: `“Bike”, “Scooter”, “Car”, “Truck”, “JCB” , “Helicopter”`
 // and return the 4th element from the Array.
 
 // ### Output Format
@@ -9,9 +9,9 @@
 // Truck
 // `
 
-function createArray(names){
-  
-    return names[3]
-    
-  }
-  console.log(createArray(['Bike', 'Scooter', 'Car', 'Truck', 'JCB' ,'Helicopter']))
+function createArray(names) {
+  return names[3];
+}
+console.log(
+  createArray(["Bike", "Scooter", "Car", "Truck", "JCB", "Helicopter"])
+);
