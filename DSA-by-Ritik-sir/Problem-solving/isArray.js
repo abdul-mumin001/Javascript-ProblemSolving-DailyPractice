@@ -17,16 +17,12 @@
 // NO
 // ```
 
-function isArray(arr){
-   
-
-    if(Array.isArray(arr)===true){
-      return "YES"
-    }else{
-      return "NO"
-    }
-  
-    
+function isArray(arr) {
+  if (Array.isArray(arr) === true) {
+    return "YES";
+  } else {
+    return "NO";
   }
-  console.log(isArray([1,2,3]))
-  console.log(isArray(5))
+}
+console.log(isArray([1, 2, 3]));
+console.log(isArray(5));
