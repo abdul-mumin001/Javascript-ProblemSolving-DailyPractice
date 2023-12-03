@@ -25,16 +25,14 @@ function elementIndex(arr, element){
         if(arr[i]===element){
          flag2 = false;
           return i;
-         
         }
       }  
       if(flag2 === true){
         return -1;
-        
       }
     } else {
       return "Not Array";
     }
-  
   }
   console.log(elementIndex([1,2,3],4))
+  console.log(elementIndex([1,2,3],3))
