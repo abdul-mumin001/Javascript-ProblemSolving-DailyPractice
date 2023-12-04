@@ -44,3 +44,4 @@ function indexOf(arr, element){
     
   }
   console.log(indexOf([1, 2, 3,], 2))
+  console.log(indexOf([1, 2], 1))
