@@ -34,3 +34,4 @@ function copyElement(arr){
     } 
  }
  console.log(copyElement([1, 2, 3]))
+ console.log(copyElement([2, 5, 10, 7, 5, 19, 10]))
