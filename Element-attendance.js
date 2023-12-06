@@ -36,3 +36,4 @@ function attendance(studentsInClass, student){
   
 }
 console.log(attendance([1, 2, 3], 2))
+console.log(attendance([2, 5, 10, 7, 5], 1))
