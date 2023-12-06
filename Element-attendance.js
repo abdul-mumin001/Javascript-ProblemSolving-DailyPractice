@@ -1,5 +1,5 @@
-// Q A teacher is about to take the attendance of the class, you being the monitor someone informs you that one 
-// student is missing. Check if the student is present in the class or not. 
+// Q A teacher is about to take the attendance of the class, you being the monitor someone informs you that one
+// student is missing. Check if the student is present in the class or not.
 
 // Input Format
 // An array ```studentsInClass``` with list of students and a student ```student```. You need to check if the
@@ -25,15 +25,11 @@
 // Not Present
 // ```
 
-function attendance(studentsInClass, student){
- 
-  
-    if(studentsInClass.includes(student)==true){
-      return 'Present';
-    }
-      return 'Not Present';
-    
-  
+function attendance(studentsInClass, student) {
+  if (studentsInClass.includes(student) == true) {
+    return "Present";
+  }
+  return "Not Present";
 }
-console.log(attendance([1, 2, 3], 2))
-console.log(attendance([2, 5, 10, 7, 5], 1))
+console.log(attendance([1, 2, 3], 2));
+console.log(attendance([2, 5, 10, 7, 5], 1));
