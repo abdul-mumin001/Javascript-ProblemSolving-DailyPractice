@@ -24,3 +24,4 @@ function sort(arr){
     return [...arr.sort()]
   }
   console.log(sort(['c', 'a', 'd']))
+  console.log(sort([2, 5, 7, 5]))
