@@ -1,4 +1,4 @@
-// Q Given an array of numbers, sort the array in ascending order and then return the sorted array. 
+// Q Given an array of numbers, sort the array in ascending order and then return the sorted array.
 
 // Input:
 // ```
@@ -20,8 +20,8 @@
 // [2, 5, 5, 7]
 // ```
 
-function sort(arr){
-    return [...arr.sort()]
-  }
-  console.log(sort(['c', 'a', 'd']))
-  console.log(sort([2, 5, 7, 5]))
+function sort(arr) {
+  return [...arr.sort()];
+}
+console.log(sort(["c", "a", "d"]));
+console.log(sort([2, 5, 7, 5]));
