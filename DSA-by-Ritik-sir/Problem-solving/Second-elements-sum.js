@@ -1,6 +1,6 @@
-// Q Given an array of strings, sort the array and then return concatinating the 2nd and 2nd last element of 
+// Q Given an array of strings, sort the array and then return concatinating the 2nd and 2nd last element of
 // the array.
- 
+
 // Input:
 // ```
 // ['3', '1', '2']
@@ -22,8 +22,8 @@
 // '25'
 // ```
 
-function sortSum(arr){
-    [...arr].sort()
-     return arr.length-1
-   }
-   console.log(sortSum(['3', '1', '2']))
+function sortSum(arr) {
+  [...arr].sort();
+  return arr.length - 1;
+}
+console.log(sortSum(["3", "1", "2"]));
