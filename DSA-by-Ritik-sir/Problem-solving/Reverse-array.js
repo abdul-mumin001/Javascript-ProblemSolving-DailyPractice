@@ -25,3 +25,4 @@ function reverseArray(arr) {
   return arr;
 }
 console.log(reverseArray([1, 2, 3]));
+console.log(reverseArray([2, 5, 10, 7, 5]));
