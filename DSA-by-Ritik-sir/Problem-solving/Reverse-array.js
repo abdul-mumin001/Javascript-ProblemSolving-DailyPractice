@@ -20,8 +20,8 @@
 // [5, 7, 10, 5, 2]
 // ```
 
-function reverseArray(arr){
-    arr.reverse()
-      return arr;
-    }
-    console.log(reverseArray([1, 2, 3]))
+function reverseArray(arr) {
+  arr.reverse();
+  return arr;
+}
+console.log(reverseArray([1, 2, 3]));
