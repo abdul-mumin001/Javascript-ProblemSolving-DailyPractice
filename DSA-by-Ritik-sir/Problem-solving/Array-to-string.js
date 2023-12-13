@@ -17,9 +17,8 @@
 // '2,5,10,7,5'
 // ```
 
-function arrString(arr){
-    let convertToString=arr.toString()
-    return convertToString;
-  }
-  console.log(arrString([1, 2, 3]))
-  
+function arrString(arr) {
+  let convertToString = arr.toString();
+  return convertToString;
+}
+console.log(arrString([1, 2, 3]));
