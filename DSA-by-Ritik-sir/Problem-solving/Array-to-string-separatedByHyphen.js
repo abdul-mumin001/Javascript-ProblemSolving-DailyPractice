@@ -22,4 +22,4 @@ function arrString(arr){
     return stringWithHyphen
   }
   console.log(arrString([1, 2, 3]))
-  
+  console.log(arrString([2, 5, 10, 7, 5]))
