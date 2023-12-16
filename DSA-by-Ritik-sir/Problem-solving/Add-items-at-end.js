@@ -23,4 +23,5 @@ function addEnd(arr, number){
     arr.push(number)
     return arr
   }
-  console.log(addEnd([1, 2, 3],5))
+  console.log(addEnd([1, 2, 3], 5))
+  console.log(addEnd([2, 5, 10, 7, 5], 1))
