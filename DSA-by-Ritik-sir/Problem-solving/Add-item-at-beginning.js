@@ -2,7 +2,7 @@
 
 // Input:
 // ```
-// [1, 2, 3] 
+// [1, 2, 3]
 // 5
 // ```
 // Output:
@@ -11,7 +11,7 @@
 // ```
 // Input:
 // ```
-// [2, 5, 10, 7, 5] 
+// [2, 5, 10, 7, 5]
 // 1
 // ```
 // Output:
@@ -19,11 +19,9 @@
 // [1, 2, 5, 10, 7, 5]
 // ```
 
-function addBeginning(arr,num){
-    arr.unshift(num)
-    return arr
+function addBeginning(arr, num) {
+  arr.unshift(num);
+  return arr;
 }
-console.log(addBeginning([1, 2, 3], 
-5))
-console.log(addBeginning([2, 5, 10, 7, 5], 
-    1))
+console.log(addBeginning([1, 2, 3], 5));
+console.log(addBeginning([2, 5, 10, 7, 5], 1));
