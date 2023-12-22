@@ -25,3 +25,5 @@ function addBeginning(arr,num){
 }
 console.log(addBeginning([1, 2, 3], 
 5))
+console.log(addBeginning([2, 5, 10, 7, 5], 
+    1))
