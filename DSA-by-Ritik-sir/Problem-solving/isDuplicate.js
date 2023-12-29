@@ -17,18 +17,17 @@
 // true
 // ```
 
-function isDuplicate(arr){
-    for(let i=0;i<arr.length;i++){
-    let a=arr.indexOf(arr[i])
-      let b=arr.lastIndexOf(arr[i])
-       
-          if(a!=b){
-        return true;
-      }else{
-        return false;
-      }
-       }
-     
+function isDuplicate(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let a = arr.indexOf(arr[i]);
+    let b = arr.lastIndexOf(arr[i]);
+
+    if (a != b) {
+      return true;
+    } else {
+      return false;
+    }
   }
-  console.log(isDuplicate([1, 2, 3, 4, 5]))
-  console.log(isDuplicate([2, 5, 10, 7, 5]))
+}
+console.log(isDuplicate([1, 2, 3, 4, 5]));
+console.log(isDuplicate([2, 5, 10, 7, 5]));
