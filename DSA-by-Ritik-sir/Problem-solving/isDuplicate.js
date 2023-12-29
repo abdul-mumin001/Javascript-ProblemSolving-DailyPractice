@@ -31,4 +31,4 @@ function isDuplicate(arr){
      
   }
   console.log(isDuplicate([1, 2, 3, 4, 5]))
-  
+  console.log(isDuplicate([2, 5, 10, 7, 5]))
