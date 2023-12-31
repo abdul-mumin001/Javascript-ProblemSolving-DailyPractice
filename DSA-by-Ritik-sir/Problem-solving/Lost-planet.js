@@ -29,3 +29,4 @@ function lostPlanet(planets){
     }
   }
   console.log(lostPlanet([1, 5, 7, 8, 3, 0, 2, 6]))
+  console.log(lostPlanet([0, 1, 2, 3, 7, 9, 5, 4, 6, 10]))
