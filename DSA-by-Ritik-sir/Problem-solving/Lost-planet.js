@@ -21,12 +21,12 @@
 // 8
 // ```
 
-function lostPlanet(planets){
-    for(let i=0;i<planets.length;i++){
-      if(planets.includes(i)==false){
-        return i
-      }
+function lostPlanet(planets) {
+  for (let i = 0; i < planets.length; i++) {
+    if (planets.includes(i) == false) {
+      return i;
     }
   }
-  console.log(lostPlanet([1, 5, 7, 8, 3, 0, 2, 6]))
-  console.log(lostPlanet([0, 1, 2, 3, 7, 9, 5, 4, 6, 10]))
+}
+console.log(lostPlanet([1, 5, 7, 8, 3, 0, 2, 6]));
+console.log(lostPlanet([0, 1, 2, 3, 7, 9, 5, 4, 6, 10]));
