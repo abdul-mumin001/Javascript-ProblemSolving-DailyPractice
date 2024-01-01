@@ -26,3 +26,4 @@ function goodManager(arr){
     return newArray;
   }
   console.log(goodManager([1000,2000, 3000]))
+  console.log(goodManager([20000, 40000, 500000, 20000, 10000]))
