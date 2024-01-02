@@ -26,3 +26,4 @@ function square(arr){
     return newArray
   }
   console.log(square([2, 3, 6])) 
+  console.log(square([10, 7, 15, 99])) 
