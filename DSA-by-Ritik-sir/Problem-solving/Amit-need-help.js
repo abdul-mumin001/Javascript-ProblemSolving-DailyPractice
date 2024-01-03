@@ -26,3 +26,4 @@ function order(menu){
     }
   }
   console.log(order(['Paneer Butter Masala', 'Paneer Fried Rice', 'Chicken Biryani', 'Cold Coffee']))
+  console.log(order(['Panner Fried Rice', 'Chicken Biryani', 'Paneer Paratha', 'Cold Coffee'])) 
