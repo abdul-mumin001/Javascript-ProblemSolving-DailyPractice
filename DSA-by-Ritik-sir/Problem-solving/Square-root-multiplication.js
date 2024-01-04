@@ -26,3 +26,4 @@ function multiply(arr){
     return newArray;
   }
   console.log(multiply([4, 9, 25, 49]))
+  console.log(multiply([5, 9, 49, 40, 15]))
