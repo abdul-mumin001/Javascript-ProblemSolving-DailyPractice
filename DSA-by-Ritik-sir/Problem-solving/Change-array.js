@@ -45,3 +45,4 @@ function changeArray(arr, moves){
    }
    
 console.log(changeArray([1, 5, 7, 8], [[1, 3], [7, 9]]))
+console.log(changeArray([1, 5, 7, 3, 2], [[1, 4], [5, 8], [7, 9], [3, 11], [2, 10]]))
