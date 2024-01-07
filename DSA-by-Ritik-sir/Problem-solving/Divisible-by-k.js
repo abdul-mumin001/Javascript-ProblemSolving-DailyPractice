@@ -35,3 +35,5 @@ function divisibleByK(arr, k){
     }
     console.log(divisibleByK([1, 5, 7, 8],
     3))
+    console.log(divisibleByK([7, 2, 5],
+        12))
