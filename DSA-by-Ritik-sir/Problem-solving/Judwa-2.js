@@ -18,20 +18,20 @@
 // [1, 3, 5, 9, 10]
 // ```
 
-function judwaa(arr){
-    var result =[]
-    var n=arr.length;
-    var totalL=n;
-    for(var i=0;i<totalL;i++){
-      if(arr[i]==2){
-        result.push(arr[i]);
-        result.push(arr[i]);
-        totalL--;
-      }else{
-        result.push(arr[i])
-      }
+function judwaa(arr) {
+  var result = [];
+  var n = arr.length;
+  var totalL = n;
+  for (var i = 0; i < totalL; i++) {
+    if (arr[i] == 2) {
+      result.push(arr[i]);
+      result.push(arr[i]);
+      totalL--;
+    } else {
+      result.push(arr[i]);
     }
-    return(result)
   }
-  console.log(judwaa([1, 2, 5 , 2, 7, 9, 1, 3]))
-  console.log(judwaa([1, 3, 5, 9, 10]))
+  return result;
+}
+console.log(judwaa([1, 2, 5, 2, 7, 9, 1, 3]));
+console.log(judwaa([1, 3, 5, 9, 10]));
