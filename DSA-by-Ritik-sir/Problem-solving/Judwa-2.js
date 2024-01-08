@@ -34,3 +34,4 @@ function judwaa(arr){
     return(result)
   }
   console.log(judwaa([1, 2, 5 , 2, 7, 9, 1, 3]))
+  console.log(judwaa([1, 3, 5, 9, 10]))
