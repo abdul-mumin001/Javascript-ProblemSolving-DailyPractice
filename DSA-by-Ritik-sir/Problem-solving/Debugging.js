@@ -1,4 +1,4 @@
-// Q Given the solution to the below questions, but somehow bugs got introduced in the solution. Can 
+// Q Given the solution to the below questions, but somehow bugs got introduced in the solution. Can
 // you fix them ?
 // Given an array, if the array contains duplicate elements return true, else return false
 
@@ -20,11 +20,10 @@
 // ```
 
 function isDuplicate(arr) {
-    for (let i = 0; i <= arr.length; i++) {
-      if (arr.indexOf(arr[i]) != arr.lastIndexOf(arr[i]))
-        return true;
-    }
-    return false;
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr.indexOf(arr[i]) != arr.lastIndexOf(arr[i])) return true;
   }
-  console.log(isDuplicate([1, 2, 3, 4, 5]))
-  console.log(isDuplicate([2, 5, 10, 7, 5]))
+  return false;
+}
+console.log(isDuplicate([1, 2, 3, 4, 5]));
+console.log(isDuplicate([2, 5, 10, 7, 5]));
