@@ -17,10 +17,8 @@
 // tpircsavaj
 // ```
 
-function reverse(str){
-  
-  
-    return str.split("").reverse().join("")
-  }
-  console.log(reverse('aircampus'))
-  console.log(reverse('javascript'))
+function reverse(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverse("aircampus"));
+console.log(reverse("javascript"));
