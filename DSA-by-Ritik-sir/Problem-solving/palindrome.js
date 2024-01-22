@@ -10,7 +10,7 @@
 // ```
 // Input:
 // ```
-// aircampus
+// campus
 // ```
 // Output:
 // ```
@@ -25,3 +25,4 @@ function palindrome(str){
     }
   }
   console.log(palindrome('arora'))
+  console.log(palindrome('campus'))
