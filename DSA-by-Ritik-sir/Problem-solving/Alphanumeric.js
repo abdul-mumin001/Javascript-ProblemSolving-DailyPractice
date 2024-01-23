@@ -2,7 +2,7 @@
 
 // Input:
 // ```
-// aircampus
+// DownTown
 // ```
 // Output:
 // ```
@@ -30,3 +30,4 @@ function alphanumeric(str){
   
   }
   console.log(alphanumeric('DownTown'))
+  console.log(alphanumeric('javascr1pt'))
