@@ -17,9 +17,9 @@
 // 420
 // ```
 
-function removeZeroes(str){
-    let value=(str*1).toString();
-    return value;
-  }
-  console.log(removeZeroes('230.00'))
-  console.log(removeZeroes('00420'))
+function removeZeroes(str) {
+  let value = (str * 1).toString();
+  return value;
+}
+console.log(removeZeroes("230.00"));
+console.log(removeZeroes("00420"));
