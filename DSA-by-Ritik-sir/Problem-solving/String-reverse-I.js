@@ -17,9 +17,9 @@
 // world! hello
 // ```
 
-function reverse(str){
-    let x=str.split(" ").reverse().join(" ");
-    return x;
-  }
-  console.log(reverse('the sky is blue'))
-  console.log(reverse('hello   world!'))
+function reverse(str) {
+  let x = str.split(" ").reverse().join(" ");
+  return x;
+}
+console.log(reverse("the sky is blue"));
+console.log(reverse("hello   world!"));
