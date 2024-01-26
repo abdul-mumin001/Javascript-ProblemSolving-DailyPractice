@@ -22,3 +22,4 @@ function reverse(str){
     return x;
   }
   console.log(reverse('the sky is blue'))
+  console.log(reverse('hello   world!'))
