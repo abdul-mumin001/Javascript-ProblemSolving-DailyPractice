@@ -28,4 +28,4 @@ function capitalization(str){
     
   }
   console.log(capitalization('This is a title'))
-  
+  console.log(capitalization('capitalize every word'))
