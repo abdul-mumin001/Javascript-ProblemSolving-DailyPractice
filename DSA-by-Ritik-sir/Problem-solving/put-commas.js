@@ -22,3 +22,4 @@ function putComma(str){
     return str.toLocaleString("en-IN")
 }
 console.log(putComma(100000))
+console.log(putComma(87678567465996))
