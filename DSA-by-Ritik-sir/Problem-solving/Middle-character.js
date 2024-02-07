@@ -27,3 +27,4 @@ function middleChar(str){
     return ans
   }
   console.log(middleChar('test'))
+  console.log(middleChar('testing'))
