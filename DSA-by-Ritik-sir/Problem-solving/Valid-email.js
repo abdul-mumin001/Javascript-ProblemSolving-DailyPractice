@@ -1,7 +1,6 @@
 // Q Given a string which contains an email address, return true if the given email is valid,
 // else return false.
 
-
 // Input:
 // ```
 // js@aircampus.in
@@ -19,12 +18,12 @@
 // false
 // ```
 
-function validEmail(str){
-    if(str.endsWith('@aircampus.in')){
-      return true;
-    }else{
-      return false;
-    }
+function validEmail(str) {
+  if (str.endsWith("@aircampus.in")) {
+    return true;
+  } else {
+    return false;
   }
-  console.log(validEmail('js@aircampus.in'))
-  console.log(validEmail('admin@aircampus'))
+}
+console.log(validEmail("js@aircampus.in"));
+console.log(validEmail("admin@aircampus"));
