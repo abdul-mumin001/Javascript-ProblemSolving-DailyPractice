@@ -27,3 +27,4 @@ function validEmail(str){
     }
   }
   console.log(validEmail('js@aircampus.in'))
+  console.log(validEmail('admin@aircampus'))
