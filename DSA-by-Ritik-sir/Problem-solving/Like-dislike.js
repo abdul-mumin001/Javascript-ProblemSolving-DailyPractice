@@ -23,3 +23,4 @@ function likesDislikes(obj){
     
   }
   console.log(likesDislikes({ upvotes: 13, downvotes: 0 }))
+  console.log(likesDislikes({ upvotes: 2, downvotes: 33 }))
