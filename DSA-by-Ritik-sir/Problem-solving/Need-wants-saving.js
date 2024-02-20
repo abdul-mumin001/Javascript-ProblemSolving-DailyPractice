@@ -29,4 +29,4 @@ function needsWantsSavings(salary){
     return obj;
   }
   console.log(needsWantsSavings(10000))
-  
+  console.log(needsWantsSavings(50000))
