@@ -20,13 +20,13 @@
 // { "Needs": 25000, "Wants": 15000, "Savings": 10000 }
 // ```
 
-function needsWantsSavings(salary){
-    let obj={
-      Needs:0.5*salary,
-      Wants:0.3*salary,
-      Savings:0.2*salary,
-    };
-    return obj;
-  }
-  console.log(needsWantsSavings(10000))
-  console.log(needsWantsSavings(50000))
+function needsWantsSavings(salary) {
+  let obj = {
+    Needs: 0.5 * salary,
+    Wants: 0.3 * salary,
+    Savings: 0.2 * salary,
+  };
+  return obj;
+}
+console.log(needsWantsSavings(10000));
+console.log(needsWantsSavings(50000));
