@@ -17,8 +17,8 @@
 // 16
 // ```
 
-function volume(obj){
-    return obj["width"]*obj["length"]*obj["height"]
-  }
-  console.log(volume({ width: 7, length: 2, height: 1 }))
-  console.log(volume({ width: 4, length: 2, height: 2 }))
+function volume(obj) {
+  return obj["width"] * obj["length"] * obj["height"];
+}
+console.log(volume({ width: 7, length: 2, height: 1 }));
+console.log(volume({ width: 4, length: 2, height: 2 }));
