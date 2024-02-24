@@ -42,3 +42,9 @@ function ingridients(obj){
     "oil": 12,
     "ketchup": 10
   }))
+  console.log(ingridients({
+    "salt": 432,
+    "oil": 543,
+    "ketchup": 777
+  }))
+  
