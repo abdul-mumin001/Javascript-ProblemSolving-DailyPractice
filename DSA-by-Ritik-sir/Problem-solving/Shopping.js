@@ -22,3 +22,4 @@ function shopping(obj){
     return Object.keys(obj)
   }
   console.log(shopping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }))
+  console.log(shopping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }))
