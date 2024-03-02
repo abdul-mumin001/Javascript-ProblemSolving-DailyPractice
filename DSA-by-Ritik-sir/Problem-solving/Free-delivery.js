@@ -18,18 +18,20 @@
 // true
 // ```
 
-function freeDelivery(obj){
-    let amount=Object.values(obj);
-    console.log(amount)
-    let sum=0;
-    for(let i of amount){
-      sum=sum+i;
-    }
-    if(sum>50){
-      return true;
-    }else{
-      return false;
-    }
+function freeDelivery(obj) {
+  let amount = Object.values(obj);
+  console.log(amount);
+  let sum = 0;
+  for (let i of amount) {
+    sum = sum + i;
   }
-  console.log(freeDelivery({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }))
-  console.log(freeDelivery({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }));
+  if (sum > 50) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(
+  freeDelivery({ Monopoly: 11.99, "Secret Hitler": 35.99, Bananagrams: 13.99 })
+);
+console.log(freeDelivery({ Shampoo: 5.99, "Rubber Ducks": 15.99 }));
