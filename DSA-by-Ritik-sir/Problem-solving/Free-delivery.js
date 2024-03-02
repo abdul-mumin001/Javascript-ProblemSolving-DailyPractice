@@ -32,3 +32,4 @@ function freeDelivery(obj){
     }
   }
   console.log(freeDelivery({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }))
+  console.log(freeDelivery({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }));
