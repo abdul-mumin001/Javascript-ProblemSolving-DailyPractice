@@ -22,3 +22,4 @@ function array(obj){
     return Object.entries(obj)
    }
    console.log(array({ a: 1, b: 2 }))
+   console.log(array({}))
