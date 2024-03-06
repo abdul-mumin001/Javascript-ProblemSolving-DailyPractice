@@ -19,6 +19,7 @@
 function sorting(obj) {
   return obj.sort((a, b) => a.price - b.price);
 }
+
 console.log(
   sorting([
     { name: "lemonade", price: 50 },
